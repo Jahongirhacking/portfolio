@@ -1,0 +1,1899 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+    --green: #39e8c7;
+    --black: #0b0b0b;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family:  'Raleway', sans-serif;
+    color: white;
+    background: rgb(66,66,66);
+    background: radial-gradient(circle, rgb(58, 58, 58) 0%, rgb(28, 28, 28) 70%, rgba(11,11,11,1) 100%);
+}
+
+
+
+html {
+    scroll-behavior: smooth; /*Sekin o'tish*/
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 3px!important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green)!important;
+    border-radius: 50px!important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(38, 38, 38)!important;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul>li{
+    list-style: none;
+}
+
+@keyframes ElementScale{
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 65px;
+    background: var(--black);
+    z-index: 999;
+}
+
+nav>.fa-bars{
+    display: block;
+    font-size: 25pt;
+    display: none;
+}
+
+#parda{
+    position: fixed;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: #0b0b0be3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-evenly;
+    transition: 0.4s ease;
+}
+
+.parda__yoq{
+    display: none!important;
+}
+
+.parda__bor{
+    display: flex!important;
+}
+
+#parda>li{
+    text-align: center;
+    display: block;
+    list-style: none;
+    width: 100%;
+    font-size: 18pt;
+    transition: 0.4s ease;
+}
+
+#parda>li>a{
+    color: var(--green);
+    font-weight: bold;
+    padding: 20px 55px;
+    background-color: black;
+    transition: 0.4s ease;
+}
+
+nav>#logo{
+    width: 70px;
+    transition: 0.5s ease;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+}
+
+nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+nav>ul>li{
+    list-style: none;
+    display: block;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    transition-property: color;
+    transition: 0.4s ease;
+}
+
+nav>ul>li>a:hover{
+    color: var(--green);
+}
+
+nav>ul>li>#contact__link{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--green);
+    color: black;
+    transition-property: color;
+    transition: 0.6s ease;
+}
+
+nav>ul>li>#contact__link:hover{
+    color: var(--green);
+    background-color: var(--black);
+}
+
+/* Header section */
+
+#header>.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #303a39;
+    color: white;
+    z-index: 0;
+}
+
+#header>.container>#back{
+    width: 72%;
+    height: 100vh;
+    position: absolute;
+    left: -210px;
+    background-color: var(--black);
+    transform: skew(-15deg,0deg);
+    z-index: 1;
+}
+
+/* -- -- -- Balls -- -- -- */
+
+#header>.container>#balls>.ball{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    border-radius: 100px;
+    z-index: 3;
+}
+
+#header>.container>#balls>.ball.n1{
+    bottom: 22.5vh;
+    left: 69px;
+    background: rgb(196,48,43);
+    background: radial-gradient(circle, rgba(196,48,43,1) 0%, rgba(221,9,2,1) 51%, rgba(196,48,43,1) 100%);
+    box-shadow: 0px 0px 25px red;
+}
+
+#header>.container>#balls>.ball.n2{
+    bottom: 13.5vh;
+    left: 170px;
+    height: 30px;
+    width: 30px;
+    background: rgb(242,247,7);
+    background: radial-gradient(circle, rgba(242,247,7,1) 0%, rgba(255,221,18,1) 69%, rgba(255,185,5,1) 100%);
+    box-shadow: 0px 0px 25px yellow;
+}
+
+#header>.container>#balls>.ball.n3{
+    bottom: 21.5vh;
+    left: 280px;
+    height: 35px;
+    width: 35px;
+    background: rgb(247,7,213);
+    background: radial-gradient(circle, rgba(247,7,213,1) 0%, rgba(220,20,226,1) 69%, rgba(107,43,196,1) 100%);
+    box-shadow: 0px 0px 25px rgba(247,7,213,1);
+}
+/*-- -- -- -- -- -- -- --*/
+
+#header>.container>#bio{
+    width: 53%;
+    color: white;
+    padding-top: 22vh;
+    position: absolute;
+    padding-left: 70px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 3;
+}
+
+#header>.container>#bio>h1{
+    font-weight: 700;
+    font-size: 60px;
+    margin: 35px 0 0 0;
+    padding: 10px 0;
+    width: 90%;
+    letter-spacing: 2.5px;
+    color: var(--green);
+}
+
+#header>.container>#bio>p{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+#header>.container>#bio>.my__job{
+    color: rgba(255, 255, 255, 0.659);
+}
+
+#header>.container>#bio>#networking__links{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#header>.container>#bio>#networking__links>li{
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    line-height: 70px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.4s ease;
+    transition-property: transform;
+}
+
+#header>.container>#bio>#networking__links>li>a{
+    font-size: 40px;
+    color: var(--green);
+}
+
+#header>.container>#bio>#networking__links>li:hover{
+    transform: scale(1.2);
+}
+
+/*My Image*/
+#header>.container>#my__img{
+    float: right;
+}
+
+#header>.container>#my__img>#Me{
+    width: 590px;
+    float: right;
+    height: 92vh;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#header>.container>#my__img>#Bulalar__logo{
+    width: 315px;
+    float: right;
+    position: absolute;
+    height: 255px;
+    object-fit: cover;
+    object-position: 100% 0;
+    right: 439px;
+    bottom: 0;
+    transition: 0.4s ease;
+    z-index: 4;
+}
+
+#header>.container>.green__light{
+    height: 100vh;
+    width: 1px;
+    position: absolute;
+    background-color: var(--green);
+    right: 0;
+    top: 0;
+    box-shadow: -4px -5px 8px var(--green);
+}
+
+
+/*Extra Section*/
+
+#extra{
+    width: 100%;
+    padding: 20px 0 20px 70px;
+    padding-left: 70px;
+    background: rgb(5,64,53);
+    background: linear-gradient(90deg, rgba(5,64,53,1) 0%, rgba(9,110,91,1) 70%, rgba(13,154,128,1) 100%);
+    color: white;
+}
+
+#extra>h3{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+#extra>p{
+    font-family: 'Open Sans', sans-serif;
+    width: 70%;
+    font-size: 15px;
+}
+
+#extra>a.read__more{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    padding: 10px 20px;
+    margin: 25px 0;
+    font-weight: 700;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    width: fit-content;
+    transition: 0.8s ease;
+    transition-property: color, background-color;
+}
+
+#extra>a.read__more:hover{
+    background-color: white;
+    color: rgb(9,47,5);
+}
+
+/*---> About Me Section <----*/
+
+#about__me{
+    width: 100%;
+    padding: 80px 20px 60px;
+}
+
+#about__me>.container>#bulb{
+    font-size: 50pt;
+    cursor: pointer;
+    animation: ElementScale 2s infinite;
+}
+
+.container>#bulb>i{
+    transform: rotate(180deg);
+    transition: .4s ease;
+}
+
+.container>#bulb>.turn__on{
+    color: gold!important;
+    text-shadow: 0px -12px 40px yellow;
+}
+
+.container>#bulb>.turn__off{
+    color: #aaaaa9b5!important;
+    text-shadow: none;
+}
+
+#about__me>.container{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+/*Soya*/
+#about__me>.container>h2{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 15px 45px;
+    border: 5px solid var(--green);
+    color: var(--green);
+    width: fit-content;
+    margin: auto;
+    font-weight: 700;
+    transition: 0.4s ease;
+}
+
+#about__me>.container>h2.soyaFalse{
+    text-shadow: none;
+    box-shadow: none;
+}
+
+#about__me>.container>h2.soyaTrue{
+    text-shadow: 0px 11px 7px black;
+    box-shadow: 0px 14px 25px black;
+}
+
+#about__me>.container>p{
+    margin-top: 60px;
+    font-size: 17pt;
+    line-height: 30px;
+    letter-spacing: 2px;
+    transition: 0.4s ease;
+}
+
+#about__me>.container>p.soyaFalse{
+    text-shadow: none;
+}
+
+#about__me>.container>p.soyaTrue{
+    text-shadow: 0px 11px 8px black;
+}
+
+#about__me>.container>#hobby__heading{
+    font-size: 20pt;
+    letter-spacing: 4px;
+    margin-top: 60px;
+    font-weight: 800;
+}
+
+#about__me>.container>.my__hobby{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+#about__me>.container>.my__hobby>.card{
+    display: block;
+    position: relative;
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    width: 250px;
+    height: 180px;
+    color: var(--green);
+    transition: 0.4s ease;
+}
+
+#about__me>.container>.my__hobby>.card:hover{
+    transform: scale(1.1);
+}
+
+#about__me>.container>.my__hobby>.card>div{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+#about__me>.container>.my__hobby>.card>div>h3{
+    font-size: 36pt;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+#about__me>.container>.my__hobby>.card>div>p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 18pt;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+
+/*Skills Section*/
+
+#skills{
+    width: 100%;
+    padding: 100px 20px 120px;
+}
+
+#skills>.container{
+    width: 70%;
+    margin: auto;
+}
+
+#skills>.container>h2{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 15px 45px;
+    border: 5px solid var(--green);
+    color: var(--green);
+    width: fit-content;
+    margin: auto;
+    font-weight: 700;
+    transition: 0.4s ease;
+}
+
+/*Using*/
+#skills>.container>.using>h3{
+    margin: 80px 0 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 18pt;
+}
+
+#skills>.container>.using>.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+#skills>.container>.using>.cards>.card{
+    display: block;
+    position: relative;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border-radius: 10px;
+    border: 1px solid rgba(83, 83, 83, 0.18);
+}
+
+#skills>.container>.using>.cards>.card>div>img{
+    width: 50%;
+}
+
+#skills>.container>.using>.cards>.card>div>p{
+    color: var(--green);
+    font-weight: 700;
+    font-size: 18pt;
+    letter-spacing: 3px;
+}
+
+
+/*Learning*/
+#skills>.container>.learning>h3{
+    margin: 80px 0 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 18pt;
+}
+
+#skills>.container>.learning>.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#skills>.container>.learning>.cards>.card{
+    display: block;
+    position: relative;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border-radius: 10px;
+    border: 1px solid rgba(83, 83, 83, 0.18);
+}
+
+#skills>.container>.learning>.cards>.card>div>img{
+    width: 50%;
+}
+
+#skills>.container>.learning>.cards>.card>div>p{
+    color: var(--green);
+    font-weight: 700;
+    font-size: 18pt;
+    letter-spacing: 3px;
+}
+
+
+/*Other Skills*/
+#skills>.container>.other>h3{
+    margin: 80px 0 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 18pt;
+}
+
+#skills>.container>.other>.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#skills>.container>.other>.cards>.card{
+    display: block;
+    position: relative;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border-radius: 10px;
+    border: 1px solid rgba(83, 83, 83, 0.18);
+}
+
+#skills>.container>.other>.cards>.card>div>img{
+    width: 50%;
+}
+
+#skills>.container>.other>.cards>.card>div>p{
+    color: var(--green);
+    font-weight: 700;
+    font-size: 18pt;
+    letter-spacing: 3px;
+}
+
+/*----> Portfolio <----*/
+
+#portfolio{
+    background-image: url('../img/wallpaper.jpg');
+    background-position: center;
+    padding-bottom: 80px;
+    margin-bottom: 0;
+}
+
+#portfolio>.portfolio__heading{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.433);
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+    padding: 20px 0;
+    border-radius: 0px 0px 30px 30px;
+}
+
+#portfolio>.portfolio__heading>h2{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 22pt;
+    color: var(--green);
+}
+
+#portfolio>.container{
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 25px;
+    padding: 50px 30px;
+    background-color: rgba(0, 0, 0, 0.433);
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+}
+
+#portfolio>.container>.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#portfolio>.container>.card>.img{
+    width: 50%;
+    text-align: center;
+}
+
+#portfolio>.container>.card>.img>img{
+    width: 90%;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    border: 5px inset var(--green);
+}
+
+#portfolio>.container>.card:hover>.left__img>img{
+    transform: skew(0deg,-5deg);
+}
+
+#portfolio>.container>.card:hover>.right__img>img{
+    transform: skew(0deg,5deg);
+}
+
+#portfolio>.container>.card>.description{
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+#portfolio>.container>.card>.description>p{
+    margin: auto;
+    font-size: 15pt;
+    color: rgb(220, 220, 220);
+}
+
+#portfolio>.container>.card>.description>h2{
+    letter-spacing: 3px;
+    font-size: 20pt;
+    margin: auto;
+    margin-bottom: 20px;
+    color: var(--green);
+}
+
+#portfolio>.container>.card>.description>div{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+#portfolio>.container>.card>.description>div>a{
+    display: block;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 14pt;
+    margin: auto;
+    padding: 15px 25px;
+    margin-top: 20px;
+    transition: 0.6s ease;
+    transition-property: background, color;
+}
+
+#portfolio>.container>.card>.description>div>.demo{
+    border-right: 4px solid rgb(12, 116, 97);
+    border-left: 4px solid rgb(12, 116, 97);
+}
+
+#portfolio>.container>.card>.description>div>.demo:hover{
+    background: rgb(12, 116, 97);
+}
+
+#portfolio>.container>.card>.description>div>.utube{
+    border-right: 4px solid #c4302b;
+    border-left: 4px solid #c4302b;
+}
+
+#portfolio>.container>.card>.description>div>.utube:hover{
+    background: #c4302b;
+}
+
+
+/*----->   Footer Section   <-----*/
+
+#footer{
+    background-color: black;
+    height: 400px;
+    margin: auto;
+    padding: 50px 15px;
+}
+
+#footer>h3{
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21pt;
+    letter-spacing: 5px;
+    width: fit-content;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+#footer>.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+#footer>.contact>.networks{
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    transition: 0.6s ease;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
+#footer>.contact>.networks>a{
+    font-size: 30pt;
+    border-radius: 100px;
+    color: var(--green);
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    transform: translate(0, 7px);
+    transition: 0.6s ease;
+}
+
+#footer>.contact>.networks:hover{
+    background-color: var(--green);
+}
+#footer>.contact>.networks:hover>a{
+    color: black;
+}
+
+hr{
+    border-color: var(--green);
+}
+
+#footer>p.made{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-size: 19px;
+    font-weight: 700;
+    margin: auto;
+    width: fit-content;
+    margin-top: 40px;
+}
+
+
+.fa-heart{
+    color: red;
+}
+
+.red{
+    font-weight: 700;
+    color: #ed0e28;
+}
+
+.green{
+    font-weight: 700;
+    color: #1EB53A;
+}
+
+.blue{
+    font-weight: 700;
+    color: #0099B5;
+}
+
+
+
+
+/*----->   Responsive Section   <-----*/
+@media (max-width: 349px){
+    /*Nav*/
+    nav>.fa-bars{
+        display: block;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    nav>#logo {
+        width: 50px;
+    }
+    
+
+    /*header*/
+    #header>.container>#my__img>#Me {
+        width: 197px;
+        float: right;
+        height: 92vh;
+    }
+
+    #header>.container>#back {
+        width: 124%;
+        transform: skew(-6deg,0deg);
+    }
+
+    #header>.container>#bio {
+        width: 52%;
+        padding-left: 18px;
+    }
+    #header>.container>#bio>p {
+        font-size: 13px;
+    }
+
+    #header>.container>#bio>#networking__links{
+        margin-top: 40px;
+        width: 80%;
+    }
+
+    #header>.container>#bio>#networking__links>li{
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+    }
+
+    #header>.container>#bio>#networking__links>li>a {
+        font-size: 20px;
+    }
+
+    #header>.container>#bio>h1{
+        font-size: 19px;
+    }
+
+    #header>.container>#my__img>#Bulalar__logo{
+        width: 155px;
+        height: 128px;
+        right: 103px;
+    }
+
+    #header>.container>#balls>.ball.n1{
+        left: 0px;
+        height: 23px;
+        width: 23px;
+        bottom: 38.5vh;
+    }
+
+    #header>.container>#balls>.ball.n2{
+        left: 150px;
+        height: 20px;
+        width: 20px;
+        bottom: 29.5vh;
+    }
+
+    #header>.container>#balls>.ball.n3{
+        left: 200px;
+        height: 23px;
+        width: 23px;
+        bottom: 38.5vh;
+    }
+
+    #extra {
+        width: 100%;
+        padding: 17px 0 17px;
+        padding-left: 24px;
+    }
+
+    #extra>p{
+        width: 90%;
+        font-size: 11px
+    }
+
+    #extra>h3{
+        font-size: 20px;
+    }
+
+    #extra>.read__more{
+        font-size: 9px;
+    }
+
+    /*hobby*/
+
+    #about__me{
+        padding: 15px 0px;
+    }
+
+    #about__me>.container>h2{
+        font-size: 13pt;
+        padding: 15px 25px;
+    }
+
+    #about__me>.container>p {
+        font-size: 9pt;
+        margin-top: 37px;
+        line-height: 27px;
+        letter-spacing: 1px;
+    }
+
+
+    #about__me>.container>.my__hobby>.card {
+        margin: 15px 10px;
+        width: 86%;
+        height: 226px;
+    }
+
+    #about__me>.container>.my__hobby>.card>div>p{
+        font-size: 11pt;
+    }
+
+    #about__me>.container>#hobby__heading {
+        font-size: 15pt;
+    }
+
+    /*Skills*/
+
+    #skills {
+        padding: 30px 20px;
+    }
+
+    #skills>.container>.using>h3{
+        font-size: 14pt;
+        margin: 50px 0;
+    }
+
+    #skills>.container>.learning>h3{
+        font-size: 14pt;
+        margin: 50px 0;
+    }
+    
+    #skills>.container>.other>h3{
+        font-size: 14pt;
+        margin: 50px 0;
+    }
+
+    #skills>.container{
+        width: 85%;
+    }
+
+    #skills>.container>.using>.cards>.card {
+        width: 45%;
+    }
+
+    #skills>.container>.learning>.cards>.card {
+        width: 45%;
+    }
+
+    #skills>.container>.other>.cards>.card {
+        display: block;
+        position: relative;
+        width: 48%;
+    }
+
+    #skills>.container>.using>.cards>.card>div>p{
+        font-size: 11pt;
+    }
+
+    #skills>.container>.learning>.cards>.card>div>p{
+        font-size: 13pt;
+    }
+
+
+    #skills>.container>.other>.cards>.card>div>p{
+        font-size: 8pt;
+    }
+
+    /*Portfolio*/
+
+    #portfolio>.portfolio__heading{
+        padding: 5px 0;
+    }
+
+    #portfolio>.container{
+        margin-top: 20px;
+        padding: 10px 15px;
+    }
+
+    #portfolio>.container>.card {
+        margin: 0px auto 65px;
+        align-content: unset;
+    }
+
+    #portfolio>.container>.card>.img{
+        order: 1;
+        margin: 30px auto;
+        width: 70%;
+    }
+
+    #portfolio>.container>.card>.description{
+        order: 2;
+        width: 90%;
+    }
+
+    #portfolio>.container>.card>.description>p{
+        font-size: 12pt;
+        line-height: 25px;
+    }
+
+    #footer{
+        height: 330px;
+    }
+
+    #footer>p.made{
+        font-size: 10px
+    }
+
+    #footer>.contact{
+        width: 90%;
+    }
+
+    #footer>h3{
+        font-size: 16pt;
+    }
+
+}
+
+@media (max-width: 449px) and (min-width: 350px){
+    /*Nav*/
+    nav>.fa-bars{
+        display: block;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    nav>#logo {
+        width: 50px;
+    }
+
+    /*header*/
+    #header>.container>#my__img>#Me {
+        width: 252px;
+        float: right;
+        height: 93vh;
+    }
+
+    #header>.container>#back {
+        width: 110%;
+        transform: skew(-6deg,0deg);
+    }
+
+    #header>.container>#bio {
+        width: 52%;
+        padding-left: 33px;
+    }
+    #header>.container>#bio>p {
+        font-size: 13px;
+    }
+
+    #header>.container>#bio>#networking__links{
+        margin-top: 40px;
+        width: 80%;
+    }
+
+    #header>.container>#bio>#networking__links>li{
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+    }
+
+    #header>.container>#bio>#networking__links>li>a {
+        font-size: 20px;
+    }
+
+    #header>.container>#bio>h1{
+        font-size: 19px;
+    }
+
+    #header>.container>#my__img>#Bulalar__logo{
+        width: 212px;
+        height: 177px;
+        right: 103px;
+    }
+
+    #header>.container>#balls>.ball.n1{
+        left: 0px;
+        height: 23px;
+        width: 23px;
+        bottom: 38.5vh;
+    }
+
+    #header>.container>#balls>.ball.n2{
+        left: 150px;
+        height: 20px;
+        width: 20px;
+        bottom: 29.5vh;
+    }
+
+    #header>.container>#balls>.ball.n3{
+        left: 200px;
+        height: 23px;
+        width: 23px;
+        bottom: 38.5vh;
+    }
+
+    #extra{
+        padding-left: 35px;
+    }
+
+    #extra>p{
+        width: 90%;
+        font-size: 11px
+    }
+
+    #extra>h3{
+        font-size: 20px;
+    }
+
+    #extra>.read__more{
+        font-size: 9px;
+    }
+
+    /*hobby*/
+
+    #about__me{
+        padding: 15px 0px;
+    }
+
+    #about__me>.container>h2{
+        font-size: 14pt;
+    }
+
+    #about__me>.container>p {
+        font-size: 12pt;
+        margin-top: 37px;
+        line-height: 27px;
+        letter-spacing: 1px;
+    }
+
+
+    #about__me>.container>.my__hobby>.card {
+        margin: 15px 10px;
+        width: 86%;
+        height: 226px;
+    }
+
+    #about__me>.container>.my__hobby>.card>div>p{
+        font-size: 11pt;
+    }
+
+    /*Skills*/
+
+    #skills {
+        padding: 30px 20px;
+    }
+
+    #skills>.container>.using>h3{
+        font-size: 14pt;
+        margin: 50px 0;
+    }
+
+    #skills>.container>.learning>h3{
+        font-size: 14pt;
+        margin: 50px 0;
+    }
+    
+    #skills>.container>.other>h3{
+        font-size: 14pt;
+        margin: 50px 0;
+    }
+
+    #skills>.container{
+        width: 85%;
+    }
+
+    #skills>.container>.using>.cards>.card {
+        width: 45%;
+    }
+
+    #skills>.container>.learning>.cards>.card {
+        width: 45%;
+    }
+
+    #skills>.container>.other>.cards>.card {
+        display: block;
+        position: relative;
+        width: 45%;
+    }
+
+    #skills>.container>.using>.cards>.card>div>p{
+        font-size: 11pt;
+    }
+
+    #skills>.container>.learning>.cards>.card>div>p{
+        font-size: 13pt;
+    }
+
+
+    #skills>.container>.other>.cards>.card>div>p{
+        font-size: 9pt;
+    }
+
+    /*Portfolio*/
+
+    #portfolio>.portfolio__heading{
+        padding: 5px 0;
+    }
+
+    #portfolio>.container{
+        margin-top: 20px;
+        padding: 10px 15px;
+    }
+
+    #portfolio>.container>.card {
+        margin: 0px auto 65px;
+        align-content: unset;
+    }
+
+    #portfolio>.container>.card>.img{
+        order: 1;
+        margin: 30px auto;
+        width: 70%;
+    }
+
+    #portfolio>.container>.card>.description{
+        order: 2;
+        width: 90%;
+    }
+
+    #portfolio>.container>.card>.description>p{
+        font-size: 12pt;
+        line-height: 25px;
+    }
+
+    #footer{
+        height: 330px;
+    }
+
+    #footer>p.made{
+        font-size: 11px
+    }
+
+    #footer>.contact{
+        width: 90%;
+    }
+
+    #footer>h3{
+        font-size: 16pt;
+    }
+
+}
+
+@media (max-width: 599px) and (min-width: 450px){
+    /*Nav*/
+    nav>.fa-bars{
+        display: block;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    nav>#logo {
+        width: 50px;
+    }
+
+    /*header*/
+    #header>.container>#my__img>#Me {
+        width: 335px;
+        float: right;
+        height: 95vh;
+    }
+
+    #header>.container>#back {
+        width: 94%;
+        transform: skew(-6deg,0deg);
+    }
+
+    #header>.container>#bio {
+        width: 52%;
+        padding-left: 33px;
+    }
+    #header>.container>#bio>p {
+        font-size: 13px;
+    }
+
+    #header>.container>#bio>#networking__links{
+        margin-top: 40px;
+        width: 75%;
+    }
+
+    #header>.container>#bio>#networking__links>li{
+        width: 45px;
+        height: 45px;
+        line-height: 45px
+    }
+
+    #header>.container>#bio>#networking__links>li>a {
+        font-size: 24px;
+    }
+
+    #header>.container>#bio>h1{
+        font-size: 27px;
+    }
+
+    #header>.container>#my__img>#Bulalar__logo{
+        width: 222px;
+        height: 190px;
+        right: 150px;
+    }
+
+    #header>.container>#balls>.ball.n1{
+        left: 0px;
+        height: 23px;
+        width: 23px;
+        bottom: 38.5vh;
+    }
+
+    #header>.container>#balls>.ball.n2{
+        left: 150px;
+        height: 20px;
+        width: 20px;
+        bottom: 29.5vh;
+    }
+
+    #header>.container>#balls>.ball.n3{
+        left: 200px;
+        height: 23px;
+        width: 23px;
+        bottom: 38.5vh;
+    }
+
+    #extra>p{
+        width: 90%;
+        font-size: 11px
+    }
+
+    #extra>h3{
+        font-size: 20px;
+    }
+
+    #extra>.read__more{
+        font-size: 9px;
+    }
+
+    /*hobby*/
+
+    #about__me{
+        padding: 15px 0px;
+    }
+
+    #about__me>.container>h2{
+        font-size: 14pt;
+    }
+
+    #about__me>.container>p {
+        font-size: 12pt;
+        margin-top: 37px;
+        line-height: 27px;
+        letter-spacing: 1px;
+    }
+
+
+    #about__me>.container>.my__hobby>.card {
+        margin: 15px 10px;
+        width: 86%;
+        height: 226px;
+    }
+
+    #about__me>.container>.my__hobby>.card>div>p{
+        font-size: 13pt
+    }
+
+    /*Skills*/
+
+    #skills {
+        padding: 30px 20px;
+    }
+
+    #skills>.container>.using>h3{
+        font-size: 14pt;
+        margin: 50px 0;
+    }
+
+    #skills>.container>.learning>h3{
+        font-size: 14pt;
+        margin: 50px 0;
+    }
+    
+    #skills>.container>.other>h3{
+        font-size: 14pt;
+        margin: 50px 0;
+    }
+
+    #skills>.container{
+        width: 85%;
+    }
+
+    #skills>.container>.using>.cards>.card {
+        width: 45%;
+    }
+
+    #skills>.container>.learning>.cards>.card {
+        width: 45%;
+    }
+
+    #skills>.container>.other>.cards>.card {
+        display: block;
+        position: relative;
+        width: 45%;
+    }
+
+    #skills>.container>.using>.cards>.card>div>p{
+        font-size: 11pt;
+    }
+
+    #skills>.container>.learning>.cards>.card>div>p{
+        font-size: 13pt;
+    }
+
+
+    #skills>.container>.other>.cards>.card>div>p{
+        font-size: 9pt;
+    }
+
+    /*Portfolio*/
+
+    #portfolio>.portfolio__heading{
+        padding: 5px 0;
+    }
+
+    #portfolio>.container{
+        margin-top: 20px;
+        padding: 10px 15px;
+    }
+
+    #portfolio>.container>.card {
+        margin: 0px auto 65px;
+        align-content: unset;
+    }
+
+    #portfolio>.container>.card>.img{
+        order: 1;
+        margin: 30px auto;
+        width: 70%;
+    }
+
+    #portfolio>.container>.card>.description{
+        order: 2;
+        width: 90%;
+    }
+
+    #portfolio>.container>.card>.description>p{
+        font-size: 12pt;
+        line-height: 25px;
+    }
+
+    #footer{
+        height: 330px;
+    }
+
+    #footer>p.made{
+        font-size: 11px
+    }
+
+    #footer>.contact{
+        width: 90%;
+    }
+
+    #footer>h3{
+        font-size: 16pt;
+    }
+
+}
+
+@media (max-width: 799px) and (min-width: 600px){
+    /*Nav*/
+    nav>ul {
+        width: 85%;
+    }
+
+    /*header*/
+    #header>.container>#my__img>#Me{
+        width: 460px;
+    }
+
+    #header>.container>#back {
+        width: 85%;
+        transform: skew(-6deg,0deg);
+    }
+
+    #header>.container>#bio {
+        width: 52%;
+    }
+    #header>.container>#bio>p {
+        font-size: 20px;
+    }
+
+    #header>.container>#bio>#networking__links{
+        margin-top: 110px;
+        width: 77%;
+    }
+
+    #header>.container>#bio>#networking__links>li{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    #header>.container>#bio>#networking__links>li>a {
+        font-size: 30px;
+    }
+
+    #header>.container>#bio>h1{
+        font-size: 35px;
+    }
+
+    #header>.container>#my__img>#Bulalar__logo{
+        width: 318px;
+        height: 277px;
+        right: 200px;
+    }
+
+    #header>.container>#balls>.ball.n1{
+        bottom: 38.5vh;
+    }
+
+    #header>.container>#balls>.ball.n2{
+        bottom: 29.5vh;
+    }
+
+    #header>.container>#balls>.ball.n3{
+        bottom: 38.5vh;
+    }
+
+    #extra{
+        padding: 20px 0 20px 44px;
+    }
+
+    #extra>p{
+        width: 94%;
+    }
+
+    /*hobby*/
+
+    #about__me>.container>p {
+        font-size: 13pt;
+    }
+
+    #about__me>.container>.my__hobby>.card {
+        margin: 30px 10px;
+        width: 66%;
+        height: 226px;
+    }
+
+    /*Skills*/
+    #skills>.container{
+        width: 80%;
+    }
+
+    #skills>.container>.using>.cards>.card {
+        width: 40%;
+    }
+
+    #skills>.container>.learning>.cards>.card {
+        width: 40%;
+    }
+
+    #skills>.container>.other>.cards>.card {
+        display: block;
+        position: relative;
+        width: 40%;
+    }
+
+    #skills>.container>.other>.cards>.card>div>p{
+        font-size: 12pt;
+    }
+
+    /*Portfolio*/
+    #portfolio>.container>.card {
+        margin: 0px auto 65px;
+        line-height: 32px;
+        align-content: unset;
+    }
+
+    #portfolio>.container>.card>.img{
+        order: 1;
+        margin: 30px auto;
+        width: 70%;
+    }
+
+    #portfolio>.container>.card>.description{
+        order: 2;
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width: 959px) and (min-width: 800px){
+    /*Nav*/
+    nav>ul {
+        width: 65%;
+    }
+
+    /*header*/
+    #header>.container>#back {
+        width: 76%;
+        transform: skew(-8deg, 0deg);
+    }
+
+    #header>.container>#bio {
+        width: 53%;
+    }
+    #header>.container>#bio>p {
+        font-size: 27px;
+    }
+
+
+    #header>.container>#bio>#networking__links{
+        margin-top: 150px;
+        width: 65%;
+    }
+
+    #header>.container>#bio>#networking__links>li{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    #header>.container>#bio>#networking__links>li>a {
+        font-size: 30px;
+    }
+
+    #header>.container>#bio>h1{
+        font-size: 48px;
+    }
+
+    #header>.container>#my__img>#Me {
+        width: 600px;
+        height: 98vh;
+    }
+
+    #header>.container>#my__img>#Bulalar__logo{
+        width: 493px;
+        height: 400px;
+        right: 200px;
+    }
+
+    #header>.container>#balls>.ball.n1{
+        bottom: 45.5vh;
+    }
+
+    #header>.container>#balls>.ball.n2{
+        bottom: 36.5vh;
+    }
+
+    #header>.container>#balls>.ball.n3{
+        bottom: 45.5vh;
+    }
+
+    /*hobby*/
+    #about__me>.container>.my__hobby>.card {
+        margin: 30px 10px;
+    }
+
+    /*Skills*/
+    #skills>.container>.using>.cards>.card {
+        width: 40%;
+    }
+
+    #skills>.container>.learning>.cards>.card {
+        width: 40%;
+    }
+
+    #skills>.container>.other>.cards>.card {
+        display: block;
+        position: relative;
+        width: 40%;
+    }
+
+    /*Portfolio*/
+    #portfolio>.container>.card {
+        margin: 65px auto;
+        align-content: unset;
+    }
+
+    #portfolio>.container>.card>.img{
+        order: 1;
+        margin: 30px auto;
+        width: 70%;
+    }
+
+    #portfolio>.container>.card>.description{
+        order: 2;
+        width: 90%;
+    }
+
+    #portfolio>.container>.card>.description>p{
+        line-height: 35px;
+    }
+
+
+}
+
+@media (max-width: 1149px) and (min-width: 960px){
+    /*Nav*/
+    nav>ul {
+        width: 60%;
+    }
+
+    /*header*/
+    #header>.container>#my__img>#Me {
+        width: 566px;
+        float: right;
+        height: 96vh;
+    }
+
+    #header>.container>#back {
+        width: 76%;
+    }
+
+    #header>.container>#bio {
+        width: 56%;
+    }
+
+    #header>.container>#bio>#networking__links{
+        margin-top: 120px;
+        width: 48%;
+    }
+
+    #header>.container>#bio>#networking__links>li{
+        width: 65px;
+        height: 65px;
+    }
+
+    #header>.container>#bio>h1{
+        font-size: 60px;
+    }
+
+    #header>.container>#my__img>#Bulalar__logo{
+        width: 314px;
+        height: 266px;
+        right: 386px;
+    }
+
+    /*hobby*/
+    #about__me>.container>.my__hobby>.card {
+        margin: 30px 10px;
+    }
+
+    /*Skills*/
+    #skills>.container>.using>.cards>.card {
+        width: 40%;
+    }
+
+    #skills>.container>.learning>.cards>.card {
+        width: 40%;
+    }
+
+    #skills>.container>.other>.cards>.card {
+        display: block;
+        position: relative;
+        width: 40%;
+    }
+
+    /*Portfolio*/
+    #portfolio>.container>.card {
+        margin: 0 auto 105px;
+    }
+}
+
+@media (max-width: 1278px) and (min-width: 1150px){
+    #header>.container>#bio>#networking__links{
+        margin-top: 25px;
+        width: 48%;
+    }
+
+    #header>.container>#bio>#networking__links>li{
+        width: 65px;
+        height: 65px;
+    }
+
+    #header>.container>#bio>h1{
+        font-size: 47px;
+    }
+
+    #header>.container>#my__img>#Bulalar__logo{
+        width: 272px;
+        height: 227px;
+    }
+}
+

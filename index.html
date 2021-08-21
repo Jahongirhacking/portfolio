@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="nfVN6bDqMxUwXOIJZfWOsY_rWscGwmmaQKP82FDvpfU" />
+    <meta name="description" content="Jahongir Hayitov's portfolio webpage">
+    <meta name="keywords" content="Jahongir Hayitov, Jahongirhacking, Portfolio, Uzbekistan, Programmer">
+    <meta name="author" content="Jahongir Hayitov">
+    <title>Jahongir Hayitov - Portfolio (Bulalar TM)</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./img/bula.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <nav id="nav">
+        <img src="./img/bulaLogo1.png" loading="" id="logo" alt="logo">
+        <ul>
+            <li><a href="#about__me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#footer" id="contact__link">Contact me</a></li>
+        </ul>
+        <i class="fas fa-bars" onclick="parda()"></i>
+    </nav>
+
+    <div id="parda" class="parda__yoq">
+        <li><a href="#about__me" onclick="parda()">About Me</a></li>
+        <li><a href="#skills" onclick="parda()">Skills</a></li>
+        <li><a href="#portfolio" onclick="parda()">Portfolio</a></li>
+        <li><a href="#footer" onclick="parda()">Contact me</a></li>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <!--Headerdagi qora tasma-->
+            <div id="back"></div>
+
+            <div id="balls">
+                <div class="ball n1"></div>
+                <div class="ball n2"></div>
+                <div class="ball n3"></div>
+            </div>
+            
+
+
+            <div id="bio">
+                <p>Hi, Welcome to my Portfolio</p>
+                <p>My fullname is</p>
+                <h1>Hayitov Jahongir Akromovich</h1>
+                <p class="my__job">Front-End Developer</p>
+                <ul id="networking__links">
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCcCMHnnX5p9yfZ-ZtaCaGCw?sub_confirmation=1"><i class="fab fa-youtube"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/Jahongirhacking"><i class="fab fa-github"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/jahongir_hacking1/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <div id="my__img">
+                <img src="./img/Me1.jpg" alt="myImg" id="Me">
+                <img src="./img/bula.png" alt="Bulalar" id="Bulalar__logo">
+            </div>
+            <div class="green__light"></div>
+        </div>
+    </header>
+
+    <section id="extra">
+        <h3>IT BERRIES</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem eius atque neque autem id vitae iste consequuntur dolores, temporibus optio nostrum quibusdam pariatur perspiciatis quia at debitis amet? Dolor modi non voluptate enim deleniti autem ipsa saepe impedit obcaecati tempore sequi consequatur aliquam cumque, quis ducimus optio at facere! </p>
+        <a href="#" class="read__more">Read More</a>
+    </section>
+
+    <!--About Me-->
+    <section id="about__me">
+        <div class="container">
+            <p id="bulb" onclick="bulb()"><i class="fas fa-lightbulb turn__on" id="real__bulb"></i></p>
+            <h2 id="aboutHeading" class="soyaTrue">About Me</h2>
+            <p id="aboutMe" class="soyaTrue">
+                <script>
+
+                    var today=new Date();
+                    
+                    if((today.getHours()>=0) && (today.getHours()<=11)) document.write("Good Morning!");
+                    else if((today.getHours()>=12) && (today.getHours()<=18)) document.write("Good Afternoon!");
+                    else document.write("Good Evening!");
+                    
+                </script>
+                I’m a
+                
+                <script>
+
+                    var today=new Date();
+                    
+                    document.write(today.getFullYear()-2004);
+                    
+                </script>-year-old 
+                
+                <script>
+
+                    var today=new Date();
+                    
+                    if(today.getFullYear()-2004<=19) document.write("boy");
+                    else if(today.getFullYear()-2004<=22) document.write("guy");
+                    else document.write("man");
+                    
+                </script>
+                from 
+                <br>
+                <span class="blue">Guzar reg. </span> <span class="red"><i class="fas fa-fire-alt"></i></span> Kashkadarya <span class="red"><i class="fas fa-fire-alt"></i></span> <span class="green"> Uzbekistan</span> and currently I’m living in Tiklanish st. 
+                Although I've been learning Programming since I was studying in class 7th, 
+                I started learning Web Development (Front End) in 2019.
+            </p>
+
+            <p id="hobby__heading">
+                { My Hobbies }
+            </p>
+
+            <p>
+                < -- \\ // -- >
+            </p>
+            <div class="my__hobby">
+                <div class="card" data-aos="fade-right">
+                    <div>
+                        <h3><i class="fas fa-laptop-code"></i></h3>
+                        <p>Programming And Coding</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <div>
+                        <h3><i class="fas fa-futbol"></i></h3>
+                        <p>Playing Football</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-left">
+                    <div>
+                        <h3><i class="fas fa-cubes"></i></h3>
+                        <p>Solving The Rubik's Cube</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 id="skillsHeading">Skills</h2>
+            <div class="using">
+                <h3>Using Now</h3>
+
+                <div class="cards">
+                    <div class="card" data-aos="fade-right">
+                        <div>
+                            <img src="./img/Logos/html.png" alt="html">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <div>
+                            <img src="./img/Logos/css.png" alt="css">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <div>
+                            <img src="./img/Logos/js.png" alt="js">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-right">
+                        <div>
+                            <img src="./img/Logos/bootstrap.png" alt="bootstrap">
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <div>
+                            <img src="./img/Logos/php.png" alt="php">
+                            <p>PHP</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="learning">
+                
+                <h3>Learning</h3>
+
+                <div class="cards">
+                    <div class="card" data-aos="fade-right">
+                        <div>
+                            <img src="./img/Logos/react.png" alt="react">
+                            <p>ReactJS</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <div>
+                            <img src="./img/Logos/node.png" alt="node">
+                            <p>NodeJS</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <div>
+                            <img src="./img/Logos/sass.png" alt="sass">
+                            <p>SASS</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="other">
+
+                <h3>Other Skills</h3>
+
+                <div class="cards">
+                    <div class="card" data-aos="fade-right">
+                        <div>
+                            <img src="./img/Logos/eng.png" alt="eng">
+                            <p>English Language (B1)</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <div>
+                            <img src="./img/Logos/cpp.png" alt="cpp">
+                            <p>C++ for Competitive Programming</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <div>
+                            <img src="./img/Logos/python.png" alt="py">
+                            <p>Python for Competitive Programming</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-right">
+                        <div>
+                            <img src="./img/Logos/sql.png" alt="sql">
+                            <p>MySQL Databases</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portfolio__heading">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="container">
+            <div class="card" data-aos="fade-right">
+                <div class="img left__img">
+                    <img src="./img/Projects/apple.JPG" alt="projects">
+                </div>
+                <div class="description">
+                    <h2>Apple Layout</h2>
+                    <p>Apple Layout - this is one of my latest works. I hope that this layout looks like the real <b><a target="_blank" href="https://www.apple.com/">Apple Website</a></b>. Used technologies: HTML and CSS</p>
+                    <div>
+                        <a target="_blank" href="https://apple-bulalar.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <div class="description">
+                    <h2>Artificial Intellegence</h2>
+                    <p>Artificial Intellegence - I found web design of this project created by figma in <b><a target="_blank"  href="https://www.t.me/ulugbeksamigjonov">Ulugbek Samigjanov's</a></b> Telegram Channel. And I started making this WebSite layout for practising. Used technologies: HTML and CSS</p>
+                    <div>
+                        <a target="_blank" href="https://jahongir-hayitov-ai.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="img right__img">
+                    <img src="./img/Projects/ai.JPG" alt="projects">
+                </div>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <div class="img left__img">
+                    <img src="./img/Projects/maktab.JPG" alt="projects">
+                </div>
+                <div class="description">
+                    <h2>68-DIMI WebApp</h2>
+                    <p>68-DIMI WebApp - This application is created for students of our school. In this app the students can play games, solve problems, take tests and compete to win. There is the leaderboard to show students who collect big points by descending sort. Used technologies: HTML, CSS, JavaScript and PHP</p>
+                    <div>
+                        <a target="_blank" href="https://youtu.be/f1KV9d9tQu4?t=111" class="utube">VIDEO <i class="fab fa-youtube"></i></a>
+                        <a target="_blank" href="http://68dimi.atwebpages.com/" class="demo">DEMO <i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <div class="description">
+                    <h2>Math Battle Game</h2>
+                    <p>Math Battle Game - solve Math arithmetic problems and play game! The idea came to my mind after seeing Telegram Math Battle Game. I enjoyed that game and decided to create game like it. Used technologies: HTML, CSS and JavaScript.</p>
+                    <div>
+                        <a target="_blank" href="https://youtu.be/f1KV9d9tQu4?t=154" class="utube">VIDEO <i class="fab fa-youtube"></i></a>
+                        <a target="_blank" href="https://mathbattle.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="img right__img">
+                    <img src="./img/Projects/math.JPG" alt="projects">
+                </div>
+            </div><div class="card" data-aos="fade-right">
+                <div class="img left__img">
+                    <img src="./img/Projects/68.JPG" alt="projects">
+                </div>
+                <div class="description">
+                    <h2>Our School's WebSite</h2>
+                    <p>Our School's WebSite - this landing page introduces our school to you. After entering this page you could know more about our 68th special boarding school. Used technologies: HTML, CSS and JavaScript.</p>
+                    <div>
+                        <a target="_blank" href="https://youtu.be/f1KV9d9tQu4" class="utube">VIDEO <i class="fab fa-youtube"></i></a>
+                        <a target="_blank" href="https://68dimi.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <div class="description">
+                    <h2>BulaGram</h2>
+                    <p>BulaGram - limited clone of Telegram Messenger. In this application you can send text messages and emojis to your friends. You'll use this app, only if you've been registered on <b><a href="http://68dimi.atwebpages.com/">Our School WebSite</a></b>. But I put here demo version of my app. Used technologies: HTML, CSS, JavaScript and PHP.</p>
+                    <div>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=RPPY8rlWPI8" class="utube">VIDEO <i class="fab fa-youtube"></i></a>
+                        <a target="_blank" href="https://bulagram.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="img right__img">
+                    <img src="./img/Projects/bulagram.JPG" alt="projects">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h3>Contact Me</h3>
+        <div class="contact">
+            <div class="networks">
+                <a target="_blank" href="https://www.youtube.com/channel/UCcCMHnnX5p9yfZ-ZtaCaGCw?sub_confirmation=1"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="networks">
+                <a target="_blank" href="https://github.com/Jahongirhacking"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="networks">
+                <a target="_blank" href="https://www.instagram.com/jahongir_hacking1/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="networks">
+                <a target="_blank" href="https://t.me/Jahongir_hacking" class="networks"><i class="fab fa-telegram"></i></a>
+            </div>           
+        </div>
+        <hr>
+        <p class="made">
+            © Bulalar TM - 2021 - <script>
+                var today=new Date();
+                document.write(today.getFullYear());
+            </script> | Made with <i class="fas fa-heart"></i> 
+        </p>
+    </footer>
+    <path id="path1" d="M-20.736,23.87 C-36.731,-33.66 83.634,-63.231 142.465,-19.94 217.459,35.246 358.988,131.194 376.512,97.177 443.762,-33.497 127.713,102.972 83.058,102.288 23.703,101.355 -25.155,76.145 -21.248,23.59 "/>
+    <path id="path2" d="M22.891,-5.655 C89.034,-10.566 191.064,-21.558 206.624,-46.9 255.727,-126.887 69.93,-235.733 22.285,-235.229 -87.056,-234.072 -124.241,-158.519 -141.545,-113.329 -224.065,102.477 -17.463,64.563 21.097,-4.654 "/>
+    <path id="path3" d="M-16.901,2.044 C49.242,-2.867 92.71,20.923 92.391,50.638 91.417,141.364 -63.699,29.121 -106.059,50.969 -212.818,106.03 -227.005,87.26 -226.255,21.426 -224.493,-132.131 -68.8,49.156 -17.411,3.044 "/>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/MotionPathPlugin.min.js" integrity="sha512-vu190Nx0a7ou580W/UkzpqxOf5lHJaMcsJZC8RGv5TYQh9xlKdsQvMCeREbL1PqbK/k6jh3Cf/VBiurWwP/kHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+
+<script src="./script/app.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.min.js" integrity="sha512-3WLY2nDlx1c6leUk3gyqneF+bWq4Ub/HsGjmJoo7qRlMFMXcOwzw6gqf+PwKLzd/TUjWlpSaHBy6L6o1hS2y9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>

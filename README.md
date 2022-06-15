@@ -3,4 +3,4 @@ My Portfolio
 
 - [Link](https://jahongirhacking.netlify.app/)
 
-![portfolio](https://user-images.githubusercontent.com/66916141/140644255-9c690d05-d55c-4b8e-9b0f-67ddd068b357.png)
+![Screenshot from 2022-06-16 00-33-04](https://user-images.githubusercontent.com/66916141/173909473-ebc33248-fa61-4fda-805a-627a410ae9c6.png)

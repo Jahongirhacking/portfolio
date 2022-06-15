@@ -19,7 +19,7 @@
     <nav id="nav">
         <img src="./img/bulaLogo1.png" loading="" id="logo" alt="logo">
         <ul>
-            <li><a href="#about__me">About Me</a></li>
+            <li><a href="#extra">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#footer" id="contact__link">Contact me</a></li>
@@ -55,12 +55,12 @@
                 <ul id="networking__links">
                     <li><a target="_blank" href="https://www.youtube.com/channel/UCcCMHnnX5p9yfZ-ZtaCaGCw?sub_confirmation=1"><i class="fab fa-youtube"></i></a></li>
                     <li><a target="_blank" href="https://github.com/Jahongirhacking"><i class="fab fa-github"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/jahongir_hacking1/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/jahongir_hack1ng/"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
 
             <div id="my__img">
-                <img src="./img/Me1.jpg" alt="myImg" id="Me">
+                <img src="./img/Me2.jpeg" alt="myImg" id="Me">
                 <img src="./img/bula.png" alt="Bulalar" id="Bulalar__logo">
             </div>
             <div class="green__light"></div>
@@ -68,16 +68,7 @@
     </header>
 
     <section id="extra">
-        <h3>IT BERRIES</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem eius atque neque autem id vitae iste consequuntur dolores, temporibus optio nostrum quibusdam pariatur perspiciatis quia at debitis amet? Dolor modi non voluptate enim deleniti autem ipsa saepe impedit obcaecati tempore sequi consequatur aliquam cumque, quis ducimus optio at facere! </p>
-        <a href="#" class="read__more">Read More</a>
-    </section>
-
-    <!--About Me-->
-    <section id="about__me">
-        <div class="container">
-            <p id="bulb" onclick="bulb()"><i class="fas fa-lightbulb turn__on" id="real__bulb"></i></p>
-            <h2 id="aboutHeading" class="soyaTrue">About Me</h2>
+        <h3 id="aboutHeading" class="soyaTrue">About Me</h3>
             <p id="aboutMe" class="soyaTrue">
                 <script>
 
@@ -96,23 +87,19 @@
                     
                     document.write(today.getFullYear()-2004);
                     
-                </script>-year-old 
-                
-                <script>
-
-                    var today=new Date();
-                    
-                    if(today.getFullYear()-2004<=19) document.write("boy");
-                    else if(today.getFullYear()-2004<=22) document.write("guy");
-                    else document.write("man");
-                    
-                </script>
-                from 
+                </script>-year-old Front-end developer from 
                 <br>
-                <span class="blue">Guzar reg. </span> <span class="red"><i class="fas fa-fire-alt"></i></span> Kashkadarya <span class="red"><i class="fas fa-fire-alt"></i></span> <span class="green"> Uzbekistan</span> and currently I’m living in Tiklanish st. 
-                Although I've been learning Programming since I was studying in class 7th, 
-                I started learning Web Development (Front End) in 2019.
+                <span class="blue">Guzar reg. </span> <span class="red"><i class="fas fa-fire-alt"></i></span> Kashkadarya <span class="red"><i class="fas fa-fire-alt"></i></span> <span class="green"> Uzbekistan</span> and I’m currently living in Tiklanish st. 
+                Although I've been learning Programming since my 7th class, then
+                I started learning Front End Development (Web) in 2019.
             </p>
+
+        <a target="_blank" href="https://www.instagram.com/jahongir_hack1ng/" class="read__more">See More</a>
+    </section>
+
+    <!--About Me-->
+    <section id="about__me">
+        <div class="container">
 
             <p id="hobby__heading">
                 { My Hobbies }
@@ -147,7 +134,7 @@
     <section id="skills">
         <div class="container">
             <h2 id="skillsHeading">Skills</h2>
-            <div class="using">
+            <div class="using skill__container">
                 <h3>Using Now</h3>
 
                 <div class="cards">
@@ -175,16 +162,22 @@
                             <p>Bootstrap</p>
                         </div>
                     </div>
+                    <div class="card" data-aos="fade-up">
+                        <div>
+                            <img src="./img/Logos/sass.png" alt="sass">
+                            <p>SASS</p>
+                        </div>
+                    </div>
                     <div class="card" data-aos="fade-left">
                         <div>
-                            <img src="./img/Logos/php.png" alt="php">
-                            <p>PHP</p>
+                            <img src="./img/Logos/express.png" alt="express">
+                            <p>Express JS</p>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="learning">
+            <div class="learning skill__container">
                 
                 <h3>Learning</h3>
 
@@ -203,14 +196,20 @@
                     </div>
                     <div class="card" data-aos="fade-left">
                         <div>
-                            <img src="./img/Logos/sass.png" alt="sass">
-                            <p>SASS</p>
+                            <img src="./img/Logos/php.png" alt="php">
+                            <p>PHP</p>
                         </div>
                     </div>
+                    <div class="card" data-aos="fade-right">
+                        <div>
+                            <img src="./img/Logos/webpack.png" alt="webpack">
+                            <p>Webpack</p>
+                        </div>
+                    </div>                    
                 </div>
 
             </div>
-            <div class="other">
+            <div class="other skill__container">
 
                 <h3>Other Skills</h3>
 
@@ -239,11 +238,65 @@
                             <p>MySQL Databases</p>
                         </div>
                     </div>
+                    <div class="card" data-aos="fade-up">
+                        <div>
+                            <img src="./img/Logos/photoshop.png" alt="photoshop">
+                            <p>Photoshop Designing</p>
+                        </div>
+                    </div>
                     
                 </div>
 
             </div>
+
+            <div class="achievements skill__container">
+
+                <h3>Achievements</h3>
+    
+                <div class="cards">
+                    <div class="card" data-aos="fade-right">
+                        <div>
+                            <a href="./img/Achievements/Scholarship.jpg"><img src="./img/Achievements/Scholarship.jpg" alt="Scholarship"></a>
+                            <p>Grant Offer from Innopolis University</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <div>
+                            <a href="./img/Achievements/nanodegree.png"><img src="./img/Achievements/nanodegree.png" alt="nanodegree"></a>
+                            <p>Udacity Nanodegree of Front End Development</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <div>
+                            <a href="./img/Achievements/inter-olymp.jpg"><img src="./img/Achievements/inter-olymp.jpg" alt="inter-olymp"></a>
+                            <p>International Informatics Olympiad qualifying round</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-right">
+                        <div>
+                            <a href="./img/Achievements/reg-olymp1.jpg"><img src="./img/Achievements/reg-olymp1.jpg" alt="reg-olymp1"></a>
+                            <p>Regional Informatics Olympiad (2021)</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <div>
+                            <a href="./img/Achievements/reg-olymp2.jpg"><img src="./img/Achievements/reg-olymp2.jpg" alt="reg-olymp2"></a>
+                            <p>Regional Informatics Olympiad (2022)</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <div>
+                            <a href="./img/Achievements/uda.jpg"><img src="./img/Achievements/uda.jpg" alt="udacity"></a>
+                            <p>Udacity Front-End course completion</p>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+            </div>
         </div>
+
+    </div>
     </section>
 
     <section id="portfolio">
@@ -257,22 +310,23 @@
                 </div>
                 <div class="description">
                     <h2>Apple Layout</h2>
-                    <p>Apple Layout - this is one of my latest works. I hope that this layout looks like the real <b><a target="_blank" href="https://www.apple.com/">Apple Website</a></b>. Used technologies: HTML and CSS</p>
+                    <p>Apple Layout - this is one of my latest work. I hope that this layout looks like the real <b><a target="_blank" href="https://www.apple.com/">Apple Website</a></b>. Used technologies: HTML and CSS</p>
                     <div>
+                        <a target="_blank" href="https://github.com/Jahongirhacking/apple" class="git_hub">Git Hub <i class="fab fa-github"></i></a>
                         <a target="_blank" href="https://apple-bulalar.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="card" data-aos="fade-left">
                 <div class="description">
-                    <h2>Artificial Intellegence</h2>
-                    <p>Artificial Intellegence - I found web design of this project created by figma in <b><a target="_blank"  href="https://www.t.me/ulugbeksamigjonov">Ulugbek Samigjanov's</a></b> Telegram Channel. And I started making this WebSite layout for practising. Used technologies: HTML and CSS</p>
+                    <h2>Travel Planner App</h2>
+                    <p>Travel Planner App - This project requires me to build out a travel app that, at a minimum, obtains a desired trip location & date from the user, and displays weather and an image of the location using information obtained from external APIs. I also added additional functionality and customization to truly stand out with a project that now I am proud to have at the top of my portfolio! Used technologies: HTML, SASS, JavaScript, Express JS and Webpack</p>
                     <div>
-                        <a target="_blank" href="https://jahongir-hayitov-ai.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
+                        <a target="_blank" href="https://github.com/Jahongirhacking/udacity-5" class="git_hub">Git Hub <i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="img right__img">
-                    <img src="./img/Projects/ai.JPG" alt="projects">
+                    <img src="./img/Projects/5th_project.gif" alt="projects">
                 </div>
             </div>
             <div class="card" data-aos="fade-right">
@@ -281,7 +335,7 @@
                 </div>
                 <div class="description">
                     <h2>68-DIMI WebApp</h2>
-                    <p>68-DIMI WebApp - This application is created for students of our school. In this app the students can play games, solve problems, take tests and compete to win. There is the leaderboard to show students who collect big points by descending sort. Used technologies: HTML, CSS, JavaScript and PHP</p>
+                    <p>68-DIMI WebApp - This application is created for students of our school. In this project, the students can play games, solve problems, take tests and compete to win. There is a leaderboard to show students who collect big points by descending sort. Used technologies: HTML, CSS, JavaScript and PHP</p>
                     <div>
                         <a target="_blank" href="https://youtu.be/f1KV9d9tQu4?t=111" class="utube">VIDEO <i class="fab fa-youtube"></i></a>
                         <a target="_blank" href="http://68dimi.atwebpages.com/" class="demo">DEMO <i class="fas fa-link"></i></a>
@@ -290,17 +344,18 @@
             </div>
             <div class="card" data-aos="fade-left">
                 <div class="description">
-                    <h2>Math Battle Game</h2>
-                    <p>Math Battle Game - solve Math arithmetic problems and play game! The idea came to my mind after seeing Telegram Math Battle Game. I enjoyed that game and decided to create game like it. Used technologies: HTML, CSS and JavaScript.</p>
+                    <h2>Landing Page</h2>
+                    <p>Landing Page - The second project of the Udacity Nanodegree course. In addition, I added a new "Write Your Own Section" to this project in order to see your article on this landing page. Used technologies: HTML, CSS and JavaScript</p>
                     <div>
-                        <a target="_blank" href="https://youtu.be/f1KV9d9tQu4?t=154" class="utube">VIDEO <i class="fab fa-youtube"></i></a>
-                        <a target="_blank" href="https://mathbattle.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
+                        <a target="_blank" href="https://github.com/Jahongirhacking/udacity-2" class="git_hub">Git Hub <i class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://project-udacity-2.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
                     </div>
                 </div>
                 <div class="img right__img">
-                    <img src="./img/Projects/math.JPG" alt="projects">
+                    <img src="./img/Projects/project_udacity.gif" alt="projects">
                 </div>
-            </div><div class="card" data-aos="fade-right">
+            </div>
+            <div class="card" data-aos="fade-right">
                 <div class="img left__img">
                     <img src="./img/Projects/68.JPG" alt="projects">
                 </div>
@@ -326,6 +381,20 @@
                     <img src="./img/Projects/bulagram.JPG" alt="projects">
                 </div>
             </div>
+            <div class="card" data-aos="fade-right">
+                <div class="img left__img">
+                    <img src="./img/Projects/frontendmentor.png" alt="projects">
+                </div>
+                <div class="description">
+                    <h2>FrontEnd-Mentor</h2>
+                    <p>
+                        In this platform, you can see my other work related to Front-End Development. I think this platform is the best for any Developer, By doing some practice, I have achieved a lot of progress on it. 
+                    </p>
+                    <div>
+                        <a target="_blank" href="https://www.frontendmentor.io/profile/Jahongirhacking" class="demo">Click to see <i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -339,13 +408,13 @@
                 <a target="_blank" href="https://github.com/Jahongirhacking"><i class="fab fa-github"></i></a>
             </div>
             <div class="networks">
-                <a target="_blank" href="https://www.instagram.com/jahongir_hacking1/"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.instagram.com/jahongir_hack1ng/"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="networks">
                 <a target="_blank" href="https://t.me/Jahongir_hacking" class="networks"><i class="fab fa-telegram"></i></a>
             </div>           
         </div>
-        <hr>
+        <div class="line"></div>
         <p class="made">
             © Bulalar TM - 2021 - <script>
                 var today=new Date();

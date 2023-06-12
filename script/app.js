@@ -116,26 +116,26 @@ document.addEventListener("keyup", controlKeyboard);
 if (leetcodeIcon.complete) fixElementsPosition();
 else leetcodeIcon.addEventListener("load", fixElementsPosition);
 
-// gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(MotionPathPlugin);
 
-// gsap.to(".n1", {
-//   duration: 15,
-//   stagger: 1,
-//   repeat: -1,
-//   yoyo: true,
-//   motionPath: "#path1",
-// });
-// gsap.to(".n2", {
-//   duration: 16,
-//   stagger: 1,
-//   repeat: -1,
-//   yoyo: true,
-//   motionPath: "#path2",
-// });
-// gsap.to(".n3", {
-//   duration: 20,
-//   stagger: 1,
-//   repeat: -1,
-//   yoyo: true,
-//   motionPath: "#path3",
-// });
+gsap.to(".number-1", {
+  duration: 15,
+  stagger: 1,
+  repeat: -1,
+  yoyo: true,
+  motionPath: "#path1",
+});
+gsap.to(".number-2", {
+  duration: 16,
+  stagger: 1,
+  repeat: -1,
+  yoyo: true,
+  motionPath: "#path2",
+});
+gsap.to(".number-3", {
+  duration: 20,
+  stagger: 1,
+  repeat: -1,
+  yoyo: true,
+  motionPath: "#path3",
+});

@@ -264,6 +264,7 @@ ul > li, .card, .list_item, li {
   align-items: center;
   justify-content: space-around;
   width: fit-content;
+  position: relative;
 }
 
 .header__network > .header__list {
@@ -279,7 +280,6 @@ ul > li, .card, .list_item, li {
   border: 1px solid rgba(255, 255, 255, 0.18);
   transition: 0.4s ease;
   transition-property: transform;
-  position: relative;
 }
 
 .header__network > .header__list:hover {
@@ -299,15 +299,16 @@ ul > li, .card, .list_item, li {
 }
 /* -- Balls -- */
 
-.header__network > .header__list > .ball {
+.header__network > .ball {
   height: 35px;
   width: 35px;
   position: absolute;
   border-radius: 50%;
+  z-index: -1;
 }
 
-.header__list > .ball.number-1 {
-  bottom: 0;
+.header__network > .ball.number-1 {
+  top: 0;
   left: 10px;
   background: radial-gradient(
     circle,
@@ -319,9 +320,9 @@ ul > li, .card, .list_item, li {
   z-index: -1;
 }
 
-.header__list > .ball.number-2 {
-  bottom: 0;
-  left: 10px;
+.header__network > .ball.number-2 {
+  bottom: 10px;
+  left: 49%;
   height: 30px;
   width: 30px;
   background: radial-gradient(
@@ -334,9 +335,9 @@ ul > li, .card, .list_item, li {
   z-index: -2;
 }
 
-.header__list > .ball.number-3 {
-  bottom: 0;
-  left: 10px;
+.header__network > .ball.number-3 {
+  top: 0;
+  right: -10px;
   height: 35px;
   width: 35px;
   background: rgb(247, 7, 213);
@@ -671,7 +672,7 @@ section .card-container {
   border-left: 4px solid #000000;
 }
 
-/*----->   Footer Section   <-----*/
+/*----->   FOOTER SECTION   <-----*/
 
 #footer {
   background-color: var(--secondary-color);
@@ -750,5 +751,3 @@ section .card-container {
 .scale-element {
   transform: scale(1.06)!important;
 }
-
-/* ----->   Responsive Section   <----- */

@@ -40,7 +40,7 @@ const fixElementsPosition = () => {
 
   // leetcode icon size
   leetcodeIcon.style.width =
-    Math.min(document.querySelector(".header__link > i").offsetWidth - 7, 30) +
+    Math.max(document.querySelector(".header__link > i").offsetWidth - 7, 30) +
     "px";
 
   leetcodeIcon.style.marginTop =

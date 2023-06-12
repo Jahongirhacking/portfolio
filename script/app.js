@@ -116,6 +116,8 @@ document.addEventListener("keyup", controlKeyboard);
 if (leetcodeIcon.complete) fixElementsPosition();
 else leetcodeIcon.addEventListener("load", fixElementsPosition);
 
+// I USED GSAP FOR BALLS ANIMATION
+
 gsap.registerPlugin(MotionPathPlugin);
 
 gsap.to(".number-1", {

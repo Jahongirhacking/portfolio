@@ -39,9 +39,9 @@ const fixElementsPosition = () => {
   imageShadow.style.height = imageShadow.offsetWidth + "px";
 
   // leetcode icon size
-
   leetcodeIcon.style.width =
-    document.querySelector(".header__link > i").offsetWidth - 7 + "px";
+    Math.min(document.querySelector(".header__link > i").offsetWidth - 7, 30) +
+    "px";
 
   leetcodeIcon.style.marginTop =
     (leetcodeIcon.parentElement.parentElement.offsetHeight -

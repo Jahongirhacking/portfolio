@@ -1,46 +1,141 @@
-var turnOn=true;
-function bulb(){
-    if(turnOn) {
-        document.getElementById('real__bulb').className='fas fa-lightbulb turn__off';
-        document.getElementById('aboutMe').className='soyaFalse';
-        document.getElementById('aboutHeading').className='soyaFalse';
-    }else{
-        document.getElementById('real__bulb').className='fas fa-lightbulb turn__on';
-        document.getElementById('aboutMe').className='soyaTrue';
-        document.getElementById('aboutHeading').className='soyaTrue';
-    }
-    
+// ELEMENTS
+const navList = document.getElementById("nav__list");
+const overlayMenuBar = document.getElementById("nav__overlay-menu-bars");
+const imageShadow = document.querySelector(
+  ".header__img > .header__img-shadow"
+);
+const leetcodeIcon = document.querySelector(".header__link > img.fa-leetcode");
+let isWindowResized = false;
 
-    turnOn=!turnOn;
+// FUNCTIONS
+
+const modifyTextContent = (element, text) => {
+  element.textContent = text;
+};
+
+const toggleElementClassList = (element, classname) => {
+  element.classList.toggle(classname);
+};
+
+const addElementClassList = (element, classname) => {
+  element.classList.add(classname);
+};
+
+const removeElementClassList = (element, classname) => {
+  element.classList.remove(classname);
+};
+
+const addEventListenerToElem = (element, eventType, fn) => {
+  element.addEventListener(eventType, fn);
+};
+
+const controlKeyboard = (e) => {
+  if (e.key === "Escape" && overlayMenuBar.classList.contains("fa-xmark"))
+    showOverlay();
+};
+
+const fixElementsPosition = () => {
+  // image green shadow make circle
+  imageShadow.style.height = imageShadow.offsetWidth + "px";
+
+  // leetcode icon size
+
+  leetcodeIcon.style.width =
+    document.querySelector(".header__link > i").offsetWidth - 7 + "px";
+
+  leetcodeIcon.style.marginTop =
+    (leetcodeIcon.parentElement.parentElement.offsetHeight -
+      leetcodeIcon.offsetHeight) /
+      2 +
+    "px";
+};
+
+const controlWindowSize = () => {
+  fixElementsPosition();
+  // Media Queries
+  if (window.innerWidth < 700) {
+    navList.classList.add("hidden");
+    navList.classList.add("overlay");
+    overlayMenuBar.classList.remove("fa-xmark");
+    overlayMenuBar.classList.add("fa-bars");
+    overlayMenuBar.classList.remove("hidden");
+    // Make overlay hidden if one button is clicked
+    if (!isWindowResized) {
+      isWindowResized = true;
+      Array.from(document.querySelectorAll(".overlay>li>a")).forEach((elem) =>
+        addEventListenerToElem(elem, "click", (e) => {
+          e.stopPropagation();
+          const grandParent = e.target.parentElement.parentElement;
+          if (grandParent.classList.contains("overlay")) showOverlay();
+        })
+      );
+    }
+  } else {
+    navList.classList.remove("hidden");
+    navList.classList.remove("overlay");
+    overlayMenuBar.classList.add("hidden");
+  }
+};
+
+function showOverlay() {
+  toggleElementClassList(navList, "hidden");
+  toggleElementClassList(overlayMenuBar, "fa-bars");
+  toggleElementClassList(overlayMenuBar, "fa-xmark");
 }
 
+const main = () => {
+  const currentDate = new Date();
 
-var bor=false;
-function parda(){
-    if(bor) {
-        document.getElementById('parda').className='parda__yoq';
-    }else{
-        document.getElementById('parda').className='parda__bor';
-    }
-    
+  // Modify Document
+  controlWindowSize();
+  modifyTextContent(
+    document.getElementById("my-age"),
+    currentDate.getFullYear() - 2004
+  );
+  modifyTextContent(
+    document.getElementById("current__year"),
+    currentDate.getFullYear()
+  );
+  //   EventListeners
+  addEventListenerToElem(overlayMenuBar, "click", showOverlay);
+  addEventListenerToElem(
+    document.querySelector(".header__img > .header__my-img"),
+    "mouseover",
+    () => imageShadow.classList.add("scale-element")
+  );
+  addEventListenerToElem(
+    document.querySelector(".header__img > .header__my-img"),
+    "mouseout",
+    () => imageShadow.classList.remove("scale-element")
+  );
+};
 
-    bor=!bor;
-}
+document.addEventListener("DOMContentLoaded", main);
+window.addEventListener("resize", controlWindowSize);
+document.addEventListener("keyup", controlKeyboard);
+if (leetcodeIcon.complete) fixElementsPosition();
+else leetcodeIcon.addEventListener("load", fixElementsPosition);
 
-/*
+// gsap.registerPlugin(MotionPathPlugin);
 
-duration: ketadigan vaqt;
-opacity:        paydo bulish
-stagger:        1-class bilan 2-class vaqt oralig'i
-delay:          1-animatsiya bilan 2-animatsiya oralig'i
-repeat          necha marta qaytarish
-repeat: -1      cheksiz animatsiya    
-yoyo: true      element borish va qaytish
-
-*/
-
-gsap.registerPlugin(MotionPathPlugin);
-
-gsap.to('.n1',{ duration: 15, stagger:1, repeat:-1, yoyo:true, motionPath: "#path1"})
-gsap.to('.n2',{ duration: 16, stagger:1, repeat:-1, yoyo:true, motionPath: "#path2"})
-gsap.to('.n3',{ duration: 20, stagger:1, repeat:-1, yoyo:true, motionPath: "#path3"})
+// gsap.to(".n1", {
+//   duration: 15,
+//   stagger: 1,
+//   repeat: -1,
+//   yoyo: true,
+//   motionPath: "#path1",
+// });
+// gsap.to(".n2", {
+//   duration: 16,
+//   stagger: 1,
+//   repeat: -1,
+//   yoyo: true,
+//   motionPath: "#path2",
+// });
+// gsap.to(".n3", {
+//   duration: 20,
+//   stagger: 1,
+//   repeat: -1,
+//   yoyo: true,
+//   motionPath: "#path3",
+// });

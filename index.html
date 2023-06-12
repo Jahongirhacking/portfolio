@@ -1,443 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="nfVN6bDqMxUwXOIJZfWOsY_rWscGwmmaQKP82FDvpfU" />
-    <meta name="description" content="Jahongir Hayitov's portfolio webpage">
-    <meta name="keywords" content="Jahongir Hayitov, Jahongirhacking, Portfolio, Uzbekistan, Programmer">
-    <meta name="author" content="Jahongir Hayitov">
-    <title>Jahongir Hayitov - Portfolio (Bulalar TM)</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./img/bula.png">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-</head>
-<body>
-    <nav id="nav">
-        <img src="./img/bulaLogo1.png" loading="" id="logo" alt="logo">
-        <ul>
-            <li><a href="#extra">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#footer" id="contact__link">Contact me</a></li>
-        </ul>
-        <i class="fas fa-bars" onclick="parda()"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="nfVN6bDqMxUwXOIJZfWOsY_rWscGwmmaQKP82FDvpfU"
+    />
+    <meta name="description" content="Jahongir Hayitov's portfolio webpage" />
+    <meta
+      name="keywords"
+      content="Jahongir Hayitov, Jahongirhacking, Portfolio, Uzbekistan, Programmer"
+    />
+    <meta name="author" content="Jahongir Hayitov" />
+    <title>Jahongir Hayitov - Portfolio (Bulalar Team)</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./img/logo.png" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="nav" class="nav">
+      <img src="./img/logo.png" class="nav__logo" alt="logo-image" />
+      <ul class="nav__list" id="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#about_me">About Me</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#skills">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#footer" id="nav_last_link">Contact Me</a>
+        </li>
+      </ul>
+      <i id="nav__overlay-menu-bars" class="fa-solid fa-bars hidden"></i>
     </nav>
 
-    <div id="parda" class="parda__yoq">
-        <li><a href="#about__me" onclick="parda()">About Me</a></li>
-        <li><a href="#skills" onclick="parda()">Skills</a></li>
-        <li><a href="#portfolio" onclick="parda()">Portfolio</a></li>
-        <li><a href="#footer" onclick="parda()">Contact me</a></li>
-    </div>
-
+    <!-- HEADER -->
     <header id="header">
-        <div class="container">
-            <!--Headerdagi qora tasma-->
-            <div id="back"></div>
+      <div class="header__info">
+        <span>Hi, Welcome to my Portfolio</span>
+        <span>My fullname is</span>
+        <h1 class="header__my-name">Hayitov Jahongir Akrom ugli</h1>
+        <small class="header__my-job">I am a Front-End Developer</small>
+        <ul class="header__network">
+          <li class="header__list">
+            <a
+              class="header__link"
+              target="_blank"
+              href="https://www.youtube.com/channel/UCcCMHnnX5p9yfZ-ZtaCaGCw?sub_confirmation=1"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <div class="ball number-1"></div>
+          </li>
+          <li class="header__list">
+            <a
+              class="header__link"
+              target="_blank"
+              href="https://github.com/Jahongirhacking"
+              ><i class="fab fa-github"></i
+            ></a>
+            <div class="ball number-2"></div>
+          </li>
+          <li class="header__list">
+            <a
+              class="header__link"
+              target="_blank"
+              href="https://leetcode.com/Jahongirhacking/"
+              ><img src="./img/Logos/leetcode.png" class="fa-solid fa-leetcode"
+            /></a>
+            <div class="ball number-3"></div>
+          </li>
+        </ul>
+      </div>
 
-            <div id="balls">
-                <div class="ball n1"></div>
-                <div class="ball n2"></div>
-                <div class="ball n3"></div>
-            </div>
-            
-
-
-            <div id="bio">
-                <p>Hi, Welcome to my Portfolio</p>
-                <p>My fullname is</p>
-                <h1>Hayitov Jahongir Akromovich</h1>
-                <p class="my__job">Front-End Developer</p>
-                <ul id="networking__links">
-                    <li><a target="_blank" href="https://www.youtube.com/channel/UCcCMHnnX5p9yfZ-ZtaCaGCw?sub_confirmation=1"><i class="fab fa-youtube"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/Jahongirhacking"><i class="fab fa-github"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/jahongir_hack1ng/"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-
-            <div id="my__img">
-                <img src="./img/Me2.jpeg" alt="myImg" id="Me">
-                <img src="./img/bula.png" alt="Bulalar" id="Bulalar__logo">
-            </div>
-            <div class="green__light"></div>
-        </div>
+      <div class="header__img">
+        <img class="header__my-img" src="./img/profile.png" alt="myImg" />
+        <div class="header__img-shadow"></div>
+        <img
+          class="header__triangle-img animating-shape"
+          src="./img/traiangle.png"
+          alt="triangle-image"
+        />
+        <img
+          class="header__pattern-img animating-shape"
+          src="./img/pattern.png"
+          alt="pattern-image"
+        />
+      </div>
     </header>
 
-    <section id="extra">
-        <h3 id="aboutHeading" class="soyaTrue">About Me</h3>
-            <p id="aboutMe" class="soyaTrue">
-                <script>
+    <!-- ABOUT ME SECTION -->
+    <section id="about_me">
+      <h3 class="about_me__title">About Me</h3>
+      <p class="about_me__info">
+        I am a <span id="my-age"></span>-year-old Front-End Developer from
+        Uzbekistan. Currently, I am studying at Innopolis University in
+        Tatarstan, Russia and learning modern web frameworks like React JS, also
+        already have generated some small projects so far. During my university
+        courses, I have learned basic concepts of Software Design Patterns, Data
+        Structures and Algorithms especially Graph Theory. Everyday I practice
+        my skills using my favourite programming languages JavaScript and C++ on
+        Leetcode platform. In my opinion, these concepts what I have learned
+        will help you!
+      </p>
 
-                    var today=new Date();
-                    
-                    if((today.getHours()>=0) && (today.getHours()<=11)) document.write("Good Morning!");
-                    else if((today.getHours()>=12) && (today.getHours()<=18)) document.write("Good Afternoon!");
-                    else document.write("Good Evening!");
-                    
-                </script>
-                I’m a
-                
-                <script>
-
-                    var today=new Date();
-                    
-                    document.write(today.getFullYear()-2004);
-                    
-                </script>-year-old Front-end developer from 
-                <br>
-                <span class="blue">Guzar reg. </span> <span class="red"><i class="fas fa-fire-alt"></i></span> Kashkadarya <span class="red"><i class="fas fa-fire-alt"></i></span> <span class="green"> Uzbekistan</span> and I’m currently living in Tiklanish st. 
-                Although I've been learning Programming since my 7th class, then
-                I started learning Front End Development (Web) in 2019.
-            </p>
-
-        <a target="_blank" href="https://www.instagram.com/jahongir_hack1ng/" class="read__more">See More</a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/jahongir-hayitov-633b9a1b3/"
+        class="about_me__link"
+        >More Info</a
+      >
     </section>
 
-    <!--About Me-->
-    <section id="about__me">
-        <div class="container">
-
-            <p id="hobby__heading">
-                { My Hobbies }
-            </p>
-
-            <p>
-                < -- \\ // -- >
-            </p>
-            <div class="my__hobby">
-                <div class="card" data-aos="fade-right">
-                    <div>
-                        <h3><i class="fas fa-laptop-code"></i></h3>
-                        <p>Programming And Coding</p>
-                    </div>
-                </div>
-                <div class="card" data-aos="fade-up">
-                    <div>
-                        <h3><i class="fas fa-futbol"></i></h3>
-                        <p>Playing Football</p>
-                    </div>
-                </div>
-                <div class="card" data-aos="fade-left">
-                    <div>
-                        <h3><i class="fas fa-cubes"></i></h3>
-                        <p>Solving The Rubik's Cube</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- SKILLS SECTION -->
     <section id="skills">
-        <div class="container">
-            <h2 id="skillsHeading">Skills</h2>
-            <div class="using skill__container">
-                <h3>Using Now</h3>
-
-                <div class="cards">
-                    <div class="card" data-aos="fade-right">
-                        <div>
-                            <img src="./img/Logos/html.png" alt="html">
-                            <p>HTML</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up">
-                        <div>
-                            <img src="./img/Logos/css.png" alt="css">
-                            <p>CSS</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-left">
-                        <div>
-                            <img src="./img/Logos/js.png" alt="js">
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-right">
-                        <div>
-                            <img src="./img/Logos/bootstrap.png" alt="bootstrap">
-                            <p>Bootstrap</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up">
-                        <div>
-                            <img src="./img/Logos/sass.png" alt="sass">
-                            <p>SASS</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-left">
-                        <div>
-                            <img src="./img/Logos/express.png" alt="express">
-                            <p>Express JS</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="learning skill__container">
-                
-                <h3>Learning</h3>
-
-                <div class="cards">
-                    <div class="card" data-aos="fade-right">
-                        <div>
-                            <img src="./img/Logos/react.png" alt="react">
-                            <p>ReactJS</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up">
-                        <div>
-                            <img src="./img/Logos/node.png" alt="node">
-                            <p>NodeJS</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-left">
-                        <div>
-                            <img src="./img/Logos/php.png" alt="php">
-                            <p>PHP</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-right">
-                        <div>
-                            <img src="./img/Logos/webpack.png" alt="webpack">
-                            <p>Webpack</p>
-                        </div>
-                    </div>                    
-                </div>
-
-            </div>
-            <div class="other skill__container">
-
-                <h3>Other Skills</h3>
-
-                <div class="cards">
-                    <div class="card" data-aos="fade-right">
-                        <div>
-                            <img src="./img/Logos/eng.png" alt="eng">
-                            <p>English Language (B1)</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up">
-                        <div>
-                            <img src="./img/Logos/cpp.png" alt="cpp">
-                            <p>C++ for Competitive Programming</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-left">
-                        <div>
-                            <img src="./img/Logos/python.png" alt="py">
-                            <p>Python for Competitive Programming</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-right">
-                        <div>
-                            <img src="./img/Logos/sql.png" alt="sql">
-                            <p>MySQL Databases</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up">
-                        <div>
-                            <img src="./img/Logos/photoshop.png" alt="photoshop">
-                            <p>Photoshop Designing</p>
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </div>
-
-            <div class="achievements skill__container">
-
-                <h3>Achievements</h3>
-    
-                <div class="cards">
-                    <div class="card" data-aos="fade-right">
-                        <div>
-                            <a href="./img/Achievements/Scholarship.jpg"><img src="./img/Achievements/Scholarship.jpg" alt="Scholarship"></a>
-                            <p>Grant Offer from Innopolis University</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up">
-                        <div>
-                            <a href="./img/Achievements/nanodegree.png"><img src="./img/Achievements/nanodegree.png" alt="nanodegree"></a>
-                            <p>Udacity Nanodegree of Front End Development</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-left">
-                        <div>
-                            <a href="./img/Achievements/inter-olymp.jpg"><img src="./img/Achievements/inter-olymp.jpg" alt="inter-olymp"></a>
-                            <p>International Informatics Olympiad qualifying round</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-right">
-                        <div>
-                            <a href="./img/Achievements/reg-olymp1.jpg"><img src="./img/Achievements/reg-olymp1.jpg" alt="reg-olymp1"></a>
-                            <p>Regional Informatics Olympiad (2021)</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up">
-                        <div>
-                            <a href="./img/Achievements/reg-olymp2.jpg"><img src="./img/Achievements/reg-olymp2.jpg" alt="reg-olymp2"></a>
-                            <p>Regional Informatics Olympiad (2022)</p>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-left">
-                        <div>
-                            <a href="./img/Achievements/uda.jpg"><img src="./img/Achievements/uda.jpg" alt="udacity"></a>
-                            <p>Udacity Front-End course completion</p>
-                        </div>
-                    </div>
-                    
-                </div>
-    
-            </div>
+      <h2 class="skills__title">Skills</h2>
+      <!-- USING -->
+      <div class="skills__using skill-container">
+        <h3 class="skills__using__title skill-title">Using Now</h3>
+        <div class="card-container skills__using__cards">
+          <div class="skills__using__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/html.png"
+              alt="html-logo"
+            />
+            <p class="card__info">HTML</p>
+          </div>
+          <div class="skills__using__card card">
+            <img class="card__image" src="./img/Logos/css.png" alt="css-logo" />
+            <p class="card__info">CSS</p>
+          </div>
+          <div class="skills__using__card card">
+            <img class="card__image" src="./img/Logos/js.png" alt="js-logo" />
+            <p class="card__info">JavaScript ES6</p>
+          </div>
+          <div class="skills__using__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/sass.png"
+              alt="sass-logo"
+            />
+            <p class="card__info">SASS</p>
+          </div>
         </div>
-
-    </div>
+      </div>
+      <!-- LEARNING -->
+      <div class="skills__learning skill-container">
+        <h3 class="skills__learning__title skill-title">Learning</h3>
+        <div class="card-container skills__learning__cards">
+          <div class="skills__learning__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/react.png"
+              alt="react-logo"
+            />
+            <p class="card__info">React JS</p>
+          </div>
+          <div class="skills__learning__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/node.png"
+              alt="node-logo"
+            />
+            <p class="card__info">Node JS</p>
+          </div>
+          <div class="skills__learning__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/vite.png"
+              alt="vite-logo"
+            />
+            <p class="card__info">Vite JS</p>
+          </div>
+          <div class="skills__learning__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/typescript.png"
+              alt="ts-logo"
+            />
+            <p class="card__info">TypeScript</p>
+          </div>
+        </div>
+      </div>
+      <!-- OTHERS -->
+      <div class="skills__others skill-container">
+        <h3 class="skills__others__title skill-title">Other Skills</h3>
+        <div class="card-container skills__others__cards">
+          <div class="skills__others__card card">
+            <img class="card__image" src="./img/Logos/cpp.png" alt="cpp-logo" />
+            <p class="card__info">C++ for Competitive Programming</p>
+          </div>
+          <div class="skills__others__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/photoshop.png"
+              alt="photoshop-logo"
+            />
+            <p class="card__info">Photoshop Designing</p>
+          </div>
+          <div class="skills__others__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/figma.png"
+              alt="photoshop-logo"
+            />
+            <p class="card__info">UI/UX Designing</p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- ACHIEVEMENTS SECTION -->
+    <section id="achievements">
+      <h3 class="achievements__title">Achievements</h3>
+      <div class="card-container achievements__cards">
+        <div class="achievements__card card">
+          <a href="./img/Achievements/real-img/Scholarship.jpg"
+            ><img
+              class="card__image"
+              src="./img/Achievements/Scholarship.jpg"
+              alt="Scholarship-image"
+          /></a>
+          <p class="card__info">Grant Offer from Innopolis University</p>
+        </div>
+        <div class="achievements__card card">
+          <a href="./img/Achievements/real-img/nanodegree.jpg"
+            ><img
+              class="card__image"
+              src="./img/Achievements/nanodegree.jpg"
+              alt="nanodegree-image"
+          /></a>
+          <p class="card__info">Udacity Nanodegree of Front End Development</p>
+        </div>
+        <div class="achievements__card card">
+          <a href="./img/Achievements/real-img/inter-olymp.jpg"
+            ><img
+              class="card__image"
+              src="./img/Achievements/inter-olymp.jpg"
+              alt="inter-olymp-image"
+          /></a>
+          <p class="card__info">
+            International Informatics Olympiad qualifying round
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
     <section id="portfolio">
-        <div class="portfolio__heading">
-            <h2>Portfolio</h2>
+      <h2 class="portfolio__heading">Portfolio</h2>
+      <div class="project-container portfolio__projects">
+        <!-- 1st -->
+        <div class="portfolio__project">
+          <img
+            class="portfolio__img"
+            src="./img/Projects/todolist.jpg"
+            alt="todolist-image"
+          />
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">Todo List App</h2>
+            <p class="portfolio__info">
+              I used Binary Search Algorithm to efficiently find the index of
+              the clicked element from the list of Todos, this enhanced the
+              process of editing and deleting a list. Before deleting, it will
+              show you a modal. I added "Clear All" button to clear everything
+              and a new "read the whole text" function since the text content
+              for list is limited
+            </p>
+            <div class="portfolio__links">
+              <a
+                target="_blank"
+                href="https://github.com/Jahongirhacking/FE-Projects/tree/main/CRUD%20App"
+                class="github-link portfolio__link"
+                >GitHub <i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://bulalar-todo.netlify.app/"
+                class="demo-link portfolio__link"
+                >DEMO <i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        <div class="container">
-            <div class="card" data-aos="fade-right">
-                <div class="img left__img">
-                    <img src="./img/Projects/apple.JPG" alt="projects">
-                </div>
-                <div class="description">
-                    <h2>Apple Layout</h2>
-                    <p>Apple Layout - this is one of my latest work. I hope that this layout looks like the real <b><a target="_blank" href="https://www.apple.com/">Apple Website</a></b>. Used technologies: HTML and CSS</p>
-                    <div>
-                        <a target="_blank" href="https://github.com/Jahongirhacking/apple" class="git_hub">Git Hub <i class="fab fa-github"></i></a>
-                        <a target="_blank" href="https://apple-bulalar.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
-                    </div>
-                </div>
+        <!-- 2nd -->
+        <div class="portfolio__project">
+          <img
+            class="portfolio__img"
+            src="./img/Projects/project5.jpg"
+            alt="travel-image"
+          />
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">Travel Planner App</h2>
+            <p class="portfolio__info">
+              Travel Planner App - This project requires me to build out a
+              travel app that, at a minimum, obtains a desired trip location &
+              date from the user, and displays weather and an image of the
+              location using information obtained from external APIs. I also
+              added additional functionality and customization to truly stand
+              out with a project that now I am proud to have at the top of my
+              portfolio! Used technologies: HTML, SASS, JavaScript, Express JS
+              and Webpack
+            </p>
+            <div class="portfolio__links">
+              <a
+                target="_blank"
+                href="https://github.com/Jahongirhacking/Udacity-FE-Projects/tree/main/udacity-5"
+                class="github-link portfolio__link"
+                >GitHub <i class="fab fa-github"></i
+              ></a>
             </div>
-            <div class="card" data-aos="fade-left">
-                <div class="description">
-                    <h2>Travel Planner App</h2>
-                    <p>Travel Planner App - This project requires me to build out a travel app that, at a minimum, obtains a desired trip location & date from the user, and displays weather and an image of the location using information obtained from external APIs. I also added additional functionality and customization to truly stand out with a project that now I am proud to have at the top of my portfolio! Used technologies: HTML, SASS, JavaScript, Express JS and Webpack</p>
-                    <div>
-                        <a target="_blank" href="https://github.com/Jahongirhacking/udacity-5" class="git_hub">Git Hub <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="img right__img">
-                    <img src="./img/Projects/5th_project.gif" alt="projects">
-                </div>
-            </div>
-            <div class="card" data-aos="fade-right">
-                <div class="img left__img">
-                    <img src="./img/Projects/maktab.JPG" alt="projects">
-                </div>
-                <div class="description">
-                    <h2>68-DIMI WebApp</h2>
-                    <p>68-DIMI WebApp - This application is created for students of our school. In this project, the students can play games, solve problems, take tests and compete to win. There is a leaderboard to show students who collect big points by descending sort. Used technologies: HTML, CSS, JavaScript and PHP</p>
-                    <div>
-                        <a target="_blank" href="https://youtu.be/f1KV9d9tQu4?t=111" class="utube">VIDEO <i class="fab fa-youtube"></i></a>
-                        <a target="_blank" href="http://68dimi.atwebpages.com/" class="demo">DEMO <i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card" data-aos="fade-left">
-                <div class="description">
-                    <h2>Landing Page</h2>
-                    <p>Landing Page - The second project of the Udacity Nanodegree course. In addition, I added a new "Write Your Own Section" to this project in order to see your article on this landing page. Used technologies: HTML, CSS and JavaScript</p>
-                    <div>
-                        <a target="_blank" href="https://github.com/Jahongirhacking/udacity-2" class="git_hub">Git Hub <i class="fab fa-github"></i></a>
-                        <a target="_blank" href="https://project-udacity-2.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="img right__img">
-                    <img src="./img/Projects/project_udacity.gif" alt="projects">
-                </div>
-            </div>
-            <div class="card" data-aos="fade-right">
-                <div class="img left__img">
-                    <img src="./img/Projects/68.JPG" alt="projects">
-                </div>
-                <div class="description">
-                    <h2>Our School's WebSite</h2>
-                    <p>Our School's WebSite - this landing page introduces our school to you. After entering this page you could know more about our 68th special boarding school. Used technologies: HTML, CSS and JavaScript.</p>
-                    <div>
-                        <a target="_blank" href="https://youtu.be/f1KV9d9tQu4" class="utube">VIDEO <i class="fab fa-youtube"></i></a>
-                        <a target="_blank" href="https://68dimi.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card" data-aos="fade-left">
-                <div class="description">
-                    <h2>BulaGram</h2>
-                    <p>BulaGram - limited clone of Telegram Messenger. In this application you can send text messages and emojis to your friends. You'll use this app, only if you've been registered on <b><a href="http://68dimi.atwebpages.com/">Our School WebSite</a></b>. But I put here demo version of my app. Used technologies: HTML, CSS, JavaScript and PHP.</p>
-                    <div>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=RPPY8rlWPI8" class="utube">VIDEO <i class="fab fa-youtube"></i></a>
-                        <a target="_blank" href="https://bulagram.netlify.app/" class="demo">DEMO <i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="img right__img">
-                    <img src="./img/Projects/bulagram.JPG" alt="projects">
-                </div>
-            </div>
-            <div class="card" data-aos="fade-right">
-                <div class="img left__img">
-                    <img src="./img/Projects/frontendmentor.png" alt="projects">
-                </div>
-                <div class="description">
-                    <h2>FrontEnd-Mentor</h2>
-                    <p>
-                        In this platform, you can see my other work related to Front-End Development. I think this platform is the best for any Developer, By doing some practice, I have achieved a lot of progress on it. 
-                    </p>
-                    <div>
-                        <a target="_blank" href="https://www.frontendmentor.io/profile/Jahongirhacking" class="demo">Click to see <i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- 3rd -->
+        <div class="portfolio__project">
+          <img
+            class="portfolio__img"
+            src="./img/Projects/movie-finder.jpg"
+            alt="movie-image"
+          />
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">Movie Finder App</h2>
+            <p class="portfolio__info">
+              After learning about asynchronous functions, I practice my
+              knowledge by working with external APIs. In this small project,
+              you can find the movie by searching its name or keyword. Used
+              technologies: React JS
+            </p>
+            <div class="portfolio__links">
+              <a
+                target="_blank"
+                href="https://github.com/Jahongirhacking/React-Projects/tree/main/MovieFinder"
+                class="github-link portfolio__link"
+                >GitHub <i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://bulalar-movie.netlify.app/"
+                class="demo-link portfolio__link"
+                >DEMO <i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- 4th -->
+        <div class="portfolio__project">
+          <img
+            class="portfolio__img"
+            src="./img/Projects/school.jpg"
+            alt="todolist-image"
+          />
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">68th School App</h2>
+            <p class="portfolio__info">
+              68-DIMI WebApp - This application was created for students of our
+              school in Uzbekistan. In this project, the students can play
+              games, solve problems, take tests and compete to win. It has a
+              leaderboard to show top students who collect points by taking
+              tests and exams which being organized by the App. Used
+              technologies: HTML, CSS, JavaScript and PHP
+            </p>
+            <div class="portfolio__links">
+              <a
+                target="_blank"
+                href="https://github.com/Jahongirhacking/68dimi"
+                class="github-link portfolio__link"
+                >GitHub <i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://68dimi.netlify.app/"
+                class="demo-link portfolio__link"
+                >DEMO <i class="fas fa-link"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://youtu.be/f1KV9d9tQu4"
+                class="youtube-link portfolio__link"
+                >Video <i class="fas fa-video"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- 5th -->
+        <div class="portfolio__project">
+          <img
+            class="portfolio__img"
+            src="./img/Projects/apple.jpg"
+            alt="todolist-image"
+          />
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">Apple Layout</h2>
+            <p class="portfolio__info">
+              I was going to sharpen my CSS skills to work with Flexbox ang Grid
+              Layouts. I choose Apple's website and tried to build its clone. I
+              hope this layout looks like the real Apple Website. Used
+              technologies: HTML and CSS
+            </p>
+            <div class="portfolio__links">
+              <a
+                target="_blank"
+                href="https://github.com/Jahongirhacking/apple"
+                class="github-link portfolio__link"
+                >GitHub <i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://apple-bulalar.netlify.app/"
+                class="demo-link portfolio__link"
+                >DEMO <i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- 6th -->
+        <div class="portfolio__project">
+          <img
+            class="portfolio__img"
+            src="./img/Projects/frontendmentor.jpg"
+            alt="mentor-image"
+          />
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">Frontend Mentor Profile</h2>
+            <p class="portfolio__info">
+              You can see my other works related to Front-End stuff. I think
+              this platform is the best learning and gaining a lot of experience
+              for Junior Developers, by doing some practice, I have achieved a
+              lot of progress on this platform.
+            </p>
+            <div class="portfolio__links">
+              <a
+                target="_blank"
+                href="https://www.frontendmentor.io/profile/Jahongirhacking"
+                class="demo-link portfolio__link"
+                >Click To See <i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- FOOTER -->
     <footer id="footer">
-        <h3>Contact Me</h3>
-        <div class="contact">
-            <div class="networks">
-                <a target="_blank" href="https://www.youtube.com/channel/UCcCMHnnX5p9yfZ-ZtaCaGCw?sub_confirmation=1"><i class="fab fa-youtube"></i></a>
-            </div>
-            <div class="networks">
-                <a target="_blank" href="https://github.com/Jahongirhacking"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="networks">
-                <a target="_blank" href="https://www.instagram.com/jahongir_hack1ng/"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="networks">
-                <a target="_blank" href="https://t.me/Jahongir_hacking" class="networks"><i class="fab fa-telegram"></i></a>
-            </div>           
-        </div>
-        <div class="line"></div>
-        <p class="made">
-            © Bulalar TM - 2021 - <script>
-                var today=new Date();
-                document.write(today.getFullYear());
-            </script> | Made with <i class="fas fa-heart"></i> 
-        </p>
+      <h3 class="footer__title">Contact Me</h3>
+      <div class="footer__links link-container">
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://www.youtube.com/channel/UCcCMHnnX5p9yfZ-ZtaCaGCw?sub_confirmation=1"
+          id="yt-link"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://github.com/Jahongirhacking"
+          id="gh-link"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://www.instagram.com/jahongir_khayitov/"
+          id="ig-link"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://t.me/JahongirKhayitov"
+          class="networks"
+          id="tg-link"
+          ><i class="fab fa-telegram"></i
+        ></a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://leetcode.com/Jahongirhacking/"
+          class="networks"
+          id="lc-link"
+          ><i class="fa-solid fa-code"></i
+        ></a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://robocontest.uz/profile/jahongir_khayitov"
+          class="networks"
+          id="rb-link"
+          ><i class="fas fa-robot"></i
+        ></a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="mailto:Jahongirhacking@gmail.com"
+          class="networks"
+          id="email"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+      <p class="footer__info">
+        &copy; Jahongir Hayitov 2021 - <span id="current__year"></span> | Made
+        with
+        <i class="fas fa-heart red-color"></i>
+      </p>
+      <small class="footer__small">last update: 12 Jun, 2023</small>
     </footer>
-    <path id="path1" d="M-20.736,23.87 C-36.731,-33.66 83.634,-63.231 142.465,-19.94 217.459,35.246 358.988,131.194 376.512,97.177 443.762,-33.497 127.713,102.972 83.058,102.288 23.703,101.355 -25.155,76.145 -21.248,23.59 "/>
-    <path id="path2" d="M22.891,-5.655 C89.034,-10.566 191.064,-21.558 206.624,-46.9 255.727,-126.887 69.93,-235.733 22.285,-235.229 -87.056,-234.072 -124.241,-158.519 -141.545,-113.329 -224.065,102.477 -17.463,64.563 21.097,-4.654 "/>
-    <path id="path3" d="M-16.901,2.044 C49.242,-2.867 92.71,20.923 92.391,50.638 91.417,141.364 -63.699,29.121 -106.059,50.969 -212.818,106.03 -227.005,87.26 -226.255,21.426 -224.493,-132.131 -68.8,49.156 -17.411,3.044 "/>
-</body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/MotionPathPlugin.min.js" integrity="sha512-vu190Nx0a7ou580W/UkzpqxOf5lHJaMcsJZC8RGv5TYQh9xlKdsQvMCeREbL1PqbK/k6jh3Cf/VBiurWwP/kHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <path
+      id="path1"
+      d="M-20.736,23.87 C-36.731,-33.66 83.634,-63.231 142.465,-19.94 217.459,35.246 358.988,131.194 376.512,97.177 443.762,-33.497 127.713,102.972 83.058,102.288 23.703,101.355 -25.155,76.145 -21.248,23.59 "
+    />
+    <path
+      id="path2"
+      d="M22.891,-5.655 C89.034,-10.566 191.064,-21.558 206.624,-46.9 255.727,-126.887 69.93,-235.733 22.285,-235.229 -87.056,-234.072 -124.241,-158.519 -141.545,-113.329 -224.065,102.477 -17.463,64.563 21.097,-4.654 "
+    />
+    <path
+      id="path3"
+      d="M-16.901,2.044 C49.242,-2.867 92.71,20.923 92.391,50.638 91.417,141.364 -63.699,29.121 -106.059,50.969 -212.818,106.03 -227.005,87.26 -226.255,21.426 -224.493,-132.131 -68.8,49.156 -17.411,3.044 "
+    />
+  </body>
 
-<script src="./script/app.js"></script>
+  <!-- JAVASCRIPT -->
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/MotionPathPlugin.min.js"
+    integrity="sha512-vu190Nx0a7ou580W/UkzpqxOf5lHJaMcsJZC8RGv5TYQh9xlKdsQvMCeREbL1PqbK/k6jh3Cf/VBiurWwP/kHA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script> -->
 
+  <script src="./script/app.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.min.js" integrity="sha512-3WLY2nDlx1c6leUk3gyqneF+bWq4Ub/HsGjmJoo7qRlMFMXcOwzw6gqf+PwKLzd/TUjWlpSaHBy6L6o1hS2y9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> -->
 
+  <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.min.js"
+    integrity="sha512-3WLY2nDlx1c6leUk3gyqneF+bWq4Ub/HsGjmJoo7qRlMFMXcOwzw6gqf+PwKLzd/TUjWlpSaHBy6L6o1hS2y9g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script> -->
 </html>

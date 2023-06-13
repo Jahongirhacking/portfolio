@@ -19,7 +19,7 @@
 
 * DOMContentLoaded (No Throttling): **850 ms** Amortized Time
 * DOMContentLoaded (Fast 3G): **1.8 s** Amortized Time
-* DOMContentLoaded (Fast 3G): **6 s** Amortized Time
+* DOMContentLoaded (Slow 3G): **6 s** Amortized Time
 * Images are taking a lot of time, I compressed all to optimize
 
 # The name of the author

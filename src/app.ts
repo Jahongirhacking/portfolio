@@ -1,56 +1,47 @@
+import { gsap } from "gsap";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 // ELEMENTS
-const navList = document.getElementById("nav__list");
-const overlayMenuBar = document.getElementById("nav__overlay-menu-bars");
+const navList = document.getElementById("nav__list") as HTMLUListElement;
+const overlayMenuBar = document.getElementById("nav__overlay-menu-bars") as HTMLElement;
 const imageShadow = document.querySelector(
   ".header__img > .header__img-shadow"
-);
-const leetcodeIcon = document.querySelector(".header__link > img.fa-leetcode");
-let isWindowResized = false;
+) as HTMLDivElement;
+const leetcodeIcon = document.querySelector(".header__link > img.fa-leetcode") as HTMLElement&{complete:boolean};
+let isWindowResized:boolean = false;
 
 // FUNCTIONS
 
-const modifyTextContent = (element, text) => {
+const modifyTextContent = (element:HTMLElement, text:string):void => {
   element.textContent = text;
 };
 
-const toggleElementClassList = (element, classname) => {
+const toggleElementClassList = (element:HTMLElement, classname:string):void => {
   element.classList.toggle(classname);
 };
 
-const addElementClassList = (element, classname) => {
-  element.classList.add(classname);
-};
-
-const removeElementClassList = (element, classname) => {
-  element.classList.remove(classname);
-};
-
-const addEventListenerToElem = (element, eventType, fn) => {
-  element.addEventListener(eventType, fn);
-};
-
-const controlKeyboard = (e) => {
+const controlKeyboard = (e:KeyboardEvent) => {
   if (e.key === "Escape" && overlayMenuBar.classList.contains("fa-xmark"))
     showOverlay();
 };
 
-const fixElementsPosition = () => {
+const fixElementsPosition = ():void => {
   // image green shadow make circle
   imageShadow.style.height = imageShadow.offsetWidth + "px";
 
   // leetcode icon size
   leetcodeIcon.style.width =
-    Math.max(document.querySelector(".header__link > i").offsetWidth - 7, 30) +
+    Math.max((document.querySelector(".header__link > i") as HTMLElement).offsetWidth - 7, 30) +
     "px";
 
+  const grandparentElem = document.querySelectorAll(".header__list")[2] as HTMLLIElement;
   leetcodeIcon.style.marginTop =
-    (leetcodeIcon.parentElement.parentElement.offsetHeight -
+    (grandparentElem.offsetHeight -
       leetcodeIcon.offsetHeight) /
       2 +
     "px";
 };
 
-const controlWindowSize = () => {
+const controlWindowSize = ():void => {
   fixElementsPosition();
   // Media Queries
   if (window.innerWidth < 770) {
@@ -63,10 +54,10 @@ const controlWindowSize = () => {
     if (!isWindowResized) {
       isWindowResized = true;
       Array.from(document.querySelectorAll(".overlay>li>a")).forEach((elem) =>
-        addEventListenerToElem(elem, "click", (e) => {
+        (elem as HTMLElement).addEventListener("click", (e: MouseEvent) => {
           e.stopPropagation();
-          const grandParent = e.target.parentElement.parentElement;
-          if (grandParent.classList.contains("overlay")) showOverlay();
+          const grandParent = (e.target as HTMLElement)?.parentElement?.parentElement;
+          if (grandParent?.classList.contains("overlay")) showOverlay();
         })
       );
     }
@@ -77,36 +68,32 @@ const controlWindowSize = () => {
   }
 };
 
-function showOverlay() {
+function showOverlay():void {
   toggleElementClassList(navList, "hidden");
   toggleElementClassList(overlayMenuBar, "fa-bars");
   toggleElementClassList(overlayMenuBar, "fa-xmark");
 }
 
-const main = () => {
+const main = ():void => {
   const currentDate = new Date();
 
   // Modify Document
   controlWindowSize();
   modifyTextContent(
-    document.getElementById("my-age"),
-    currentDate.getFullYear() - 2004
+    document.getElementById("my-age") as HTMLSpanElement,
+    (currentDate.getFullYear() - 2004).toString()
   );
   modifyTextContent(
-    document.getElementById("current__year"),
-    currentDate.getFullYear()
+    document.getElementById("current__year") as HTMLSpanElement,
+    currentDate.getFullYear().toString()
   );
   //   EventListeners
-  addEventListenerToElem(overlayMenuBar, "click", showOverlay);
-  addEventListenerToElem(
-    document.querySelector(".header__img > .header__my-img"),
-    "mouseover",
-    () => imageShadow.classList.add("scale-element")
+  overlayMenuBar.addEventListener("click", showOverlay);
+  
+    (document.querySelector(".header__img > .header__my-img") as HTMLImageElement )
+    .addEventListener("mouseover", () => imageShadow.classList.add("scale-element")
   );
-  addEventListenerToElem(
-    document.querySelector(".header__img > .header__my-img"),
-    "mouseout",
-    () => imageShadow.classList.remove("scale-element")
+    (document.querySelector(".header__img > .header__my-img") as HTMLImageElement).addEventListener("mouseout", () => imageShadow.classList.remove("scale-element")
   );
 };
 

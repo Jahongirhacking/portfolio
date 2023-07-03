@@ -203,6 +203,15 @@ main {
     user-select: none;
 }
 
+.released-wrapper {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 11pt;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
 .hidden {
     display: none!important;
 }

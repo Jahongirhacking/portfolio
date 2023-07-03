@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,16 +16,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 18.12
 
       - name: Install dependencies
-        run: npm ci
+        run: npm i
 
-      - name: Build the project
+      - name: Build project
         run: npm run build
+
+      - name: Rewrite .gitignore
+        run: echo node_modules > .gitignore
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: .

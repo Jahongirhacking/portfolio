@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+:root {
+    --comic-background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    --bg-color: rgb(13, 13, 13);
+    --text-color: white;
+    --black-alpha: rgba(0, 0, 0, 0.60);
+    --blue-alpha: rgba(3, 51, 79, 0.73);
+    --primary-color: #39e8c7;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 4px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color) !important;
+    border-radius: 50px !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(39, 39, 39) !important;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background: var(--comic-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 20px;
+    width: 100%;
+}
+
+.nav__link {
+    font-size: 1rem;
+    padding: 8px 10px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    transition-property: background-color, color;
+}
+
+.nav__link:hover {
+    color: var(--primary-color);
+}
+
+.btn {
+    font-size: 1rem;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main__btn {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+}
+
+.main__btn:hover {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.main__img-container {
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.comic-img {
+    display: block;
+    max-width: 90vw;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.img-loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-alpha);
+    backdrop-filter: blur(8px);
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.img-loader > i.fa-spinner {
+    font-size: 50px;
+    color: var(--text-color);
+}
+
+.sensitive-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-alpha);
+    backdrop-filter: blur(10px);
+    left: 0;
+    top: 0;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 25px;
+    z-index: 2;
+}
+
+.sensitive-content__info {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+.sensitive-content__info > i.fa-eye-slash {
+    font-size: 30px;
+}
+
+.sensitive-content__btn {
+    padding: 10px 0;
+    width: 100%;
+    font-weight: 600;
+    background-color: transparent;
+    border-top: 1px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 0;
+}
+
+#comic-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 15pt;
+    padding: 10px 20px;
+    display: block;
+    z-index: 0;
+    background-color: var(--black-alpha);
+    backdrop-filter: blur(8px);
+    color: var(--text-color);
+    user-select: none;
+}
+
+.comic-date-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 10pt;
+    padding: 8px 10px;
+    display: block;
+    z-index: 0;
+    background-color: var(--black-alpha);
+    backdrop-filter: blur(8px);
+    color: var(--text-color);
+    user-select: none;
+}
+
+.released-wrapper {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 11pt;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none!important;
+}
+
+
+@media screen and (max-width: 450px) {
+    body {
+        gap:20px;
+    }
+
+    .nav__link {
+        font-size: 10pt;
+    }
+
+    .btn {
+        font-size: 10pt;
+    }
+
+    #comic-title {
+        font-size: 10pt;
+    }
+
+    .comic-date-wrapper {
+        font-size: 6pt;
+    }
+
+    .sensitive-content {
+        padding: 3px 8px;
+    }
+
+    .sensitive-content__info {
+        gap: 3px;
+    }
+
+    .sensitive-content__info > h3 {
+        font-size: 12pt;
+    }
+
+    .sensitive-content__info > p {
+        font-size: 10pt;
+    }
+    
+    .sensitive-content__info > i.fa-eye-slash {
+        font-size: 30px;
+    }
+    .comic-img {
+        max-width: 96vw;
+    }
+}

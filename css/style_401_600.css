@@ -1,0 +1,139 @@
+
+@media (min-width: 401px) and (max-width: 600px) {
+  * {
+    --default-padding: 45px;
+    --heading-font-size: 22pt;
+    --info-font-size: 13pt;
+  }
+  .nav__logo {
+    width: 40px;
+  }
+  #header {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 110px;
+  }
+  #header > .header__img {
+    order: 1;
+    margin-left: 15px;
+    width: 60%;
+  }
+  #header > .header__info {
+    order: 2;
+    text-align: center;
+  }
+  .header__info > span {
+    font-size: 14pt;
+  }
+  .header__info > .header__my-name {
+    font-size: 24pt;
+    max-width: 90%;
+    margin: auto;
+  }
+  .header__info > .header__my-job {
+    font-size: 13pt;
+    margin: auto;
+  }
+  .header__info > .header__network {
+    gap: 30px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .header__network > .header__list {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+  }
+  .header__network > .header__list > .header__link {
+    font-size: 35px;
+  }
+  .about_me__info {
+    line-height: 21pt;
+  }
+  
+  section {
+    padding: 50px 20px 20px;
+  }
+
+  #skills {
+    gap: 40px;
+  }
+
+  .skills__title {
+    padding: 10px 40px;
+    font-size: 16pt;
+  }
+
+  .skill-title, .achievements__title {
+    letter-spacing: 4px;
+    font-size: 14pt;
+  }
+
+  section .card-container {
+    width: 100%;
+  }
+
+  .card-container > .card {
+    width:45%;
+  }
+
+  .card > .card__info {
+    font-size: 15pt;
+  }
+
+  .achievements__card > .card__info {
+    font-size: 13pt;
+    letter-spacing: 2px;
+  }
+
+  .portfolio__project {
+    flex-direction: column;
+  }
+
+  .portfolio__img {
+    width: 100%;
+  }
+
+  .portfolio__project:nth-child(2n) > .portfolio__img {
+    order: 1;
+  }
+
+  .portfolio__project:nth-child(2n) > .portfolio__description {
+    order: 2;
+  }
+
+  .portfolio__description > .portfolio__info {
+    font-size: 14pt;
+    line-height: 20pt;
+    max-height: 280px;
+    overflow: auto;
+  }
+
+  .portfolio__link {
+    font-size: 13pt;
+    padding: 12px 22px;
+  }
+
+  .footer__title {
+    font-size: 18pt;
+  }
+
+  .footer__links {
+    width: 85%;
+  }
+
+  .footer__link {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer__link > i {
+    font-size: 22pt;
+    line-height: 45px;
+  }
+
+  .footer__info {
+    letter-spacing: 1px;
+    font-size: 8pt;
+  }
+}

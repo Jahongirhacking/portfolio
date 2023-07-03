@@ -16,6 +16,7 @@
 * HTML
 * CSS
 * JavaScript
+* TypeScript
 
 * DOMContentLoaded (No Throttling): **850 ms** Amortized Time
 * DOMContentLoaded (Fast 3G): **1.8 s** Amortized Time

@@ -2,6 +2,7 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 import commonjs from "@rollup/plugin-commonjs";
+const prettier = require("rollup-plugin-prettier");
 
 export default [
   {
@@ -17,6 +18,10 @@ export default [
       nodeResolve({ browser: true }),
       terser(),
       commonjs(),
+      prettier({
+        tabWidth: 2,
+        singleQuote: false,
+      }),
     ],
   },
 ];

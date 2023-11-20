@@ -480,8 +480,7 @@ section {
 }
 
 #skills {
-  background-image: linear-gradient(#00000084, #00000067),
-    url("../img/wallpaper.jpg");
+  background-image: linear-gradient(#000a, #000), url("../img/wallpaper.jpg");
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -572,8 +571,7 @@ section .card-container {
 /*----> PORTFOLIO SECTION <----*/
 
 #portfolio {
-  background-image: linear-gradient(#00000084, #00000067),
-    url("../img/wallpaper1.jpg");
+  background-image: linear-gradient(#000b, #000d), url("../img/wallpaper1.jpg");
   background-position: center;
   padding: 0;
   padding-bottom: 80px;

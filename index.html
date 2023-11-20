@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -37,8 +37,8 @@
       <img src="./img/logo.png" class="nav__logo" alt="logo-image" />
       <ul class="nav__list" id="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="./comic.html"
-            >Comics<span class="badge new-badge">new</span></a
+          <a class="nav__link" href="https://pokemono.netlify.app/"
+            >Pokemons<span class="badge new-badge">new</span></a
           >
         </li>
         <li class="nav__item">
@@ -114,14 +114,15 @@
       <h3 class="about_me__title">About Me</h3>
       <p class="about_me__info">
         I am a <span id="my-age"></span>-year-old Front-End Developer from
-        Uzbekistan. Currently, I am studying at Innopolis University in
-        Tatarstan, Russia and learning modern web frameworks like React JS, also
-        already have generated some small projects so far. During my university
-        courses, I have learned basic concepts of Software Design Patterns, Data
-        Structures and Algorithms especially Graph Theory. Everyday I practice
-        my skills using my favourite programming languages JavaScript and C++ on
-        Leetcode platform. In my opinion, these concepts what I have learned
-        will help you!
+        Uzbekistan. Currently, I am studying at Tashkent Textile and Light
+        Industry Institute in Uzbekistan and in my free time I am learning
+        modern web frameworks in Web Development, also already have generated
+        some small projects so far. My previous IT university courses helped me
+        learn basic concepts of Software Design Patterns, Data Structures and
+        Algorithms especially Graph Theory. Everyday I practice my skills using
+        my favourite programming languages JavaScript and C++ on Leetcode
+        platform. In my opinion, these concepts what I have learned will help
+        you!
       </p>
 
       <a
@@ -170,6 +171,14 @@
             />
             <p class="card__info">React JS</p>
           </div>
+          <div class="skills__using__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/typescript.png"
+              alt="typescript-logo"
+            />
+            <p class="card__info">TypeScript</p>
+          </div>
         </div>
       </div>
       <!-- LEARNING -->
@@ -179,10 +188,10 @@
           <div class="skills__learning__card card">
             <img
               class="card__image"
-              src="./img/Logos/svelte.png"
-              alt="svelte-logo"
+              src="./img/Logos/react-router.png"
+              alt="react-router-logo"
             />
-            <p class="card__info">Svelte</p>
+            <p class="card__info">React Router</p>
           </div>
           <div class="skills__learning__card card">
             <img
@@ -195,10 +204,10 @@
           <div class="skills__learning__card card">
             <img
               class="card__image"
-              src="./img/Logos/typescript.png"
-              alt="ts-logo"
+              src="./img/Logos/vitest.png"
+              alt="vitest-logo"
             />
-            <p class="card__info">TypeScript</p>
+            <p class="card__info">Vitest</p>
           </div>
         </div>
       </div>
@@ -270,6 +279,37 @@
     <section id="portfolio">
       <h2 class="portfolio__heading">Portfolio</h2>
       <div class="project-container portfolio__projects">
+        <div class="portfolio__project">
+          <img
+            class="portfolio__img"
+            src="./img/Projects/pokemon.jpg"
+            alt="pokemon-image"
+          />
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">Pokemono</h2>
+            <p class="portfolio__info">
+              "Pokemono" is a web application which I built in RS School's
+              project. It allows users to view a list of Pokemon, providing
+              details such as name, image, and other relevant information. It
+              leverages React's component-based architecture to efficiently
+              manage and update the UI, providing a responsive and interactive
+              experience for users interested in exploring Pokemon information.
+              Used technologies: React JS, TypeScript, Sass
+            </p>
+            <div class="portfolio__links">
+              <a
+                href="https://github.com/Jahongirhacking/RS-School-React-Q4"
+                class="github-link portfolio__link"
+                >GitHub <i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://pokemono.netlify.app"
+                class="demo-link portfolio__link"
+                >DEMO <i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
         <!-- 1st -->
         <div class="portfolio__project">
           <img
@@ -358,35 +398,6 @@
             </div>
           </div>
         </div>
-        <!-- 3rd -->
-        <!-- <div class="portfolio__project">
-          <img
-            class="portfolio__img"
-            src="./img/Projects/movie-finder.jpg"
-            alt="movie-image"
-          />
-          <div class="portfolio__description">
-            <h2 class="portfolio__title">Movie Finder App</h2>
-            <p class="portfolio__info">
-              After learning about asynchronous functions, I practice my
-              knowledge by working with external APIs. In this small project,
-              you can find the movie by searching its name or keyword. Used
-              technologies: React JS
-            </p>
-            <div class="portfolio__links">
-              <a
-                href="https://github.com/Jahongirhacking/React-Projects/tree/main/MovieFinder"
-                class="github-link portfolio__link"
-                >GitHub <i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://bulalar-movie.netlify.app/"
-                class="demo-link portfolio__link"
-                >DEMO <i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-        </div> -->
         <!-- 4th -->
         <div class="portfolio__project">
           <img
@@ -537,7 +548,7 @@
         with
         <i class="fas fa-heart red-color"></i>
       </p>
-      <small class="footer__small">last update: 15 Jul, 2023</small>
+      <small class="footer__small">last update: 11 Nov, 2023</small>
     </footer>
 
     <svg class="paths hidden">

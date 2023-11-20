@@ -9,14 +9,4 @@ export default [
     output: { dir: "dist" },
     plugins: [typescript(), nodeResolve({ browser: true }), terser()],
   },
-  {
-    input: "src/comic.ts",
-    output: { dir: "dist" },
-    plugins: [
-      typescript(),
-      nodeResolve({ browser: true }),
-      terser(),
-      commonjs(),
-    ],
-  },
 ];

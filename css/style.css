@@ -8,7 +8,11 @@
   --secondary-color-shadow: #0b0b0bb0;
   --text-color: white;
   --text-color-shadow: rgba(255, 255, 255, 0.659);
-  --blue-green-mixed: linear-gradient(351deg, rgba(8,255,115,1) 0%, rgba(8,213,255,1) 100%);
+  --blue-green-mixed: linear-gradient(
+    351deg,
+    rgba(8, 255, 115, 1) 0%,
+    rgba(8, 213, 255, 1) 100%
+  );
   --default-padding: 65px;
   --heading-font-size: 24pt;
   --info-font-size: 16pt;
@@ -51,7 +55,7 @@
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 /*Scroll Bar*/
@@ -75,7 +79,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   color: var(--text-color);
   background: radial-gradient(
@@ -89,12 +93,16 @@ body {
   display: grid;
 }
 
-a, a.link {
+a,
+a.link {
   color: var(--text-color);
   text-decoration: none;
 }
 
-ul > li, .card, .list_item, li {
+ul > li,
+.card,
+.list_item,
+li {
   list-style: none;
 }
 
@@ -205,7 +213,7 @@ ul > li, .card, .list_item, li {
   font-size: 8pt;
 }
 
-.overlay > .nav__item> .nav__link:hover {
+.overlay > .nav__item > .nav__link:hover {
   color: var(--primary-color);
 }
 
@@ -226,7 +234,12 @@ ul > li, .card, .list_item, li {
   width: 100%;
   min-height: 560px;
   height: fit-content;
-  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-color-shadow)), url("../img/wallpaper.jpg");
+  background: linear-gradient(
+      135deg,
+      var(--secondary-color),
+      var(--secondary-color-shadow)
+    ),
+    url("../img/wallpaper.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,9 +393,15 @@ ul > li, .card, .list_item, li {
   top: -40px;
   width: 90%;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-color-shadow));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-color-shadow)
+  );
   z-index: 0;
-  transition: transform, 0.4s ease;
+  transition:
+    transform,
+    0.4s ease;
 }
 
 .header__img > .header__triangle-img {
@@ -480,14 +499,16 @@ section {
   transition: 0.4s ease;
 }
 
-#skills > .skill-container, #achievements {
+#skills > .skill-container,
+#achievements {
   display: flex;
   flex-direction: column;
   gap: 30px;
   text-align: center;
 }
 
-.skill-title, .achievements__title {
+.skill-title,
+.achievements__title {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 700;
@@ -541,7 +562,8 @@ section .card-container {
 /*----> PORTFOLIO SECTION <----*/
 
 #portfolio {
-  background-image: linear-gradient(#00000084, #00000067), url("../img/wallpaper.jpg");
+  background-image: linear-gradient(#00000084, #00000067),
+    url("../img/wallpaper.jpg");
   background-position: center;
   padding: 0;
   padding-bottom: 80px;
@@ -593,7 +615,7 @@ section .card-container {
   transition: 0.4s ease;
 }
 
-.portfolio__project:nth-child(2n+1):hover > .portfolio__img {
+.portfolio__project:nth-child(2n + 1):hover > .portfolio__img {
   transform: perspective(150px) rotateY(4deg);
 }
 
@@ -647,7 +669,7 @@ section .card-container {
   margin: auto;
   padding: 15px 25px;
   transition: 0.6s ease;
-  transition-property: background, color;
+  transition-property: background, color, border-color;
 }
 
 .portfolio__link.demo-link {
@@ -752,11 +774,11 @@ section .card-container {
 }
 
 .hidden {
-  display: none!important;
+  display: none !important;
 }
 
 .scale-element {
-  transform: scale(1.06)!important;
+  transform: scale(1.06) !important;
 }
 
 .badge {

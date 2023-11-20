@@ -501,11 +501,8 @@ section {
 }
 
 #achievements {
-  background: radial-gradient(
-    circle,
-    rgba(0, 69, 46, 1) 0%,
-    rgba(0, 0, 0, 1) 88%
-  );
+  border: 3px dashed #39e8c7;
+  background-color: rgb(12 116 97 / 55%);
 }
 
 #skills > .skill-container,
@@ -571,7 +568,7 @@ section .card-container {
 /*----> PORTFOLIO SECTION <----*/
 
 #portfolio {
-  background-image: linear-gradient(#000b, #000d), url("../img/wallpaper1.jpg");
+  background-image: linear-gradient(#000a, #000c), url("../img/wallpaper1.jpg");
   background-position: center;
   padding: 0;
   padding-bottom: 80px;

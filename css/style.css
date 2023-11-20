@@ -480,6 +480,8 @@ section {
 }
 
 #skills {
+  background-image: linear-gradient(#00000084, #00000067),
+    url("../img/wallpaper.jpg");
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -497,6 +499,14 @@ section {
   margin-bottom: 10px;
   font-weight: 700;
   transition: 0.4s ease;
+}
+
+#achievements {
+  background: radial-gradient(
+    circle,
+    rgba(0, 69, 46, 1) 0%,
+    rgba(0, 0, 0, 1) 88%
+  );
 }
 
 #skills > .skill-container,
@@ -563,7 +573,7 @@ section .card-container {
 
 #portfolio {
   background-image: linear-gradient(#00000084, #00000067),
-    url("../img/wallpaper.jpg");
+    url("../img/wallpaper1.jpg");
   background-position: center;
   padding: 0;
   padding-bottom: 80px;
@@ -740,13 +750,14 @@ section .card-container {
   height: 70px;
   border-radius: 50%;
   display: block;
-  transition: 0.6s ease;
+  transition: 0.6s ease background-color;
 }
 
 .footer__link > i {
   color: var(--primary-color);
   font-size: 30pt;
   line-height: 70px;
+  transition: 0.6s ease color;
 }
 
 .footer__link:hover {
@@ -793,4 +804,13 @@ section .card-container {
 .new-badge {
   background: var(--blue-green-mixed);
   color: var(--secondary-color);
+}
+
+.card {
+  cursor: pointer;
+  transition: 0.4s ease transform;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }

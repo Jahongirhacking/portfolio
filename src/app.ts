@@ -2,49 +2,58 @@ import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 // ELEMENTS
 const navList = document.getElementById("nav__list") as HTMLUListElement;
-const overlayMenuBar = document.getElementById("nav__overlay-menu-bars") as HTMLElement;
+const overlayMenuBar = document.getElementById(
+  "nav__overlay-menu-bars"
+) as HTMLElement;
 const imageShadow = document.querySelector(
   ".header__img > .header__img-shadow"
 ) as HTMLDivElement;
-const leetcodeIcon = document.querySelector(".header__link > img.fa-leetcode") as HTMLElement&{complete:boolean};
-let isWindowResized:boolean = false;
+const leetcodeIcon = document.querySelector(
+  ".header__link > img.fa-leetcode"
+) as HTMLElement & { complete: boolean };
+let isWindowResized: boolean = false;
 
 // FUNCTIONS
 
-const modifyTextContent = (element:HTMLElement, text:string):void => {
+const modifyTextContent = (element: HTMLElement, text: string): void => {
   element.textContent = text;
 };
 
-const toggleElementClassList = (element:HTMLElement, classname:string):void => {
+const toggleElementClassList = (
+  element: HTMLElement,
+  classname: string
+): void => {
   element.classList.toggle(classname);
 };
 
-const controlKeyboard = (e:KeyboardEvent) => {
+const controlKeyboard = (e: KeyboardEvent) => {
   if (e.key === "Escape" && overlayMenuBar.classList.contains("fa-xmark"))
     showOverlay();
 };
 
-const fixElementsPosition = ():void => {
+const fixElementsPosition = (): void => {
   // image green shadow make circle
   imageShadow.style.height = imageShadow.offsetWidth + "px";
 
   // leetcode icon size
   leetcodeIcon.style.width =
-    Math.max((document.querySelector(".header__link > i") as HTMLElement).offsetWidth - 7, 30) +
-    "px";
+    Math.max(
+      (document.querySelector(".header__link > i") as HTMLElement).offsetWidth -
+        7,
+      30
+    ) + "px";
 
-  const grandparentElem = document.querySelectorAll(".header__list")[2] as HTMLLIElement;
+  const grandparentElem = document.querySelectorAll(
+    ".header__list"
+  )[2] as HTMLLIElement;
   leetcodeIcon.style.marginTop =
-    (grandparentElem.offsetHeight -
-      leetcodeIcon.offsetHeight) /
-      2 +
-    "px";
+    (grandparentElem.offsetHeight - leetcodeIcon.offsetHeight) / 2 + "px";
 };
 
-const controlWindowSize = ():void => {
+const controlWindowSize = (): void => {
   fixElementsPosition();
   // Media Queries
-  if (window.innerWidth < 770) {
+  if (window.innerWidth < 800) {
     navList.classList.add("hidden");
     navList.classList.add("overlay");
     overlayMenuBar.classList.remove("fa-xmark");
@@ -56,7 +65,8 @@ const controlWindowSize = ():void => {
       Array.from(document.querySelectorAll(".overlay>li>a")).forEach((elem) =>
         (elem as HTMLElement).addEventListener("click", (e: MouseEvent) => {
           e.stopPropagation();
-          const grandParent = (e.target as HTMLElement)?.parentElement?.parentElement;
+          const grandParent = (e.target as HTMLElement)?.parentElement
+            ?.parentElement;
           if (grandParent?.classList.contains("overlay")) showOverlay();
         })
       );
@@ -68,13 +78,13 @@ const controlWindowSize = ():void => {
   }
 };
 
-function showOverlay():void {
+function showOverlay(): void {
   toggleElementClassList(navList, "hidden");
   toggleElementClassList(overlayMenuBar, "fa-bars");
   toggleElementClassList(overlayMenuBar, "fa-xmark");
 }
 
-const main = ():void => {
+const main = (): void => {
   const currentDate = new Date();
 
   // Modify Document
@@ -89,11 +99,16 @@ const main = ():void => {
   );
   //   EventListeners
   overlayMenuBar.addEventListener("click", showOverlay);
-  
-    (document.querySelector(".header__img > .header__my-img") as HTMLImageElement )
-    .addEventListener("mouseover", () => imageShadow.classList.add("scale-element")
+
+  (
+    document.querySelector(".header__img > .header__my-img") as HTMLImageElement
+  ).addEventListener("mouseover", () =>
+    imageShadow.classList.add("scale-element")
   );
-    (document.querySelector(".header__img > .header__my-img") as HTMLImageElement).addEventListener("mouseout", () => imageShadow.classList.remove("scale-element")
+  (
+    document.querySelector(".header__img > .header__my-img") as HTMLImageElement
+  ).addEventListener("mouseout", () =>
+    imageShadow.classList.remove("scale-element")
   );
 };
 

@@ -809,3 +809,7 @@ section .card-container {
 .card:hover {
   transform: scale(1.05);
 }
+
+.card:focus {
+  outline: none;
+}

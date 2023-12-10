@@ -53,7 +53,7 @@ const fixElementsPosition = (): void => {
 const controlWindowSize = (): void => {
   fixElementsPosition();
   // Media Queries
-  if (window.innerWidth < 800) {
+  if (window.innerWidth < 820) {
     navList.classList.add("hidden");
     navList.classList.add("overlay");
     overlayMenuBar.classList.remove("fa-xmark");

@@ -125,6 +125,12 @@ li {
 
 /* NAV LIST */
 
+#nav > .nav__lang {
+  width: 45px;
+  cursor: pointer;
+  border: 2px dashed var(--primary-color);
+}
+
 #nav > .nav__list {
   display: flex;
   justify-content: space-evenly;
@@ -790,9 +796,9 @@ section .card-container {
 .badge {
   padding: 1px 3px;
   border-radius: 4px;
-  font-size: 6pt;
+  font-size: 7pt;
   position: absolute;
-  right: -24px;
+  right: -27px;
   top: -5px;
 }
 

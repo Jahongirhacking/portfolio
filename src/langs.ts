@@ -18,7 +18,7 @@ const langObject = {
       title: "About Me",
       info: `I am a ${
         new Date().getFullYear() - 2004
-      } year old Web Developer. I am currently studying at the Tashkent Institute of Textile and Light Industry in Uzbekistan and in my spare time I am studying modern libraries and frameworks in this field of Web Development, and I have tried myself in several small projects so far. Innopolis University courses helped me to learn the basic concepts of "Software Design", "Data Structures and Algorithms", especially "Graph Theory". In addition, I try to solve problems of various difficulty on the Leetcode platform every day using my favorite programming languages JavaScript and C++. I think these skills of mine will help you!`,
+      } year old Web Developer. I am currently studying at the Tashkent Institute of Textile and Light Industry in Uzbekistan and in my spare time I am studying modern libraries and frameworks in the field of Web Development, and I have tried myself in several small projects so far. Innopolis University courses helped me to learn the basic concepts of "Software Design", "Data Structures and Algorithms", especially "Graph Theory". In addition, I try to solve problems of various difficulties on the Leetcode platform every day using my favorite programming languages JavaScript and C++. I think these skills of mine will help you!`,
       btn: "MORE INFO",
     },
     portfolio: {

@@ -37,8 +37,8 @@
       <img src="./img/logo.png" class="nav__logo" alt="logo-image" />
       <ul class="nav__list" id="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="https://cafe-market.netlify.app/"
-            >Want Coffee?<span class="badge new-badge">new</span></a
+          <a class="nav__link" href="https://pomedoro.netlify.app/"
+            >Pomodoro<span class="badge new-badge">new</span></a
           >
         </li>
         <li class="nav__item">
@@ -118,7 +118,16 @@
     <section id="about_me">
       <h3 class="about_me__title">About Me</h3>
       <p class="about_me__info">
-        I am a 20 year old Web Developer. I am currently studying at the Tashkent Institute of Textile and Light Industry in Uzbekistan and in my spare time I am studying modern libraries and frameworks in the field of Web Development, and I have tried myself in several small projects so far. Innopolis University courses helped me to learn the basic concepts of "Software Design", "Data Structures and Algorithms", especially "Graph Theory". In addition, I try to solve problems of various difficulties on the Leetcode platform every day using my favorite programming languages JavaScript and C++. I think these skills of mine will help you!
+        I am a 20 year old Web Developer. I am currently studying at the
+        Tashkent Institute of Textile and Light Industry in Uzbekistan and in my
+        spare time I am studying modern libraries and frameworks in the field of
+        Web Development, and I have tried myself in several small projects so
+        far. Innopolis University courses helped me to learn the basic concepts
+        of "Software Design", "Data Structures and Algorithms", especially
+        "Graph Theory". In addition, I try to solve problems of various
+        difficulties on the Leetcode platform every day using my favorite
+        programming languages JavaScript and C++. I think these skills of mine
+        will help you!
       </p>
 
       <a
@@ -132,6 +141,36 @@
     <section id="portfolio">
       <h2 class="portfolio__heading">Portfolio</h2>
       <div class="project-container portfolio__projects">
+        <div class="portfolio__project">
+          <img
+            class="portfolio__img"
+            src="./img/Projects/pomodoro.png"
+            alt="pomodoro-image"
+          />
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">Pomodoro 25+5</h2>
+            <p class="portfolio__info">
+              A Pomodoro app is a time management tool that helps users break
+              their work into intervals called "pomodoros," traditionally 25
+              minutes in length, separated by short breaks. The Pomodoro
+              technique aims to improve productivity and focus by breaking down
+              work into manageable chunks.
+            </p>
+            <div class="portfolio__links">
+              <a
+                href="https://github.com/Jahongirhacking/React-Projects/tree/main/Pomodoro"
+                class="github-link portfolio__link"
+                >GitHub <i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://pomedoro.netlify.app/"
+                class="demo-link portfolio__link"
+                >DEMO <i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pokemon -->
         <div class="portfolio__project">
           <img
             class="portfolio__img"
@@ -199,7 +238,7 @@
           <img
             class="portfolio__img"
             src="./img/Projects/scivenia.jpg"
-            alt="travel-image"
+            alt="scivenia-image"
           />
           <div class="portfolio__description">
             <h2 class="portfolio__title">Scivenia Beta Project</h2>
@@ -216,37 +255,6 @@
                 href="https://github.com/Jahongirhacking/SciVenia-beta"
                 class="github-link portfolio__link"
                 >GitHub <i class="fab fa-github"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!-- 3rd -->
-        <div class="portfolio__project">
-          <img
-            class="portfolio__img"
-            src="./img/Projects/project5.jpg"
-            alt="travel-image"
-          />
-          <div class="portfolio__description">
-            <h2 class="portfolio__title">Travel Planner App</h2>
-            <p class="portfolio__info">
-              Travel Planner App - This project requires me to build out a
-              travel app that, at a minimum, obtains a desired trip location &
-              date from the user, and displays weather and an image of the
-              location using information obtained from external APIs. I also
-              added additional functionalities. Used technologies: HTML, SASS,
-              JavaScript, Express JS and Webpack
-            </p>
-            <div class="portfolio__links">
-              <a
-                href="https://github.com/Jahongirhacking/Udacity-FE-Projects/tree/main/udacity-5"
-                class="github-link portfolio__link"
-                >GitHub <i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://bulalar-travel.netlify.app/"
-                class="demo-link portfolio__link"
-                >Demo <i class="fas fa-link"></i
               ></a>
             </div>
           </div>
@@ -347,6 +355,17 @@
     <section id="achievements">
       <h3 class="achievements__title">Achievements</h3>
       <div class="card-container achievements__cards">
+        <div class="achievements__card card">
+          <a href="./img/Achievements/real-img/free-code-camp.jpg"
+            ><img
+              class="card__image"
+              src="./img/Achievements/free-code-camp.jpg"
+              alt="free-code-camp-image"
+          /></a>
+          <p class="card__info">
+            Front End Libraries Certification - freeCodeCamp
+          </p>
+        </div>
         <div class="achievements__card card">
           <a href="./img/Achievements/real-img/Scholarship.jpg"
             ><img
@@ -538,6 +557,18 @@
         ></a>
         <a
           class="footer__link"
+          href="https://www.freecodecamp.org/jahongirhacking"
+          id="fcc-link"
+          ><i class="fab fa-free-code-camp"></i
+        ></a>
+        <a
+          class="footer__link"
+          href="https://codepen.io/Jahongirhacking"
+          id="cp-link"
+          ><i class="fab fa-codepen"></i
+        ></a>
+        <a
+          class="footer__link"
           href="https://robocontest.uz/profile/jahongir_khayitov"
           id="rb-link"
           ><i class="fas fa-robot"></i
@@ -556,7 +587,7 @@
         ></span>
       </p>
       <small class="footer__small"
-        ><span>last update:</span> 23 Jan, 2024</small
+        ><span>last update:</span> 04 Feb, 2024</small
       >
     </footer>
 

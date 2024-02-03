@@ -2,7 +2,7 @@ const langObject = {
   eng: {
     flag: "eng.jpg",
     nav: {
-      latest: "Want Coffee?",
+      latest: "Pomodoro",
       about: "About Me",
       portfolio: "Portfolio",
       skills: "Skills",
@@ -25,6 +25,10 @@ const langObject = {
       title: "PORTFOLIO",
       projects: [
         {
+          name: "Pomodoro 25+5",
+          description: `This project is among the assignments of the "freeCodeCamp" course. A Pomodoro app is a time management tool that helps users break their work into intervals called "pomodoros," traditionally 25 minutes in length, separated by short breaks. The Pomodoro technique aims to improve productivity and focus by breaking down work into manageable chunks.`,
+        },
+        {
           name: "Pokemono",
           description: `"Pokemon" is a web application that I created in the RS School project. It allows users to view a list of Pokemon. Provides details such as Pokemon's name, picture, and other relevant information. It uses an architecture based on React components to efficiently manage and update the User Interface, providing a responsive and interactive experience for users interested in learning Pokemon information. Technologies used: React JS, TypeScript, Sass`,
         },
@@ -35,10 +39,6 @@ const langObject = {
         {
           name: "Scivenia Beta Project",
           description: `As part of this university software project, we created a specific functionality of a bigger web app. The purpose of this function is to visually represent the scientific collaboration between researchers and scientists. I used Breadth First Search algorithm in the client side to find all collaborators of the researcher. Used technologies: React JS and Sigma JS`,
-        },
-        {
-          name: "Travel Planner App",
-          description: `Travel Planner App - This project requires me to build out a travel app that, at a minimum, obtains a desired trip location & date from the user, and displays weather and an image of the location using information obtained from external APIs. I also added additional functionalities. Used technologies: HTML, SASS, JavaScript, Express JS and Webpack`,
         },
         {
           name: "68th School App",
@@ -58,6 +58,7 @@ const langObject = {
     achievements: {
       title: "ACHIEVEMENTS",
       cert: [
+        "Front End Libraries Certification - freeCodeCamp",
         "Grant Offer from Innopolis University",
         "Udacity Nanodegree of Front End Development",
         "International Informatics Olympiad qualifying round",
@@ -78,7 +79,7 @@ const langObject = {
   uzb: {
     flag: "uzb.jpg",
     nav: {
-      latest: "Kofe Bormi?",
+      latest: "Pomodoro",
       about: "Men Haqimda",
       portfolio: "Portfel",
       skills: "Skillar",
@@ -101,6 +102,10 @@ const langObject = {
       title: "PORTFEL",
       projects: [
         {
+          name: "Pomodoro 25+5",
+          description: `Ushbu loyiha "freeCodeCamp" kursining topshiriqlari qatoriga kiradi. Pomodoro ilovasi vaqtni boshqarish vositasi boʻlib, foydalanuvchilarga oʻz ishlarini qisqa tanaffuslar bilan ajratilgan, anʼanaviy ravishda 25 daqiqalik “pomodorolar” deb nomlangan intervallarga ajratishga yordam beradi. Pomodoro texnikasi ishni boshqariladigan bo'laklarga bo'lish orqali samaradorlikni oshirish va diqqatni jamlashga qaratilgan.`,
+        },
+        {
           name: "Pokemono",
           description: `"Pokemono" bu men RS School loyihasida yaratgan veb-ilovadir. U foydalanuvchilarga Pokemonlar roʻyxatini koʻrish imkonini beradi. Pokemonlarning nomi, rasmi va boshqa tegishli maʼlumotlari kabi tafsilotlarni taqdim etadi. U Foydalanuvchi Interfeysini samarali boshqarish va yangilash uchun React komponentlariga asoslangan arxitekturadan foydalanadi, bu Pokemon ma'lumotlarini o'rganishga qiziqqan foydalanuvchilar uchun sezgir va interaktiv tajribani taqdim etadi. Amaldagi texnologiyalar: React JS, TypeScript, Sass`,
         },
@@ -111,10 +116,6 @@ const langObject = {
         {
           name: "Scivenia Beta Loyihasi",
           description: `Ushbu universitet dasturiy loyihasining bir qismi sifatida biz kattaroq veb-ilovaning o'ziga xos funksiyasini yaratdik. Ushbu funktsiyaning maqsadi tadqiqotchilar va olimlar o'rtasidagi ilmiy hamkorlikni vizual ko'rinishda namoyish qilishdir. Men tadqiqotchining barcha hamkorlarini topish uchun mijoz tomonida "Kenglik Bo'yicha Qidirish" algoritmidan foydalandim. Ishlatilgan texnologiyalar: React JS va Sigma JS`,
-        },
-        {
-          name: "Sayohatni Rejalashtiruvchi Sayt",
-          description: `Sayohatni rejalashtiruvchi Sayt - Bu loyiha mendan hech bo'lmaganda foydalanuvchidan kerakli sayohat joyi va sanasini oladigan hamda tashqi API-lardan olingan ma'lumotlardan foydalanib ob-havo va joyning tasvirini ko'rsatadigan sayohat ilovasini yaratishimni talab qildi. Men qo'shimcha funktsiyalarni ham qo'shdim. Ishlatilgan texnologiyalar: HTML, SASS, JavaScript, Express JS va Webpack`,
         },
         {
           name: "68-DIMI App",
@@ -134,6 +135,7 @@ const langObject = {
     achievements: {
       title: "YUTUQLARIM",
       cert: [
+        "Front End Kutubxonalari Sertifikati - freeCodeCamp",
         "Innopolis universitetidan grant taklifi",
         "Front End Development bo'yicha Udacitydan Nanodaraja",
         "Xalqaro informatika olimpiadasining Respublika saralash bosqichi",
@@ -154,7 +156,7 @@ const langObject = {
   deu: {
     flag: "deu.jpg",
     nav: {
-      latest: "Kaffee?",
+      latest: "Pomodoro",
       about: "Über mich",
       portfolio: "Portfolio",
       skills: "Fähigkeiten",
@@ -177,6 +179,10 @@ const langObject = {
       title: "PORTFOLIO",
       projects: [
         {
+          name: "Pomodoro 25+5",
+          description: `Dieses Projekt gehört zu den Aufgaben des Kurses „freeCodeCamp“. Eine Pomodoro-App ist ein Zeitmanagement-Tool, das Benutzern hilft, ihre Arbeit in Intervalle namens „Pomodoros“ aufzuteilen, die traditionell 25 Minuten lang sind und durch kurze Pausen getrennt sind. Die Pomodoro-Technik zielt darauf ab, die Produktivität und Konzentration zu verbessern, indem sie die Arbeit in überschaubare Abschnitte aufteilt.`,
+        },
+        {
           name: "Pokemono",
           description: `„Pokemono“ ist eine Webanwendung, die ich im RS School-Projekt erstellt habe. Es ermöglicht Benutzern, eine Liste von Pokémon anzuzeigen. Bietet Details wie den Namen, das Bild und andere relevante Informationen des Pokémon. Es verwendet eine Architektur, die auf React-Komponenten basiert, um die Benutzeroberfläche effizient zu verwalten und zu aktualisieren und Benutzern, die Pokemon-Informationen lernen möchten, ein reaktionsfähiges und interaktives Erlebnis zu bieten. Verwendete Technologien: React JS, TypeScript, Sass`,
         },
@@ -187,10 +193,6 @@ const langObject = {
         {
           name: "Scivenia Beta-Projekt",
           description: `Im Rahmen dieses universitären Softwareprojekts haben wir ein einzigartiges Feature einer größeren Webanwendung erstellt. Der Zweck dieser Funktion besteht darin, die wissenschaftliche Zusammenarbeit zwischen Forschern und Wissenschaftlern visuell darzustellen. Ich habe einen clientseitigen Latitude Search-Algorithmus verwendet, um alle Partner des Forschers zu finden. Verwendete Technologien: React JS und Sigma JS`,
-        },
-        {
-          name: "Reiseplaner-App",
-          description: `Reiseplaner-App – Für dieses Projekt muss ich eine Reise-App entwickeln, die zumindest den gewünschten Reiseort und das gewünschte Reisedatum vom Benutzer erhält und mithilfe von Informationen, die von externen APIs stammen, das Wetter und ein Bild des Ortes anzeigt. Ich habe auch zusätzliche Funktionalitäten hinzugefügt. Verwendete Technologien: HTML, SASS, JavaScript, Express JS und Webpack`,
         },
         {
           name: "68. Schulapp",
@@ -210,9 +212,10 @@ const langObject = {
     achievements: {
       title: "ERFOLGE",
       cert: [
+        "Front-End-Bibliotheks-Zertifizierung – freeCodeCamp",
         "Stipendienangebot der Innopolis University",
         "Udacity Nanodegree der Front-End-Entwicklung",
-        "Republikanische Qualifikationsphase der Internationalen Informatikolympiade",
+        "Republikanische Qualifikationsphase der Internationalen Informatik-olympiade",
       ],
     },
     skills: {

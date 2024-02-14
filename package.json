@@ -13,6 +13,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@reduxjs/toolkit": "^2.1.0",
     "@rollup/plugin-commonjs": "^25.0.2",
     "@types/gsap": "^3.0.0",
     "acorn": "^8.9.0",
@@ -21,6 +22,7 @@
     "gsap": "^3.12.2",
     "moment": "^2.29.4",
     "randombytes": "^2.1.0",
+    "react-redux": "^9.1.0",
     "safe-buffer": "^5.2.1",
     "serialize-javascript": "^6.0.1",
     "smob": "^1.4.0",

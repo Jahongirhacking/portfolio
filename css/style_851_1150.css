@@ -17,6 +17,23 @@
   section .card-container {
     width: 90%;
   }
+  
+  .portfolio__project {
+    flex-direction: column;
+  }
+
+  .portfolio__img {
+    width: 70%;
+    max-width: 550px;
+  }
+
+  .portfolio__project:nth-child(2n) > .portfolio__img {
+    order: 1;
+  }
+
+  .portfolio__project:nth-child(2n) > .portfolio__description {
+    order: 2;
+  }
 
   .card-container > .card {
     width: 30%;
@@ -31,4 +48,8 @@
     letter-spacing: 2px;
   }
   
+}
+
+@media (min-width: 851px) and (max-width: 950px) {
+	
 }

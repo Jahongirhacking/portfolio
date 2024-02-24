@@ -626,6 +626,10 @@ section .card-container {
   transition: 0.4s ease;
 }
 
+.portfolio__img > img {
+  width: 100%;
+}
+
 .portfolio__project:nth-child(2n + 1):hover > .portfolio__img {
   transform: perspective(150px) rotateY(4deg);
 }

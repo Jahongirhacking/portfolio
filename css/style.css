@@ -626,6 +626,10 @@ section .card-container {
   transition: 0.4s ease;
 }
 
+.portfolio__img > img {
+  width: 100%;
+}
+
 .portfolio__project:nth-child(2n + 1):hover > .portfolio__img {
   transform: perspective(150px) rotateY(4deg);
 }
@@ -746,11 +750,12 @@ section .card-container {
 }
 
 .footer__link {
-  text-align: center;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.6s ease background-color;
 }
 
@@ -759,6 +764,10 @@ section .card-container {
   font-size: 30pt;
   line-height: 70px;
   transition: 0.6s ease color;
+}
+
+.footer__link > img {
+  width: 40px;
 }
 
 .footer__link:hover {

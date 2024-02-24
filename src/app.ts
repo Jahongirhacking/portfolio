@@ -177,6 +177,16 @@ function showOverlay(): void {
 const main = (): void => {
   const currentDate = new Date();
 
+  document.getElementById("duo-link")!.addEventListener("mouseover", () => {
+    (document.querySelector(".duo-img") as HTMLImageElement).src =
+      "./img/Logos/duo_dark.png";
+  });
+
+  document.getElementById("duo-link")!.addEventListener("mouseout", () => {
+    (document.querySelector(".duo-img") as HTMLImageElement).src =
+      "./img/Logos/duo_light.png";
+  });
+
   // Language
   updateDocumentContent();
   document

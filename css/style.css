@@ -767,7 +767,8 @@ section .card-container {
 }
 
 .footer__link > img {
-  width: 40px;
+  max-width: 40px;
+  width: 70%;
 }
 
 .footer__link:hover {

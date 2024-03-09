@@ -1,3 +1,5 @@
+import { description, name } from "commander";
+
 const langObject = {
   eng: {
     flag: "eng.jpg",
@@ -25,16 +27,17 @@ const langObject = {
       title: "PORTFOLIO",
       projects: [
         {
+          name: "Crypto Lab",
+          description:
+            "Crypto Lab is an online platform for sharing the necessary and important information for those interested in the world of cryptocurrencies. Conveniently, you'll be able to get detailed information about your favorite cryptocurrencies and see their prices over time, keep up with the latest news, and convert between cryptocurrencies as research. Used technologies: React + TS, Ant Design, Redux-Toolkit",
+        },
+        {
           name: "Pomodoro 25+5",
           description: `This project is among the assignments of the "freeCodeCamp" course. A Pomodoro app is a time management tool that helps users break their work into intervals called "pomodoros," traditionally 25 minutes in length, separated by short breaks. The Pomodoro technique aims to improve productivity and focus by breaking down work into manageable chunks.`,
         },
         {
           name: "Pokemono",
           description: `"Pokemon" is a web application that I created in the RS School project. It allows users to view a list of Pokemon. Provides details such as Pokemon's name, picture, and other relevant information. It uses an architecture based on React components to efficiently manage and update the User Interface, providing a responsive and interactive experience for users interested in learning Pokemon information. Technologies used: React JS, TypeScript, Sass`,
-        },
-        {
-          name: "Todo List App",
-          description: `I used Binary Search Algorithm to make Reactive state manually in JavaScript by efficiently finding the index of the clicked element from the list of Todos, this enhanced the process of editing and deleting a list. Before deleting, it will show you a modal. I added "Clear All" button to clear everything and a new "read the whole text" function since the text content for list is limited`,
         },
         {
           name: "Scivenia Beta Project",
@@ -102,16 +105,17 @@ const langObject = {
       title: "PORTFEL",
       projects: [
         {
+          name: "Crypto Lab",
+          description:
+            "Crypto Lab - Kriptovalyutalar dunyosiga qiziquvchilar uchun kerakli va muhim bo'lgan ma'lumotlarni onlayn ulashish platformasi. Qulayliklari, siz o'zingizga yoqgan kripto tangalar haqida batafsil ma'lumot olishingiz va turli davrlar oralig'idagi narxlari bilan tanishib chiqish, eng yangi xabarlardan boxabar bo'lish va tadqiqot sifatida kripto tangalar o'rtasida konvertatsiya qilish imkoniyatiga ega bo'lasiz. Foydalanilgan texnologiyalar: React + TS, Ant Design, Redux-Toolkit",
+        },
+        {
           name: "Pomodoro 25+5",
           description: `Ushbu loyiha "freeCodeCamp" kursining topshiriqlari qatoriga kiradi. Pomodoro ilovasi vaqtni boshqarish vositasi boʻlib, foydalanuvchilarga oʻz ishlarini qisqa tanaffuslar bilan ajratilgan, anʼanaviy ravishda 25 daqiqalik “pomodorolar” deb nomlangan intervallarga ajratishga yordam beradi. Pomodoro texnikasi ishni boshqariladigan bo'laklarga bo'lish orqali samaradorlikni oshirish va diqqatni jamlashga qaratilgan.`,
         },
         {
           name: "Pokemono",
           description: `"Pokemono" bu men RS School loyihasida yaratgan veb-ilovadir. U foydalanuvchilarga Pokemonlar roʻyxatini koʻrish imkonini beradi. Pokemonlarning nomi, rasmi va boshqa tegishli maʼlumotlari kabi tafsilotlarni taqdim etadi. U Foydalanuvchi Interfeysini samarali boshqarish va yangilash uchun React komponentlariga asoslangan arxitekturadan foydalanadi, bu Pokemon ma'lumotlarini o'rganishga qiziqqan foydalanuvchilar uchun sezgir va interaktiv tajribani taqdim etadi. Amaldagi texnologiyalar: React JS, TypeScript, Sass`,
-        },
-        {
-          name: "Todo List App",
-          description: `Qilmoqchi bo'lgan ishlaringiz roʻyxatidan bosilgan element indeksini samarali topib, JavaScriptda qoʻlbola reaktiv state yaratish uchun "Ikkilik Qidiruv" algoritmidan foydalandim, bu roʻyxatni tahrirlash va oʻchirish jarayonini kuchaytirdi. O'chirishdan oldin u sizga modalni ko'rsatadi. Men hamma narsani tozalash uchun "Hammasini tozalash" tugmasini va yangi "butun matnni o'qish" funksiyasini qo'shdim, chunki ro'yxatdagi matn tarkibi cheklangan`,
         },
         {
           name: "Scivenia Beta Loyihasi",
@@ -179,16 +183,17 @@ const langObject = {
       title: "PORTFOLIO",
       projects: [
         {
+          name: "Crypto Lab",
+          description:
+            "Crypto Lab ist eine Online-Plattform zum Austausch notwendiger und wichtiger Informationen für diejenigen, die sich für die Welt der Kryptowährungen interessieren. Praktischerweise können Sie detaillierte Informationen über Ihre bevorzugten Kryptowährungen abrufen und deren Preise im Laufe der Zeit verfolgen, über die neuesten Nachrichten auf dem Laufenden bleiben und als Recherche zwischen Kryptowährungen umrechnen. Verwendete Technologien: React + TS, Ant Design, Redux-Toolkit",
+        },
+        {
           name: "Pomodoro 25+5",
           description: `Dieses Projekt gehört zu den Aufgaben des Kurses „freeCodeCamp“. Eine Pomodoro-App ist ein Zeitmanagement-Tool, das Benutzern hilft, ihre Arbeit in Intervalle namens „Pomodoros“ aufzuteilen, die traditionell 25 Minuten lang sind und durch kurze Pausen getrennt sind. Die Pomodoro-Technik zielt darauf ab, die Produktivität und Konzentration zu verbessern, indem sie die Arbeit in überschaubare Abschnitte aufteilt.`,
         },
         {
           name: "Pokemono",
           description: `„Pokemono“ ist eine Webanwendung, die ich im RS School-Projekt erstellt habe. Es ermöglicht Benutzern, eine Liste von Pokémon anzuzeigen. Bietet Details wie den Namen, das Bild und andere relevante Informationen des Pokémon. Es verwendet eine Architektur, die auf React-Komponenten basiert, um die Benutzeroberfläche effizient zu verwalten und zu aktualisieren und Benutzern, die Pokemon-Informationen lernen möchten, ein reaktionsfähiges und interaktives Erlebnis zu bieten. Verwendete Technologien: React JS, TypeScript, Sass`,
-        },
-        {
-          name: "Todo Listen App",
-          description: `Um den Index eines angeklickten Elements in Ihrer To-Do-Liste effektiv zu finden, habe ich den binären Suchalgorithmus verwendet, um einen Dummy-Reaktionszustand in JavaScript zu erstellen, der den Prozess des Bearbeitens und Löschens der Liste vereinfacht. Vor dem Löschen wird Ihnen das Modal angezeigt. Ich habe eine Schaltfläche „Alle löschen“ und eine neue Funktion „Gesamten Text lesen“ hinzugefügt, um alles zu löschen, da der Textinhalt in der Liste begrenzt ist`,
         },
         {
           name: "Scivenia Beta-Projekt",

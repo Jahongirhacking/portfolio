@@ -27,17 +27,23 @@ const langObject = {
       title: "PORTFOLIO",
       projects: [
         {
+          name: "Sertifikat.edu.uz",
+          description:
+            "This website provides a database of international certificates for languages ​​and general education subjects recognized in the Republic of Uzbekistan. The site's main purpose is to provide information about educational tools, pedagogues, government agencies, international certification control processes, and security. Used technologies: Next.js, React + TS, Ant Design",
+        },
+        {
+          name: "EDUCAP Tournament Website",
+          description:
+            "The ESports EDUCAP Tournament website showcases the 2024 e-sports competition organized by the Ministry of Higher Education, Science, and Innovation in Tashkent, held from May 10-23. The event aimed to popularize e-sports and train students to work with information systems, equipping them with the skills to host large-scale tournaments in the future. Used technologies: Next.js, React + TS, Ant Design",
+        },
+        {
           name: "Crypto Lab",
           description:
             "Crypto Lab is an online platform for sharing the necessary and important information for those interested in the world of cryptocurrencies. Conveniently, you'll be able to get detailed information about your favorite cryptocurrencies and see their prices over time, keep up with the latest news, and convert between cryptocurrencies as research. Used technologies: React + TS, Ant Design, Redux-Toolkit",
         },
         {
           name: "Pomodoro 25+5",
-          description: `This project is among the assignments of the "freeCodeCamp" course. A Pomodoro app is a time management tool that helps users break their work into intervals called "pomodoros," traditionally 25 minutes in length, separated by short breaks. The Pomodoro technique aims to improve productivity and focus by breaking down work into manageable chunks.`,
-        },
-        {
-          name: "Pokemono",
-          description: `"Pokemon" is a web application that I created in the RS School project. It allows users to view a list of Pokemon. Provides details such as Pokemon's name, picture, and other relevant information. It uses an architecture based on React components to efficiently manage and update the User Interface, providing a responsive and interactive experience for users interested in learning Pokemon information. Technologies used: React JS, TypeScript, Sass`,
+          description: `This project is among the assignments of the "freeCodeCamp" course. A Pomodoro app is a time management tool that helps users break their work into intervals called "pomodoros," traditionally 25 minutes in length, separated by short breaks. The Pomodoro technique aims to improve productivity and focus by breaking down work into manageable chunks. Used technologies: React + TS, SASS`,
         },
         {
           name: "Scivenia Beta Project",
@@ -46,10 +52,6 @@ const langObject = {
         {
           name: "68th School App",
           description: `68-DIMI WebApp - This application was created for students of our school in Uzbekistan. In this project, the students can play games, solve problems, take tests and compete to win. It has a leaderboard to show top students who collect points by taking tests and exams which being organized by the App. Used technologies: HTML, CSS, JavaScript and PHP`,
-        },
-        {
-          name: "Apple Layout",
-          description: `I was going to sharpen my CSS skills to work with Flexbox ang Grid Layouts. I choose Apple's website and tried to build its clone. I hope this layout looks like the real Apple Website. Used technologies: HTML and CSS`,
         },
         {
           name: "Frontend Mentor Profile",
@@ -105,29 +107,31 @@ const langObject = {
       title: "PORTFEL",
       projects: [
         {
+          name: "Sertifikat.edu.uz",
+          description:
+            "Ushbu veb-sayt Oʻzbekiston Respublikasida tan olingan tillar va umumtaʼlim fanlari boʻyicha xalqaro sertifikatlar maʼlumotlar bazasini taqdim etadi. Saytning asosiy maqsadi ta’lim vositalari, pedagoglar, davlat idoralari, xalqaro sertifikatlashtirish nazorati jarayonlari va xavfsizlik haqida ma’lumot berishdir. Foydalanilgan texnologiyalar: Next.js, React + TS, Ant Design",
+        },
+        {
+          name: "EDUCAP Turniri Web-sayti",
+          description:
+            "ESports EDUCAP Turniri veb-saytida 10-23 may kunlari Toshkentda Oliy taʼlim, fan va innovatsiyalar vazirligi tomonidan oʻtkaziladigan 2024 yilgi e-sport musobaqasi namoyish etilgan. Tadbirdan ko‘zlangan maqsad kibersportni ommalashtirish va o‘quvchilarni axborot tizimlari bilan ishlashga o‘rgatish, ularni kelajakda keng ko‘lamli turnirlar o‘tkazish ko‘nikmasini shakllantirishdan iborat edi. Foydalanilgan texnologiyalar: Next.js, React + TS, Ant Design",
+        },
+        {
           name: "Crypto Lab",
           description:
             "Crypto Lab - Kriptovalyutalar dunyosiga qiziquvchilar uchun kerakli va muhim bo'lgan ma'lumotlarni onlayn ulashish platformasi. Qulayliklari, siz o'zingizga yoqgan kripto tangalar haqida batafsil ma'lumot olishingiz va turli davrlar oralig'idagi narxlari bilan tanishib chiqish, eng yangi xabarlardan boxabar bo'lish va tadqiqot sifatida kripto tangalar o'rtasida konvertatsiya qilish imkoniyatiga ega bo'lasiz. Foydalanilgan texnologiyalar: React + TS, Ant Design, Redux-Toolkit",
         },
         {
           name: "Pomodoro 25+5",
-          description: `Ushbu loyiha "freeCodeCamp" kursining topshiriqlari qatoriga kiradi. Pomodoro ilovasi vaqtni boshqarish vositasi boʻlib, foydalanuvchilarga oʻz ishlarini qisqa tanaffuslar bilan ajratilgan, anʼanaviy ravishda 25 daqiqalik “pomodorolar” deb nomlangan intervallarga ajratishga yordam beradi. Pomodoro texnikasi ishni boshqariladigan bo'laklarga bo'lish orqali samaradorlikni oshirish va diqqatni jamlashga qaratilgan.`,
-        },
-        {
-          name: "Pokemono",
-          description: `"Pokemono" bu men RS School loyihasida yaratgan veb-ilovadir. U foydalanuvchilarga Pokemonlar roʻyxatini koʻrish imkonini beradi. Pokemonlarning nomi, rasmi va boshqa tegishli maʼlumotlari kabi tafsilotlarni taqdim etadi. U Foydalanuvchi Interfeysini samarali boshqarish va yangilash uchun React komponentlariga asoslangan arxitekturadan foydalanadi, bu Pokemon ma'lumotlarini o'rganishga qiziqqan foydalanuvchilar uchun sezgir va interaktiv tajribani taqdim etadi. Amaldagi texnologiyalar: React JS, TypeScript, Sass`,
+          description: `Ushbu loyiha "freeCodeCamp" kursining topshiriqlari qatoriga kiradi. Pomodoro ilovasi vaqtni boshqarish vositasi boʻlib, foydalanuvchilarga oʻz ishlarini qisqa tanaffuslar bilan ajratilgan, anʼanaviy ravishda 25 daqiqalik “pomodorolar” deb nomlangan intervallarga ajratishga yordam beradi. Pomodoro texnikasi ishni boshqariladigan bo'laklarga bo'lish orqali samaradorlikni oshirish va diqqatni jamlashga qaratilgan. Foydalanilgan texnologiyalar: React + TS, SASS`,
         },
         {
           name: "Scivenia Beta Loyihasi",
-          description: `Ushbu universitet dasturiy loyihasining bir qismi sifatida biz kattaroq veb-ilovaning o'ziga xos funksiyasini yaratdik. Ushbu funktsiyaning maqsadi tadqiqotchilar va olimlar o'rtasidagi ilmiy hamkorlikni vizual ko'rinishda namoyish qilishdir. Men tadqiqotchining barcha hamkorlarini topish uchun mijoz tomonida "Kenglik Bo'yicha Qidirish" algoritmidan foydalandim. Ishlatilgan texnologiyalar: React JS va Sigma JS`,
+          description: `Ushbu universitet dasturiy loyihasining bir qismi sifatida biz kattaroq veb-ilovaning o'ziga xos funksiyasini yaratdik. Ushbu funktsiyaning maqsadi tadqiqotchilar va olimlar o'rtasidagi ilmiy hamkorlikni vizual ko'rinishda namoyish qilishdir. Men tadqiqotchining barcha hamkorlarini topish uchun mijoz tomonida "Kenglik Bo'yicha Qidirish" algoritmidan foydalandim. Foydalanilgan texnologiyalar: React JS va Sigma JS`,
         },
         {
           name: "68-DIMI App",
-          description: `68-DIMI WebApp - Ushbu ilova G'uzor tumanidagi 68-sonli ixtisoslashtirilgan maktabimiz o'quvchilari uchun yaratilgan. Ushbu loyihada o'quvchilar o'yin o'ynashlari, muammolarni hal qilishlari, testlarni yechishlari va g'alaba qozonish uchun kurashishlari mumkin. Ilova tomonidan tashkil etilgan test va imtihonlarni topshirish orqali ball to'plagan eng yaxshi talabalarni ko'rsatish uchun peshqadamlar jadvali mavjud. Ishlatilgan texnologiyalar: HTML, CSS, JavaScript va PHP`,
-        },
-        {
-          name: "Apple Maketi",
-          description: `Men Flexbox va Grid maketlar bilan ishlash uchun stillash ko'nikmalarimni oshirmoqchi edim. Men Apple veb-saytini tanladim va uning o'xshash klonini yaratishga harakat qildim. Umid qilamanki, bu maket haqiqiy Apple veb-saytiga o'xshadi. Ishlatilgan texnologiyalar: HTML va CSS`,
+          description: `68-DIMI WebApp - Ushbu ilova G'uzor tumanidagi 68-sonli ixtisoslashtirilgan maktabimiz o'quvchilari uchun yaratilgan. Ushbu loyihada o'quvchilar o'yin o'ynashlari, muammolarni hal qilishlari, testlarni yechishlari va g'alaba qozonish uchun kurashishlari mumkin. Ilova tomonidan tashkil etilgan test va imtihonlarni topshirish orqali ball to'plagan eng yaxshi talabalarni ko'rsatish uchun peshqadamlar jadvali mavjud. Foydalanilgan texnologiyalar: HTML, CSS, JavaScript va PHP`,
         },
         {
           name: "Frontend Mentor Profilim",
@@ -183,17 +187,23 @@ const langObject = {
       title: "PORTFOLIO",
       projects: [
         {
+          name: "Sertifikat.edu.uz",
+          description:
+            "Diese Website bietet eine Datenbank mit internationalen Zertifikaten für Sprachen und allgemeinbildende Fächer, die in der Republik Usbekistan anerkannt sind. Der Hauptzweck der Website besteht darin, Informationen über Bildungsinstrumente, Pädagogen, Regierungsbehörden, internationale Zertifizierungskontrollprozesse und Sicherheit bereitzustellen. Verwendete Technologien: Next.js, React + TS, Ant Design",
+        },
+        {
+          name: "EDUCAP-Turnier Website",
+          description:
+            "Auf der Website des ESports EDUCAP Tournament wird der E-Sport-Wettbewerb 2024 vorgestellt, der vom Ministerium für Hochschulbildung, Wissenschaft und Innovation in Taschkent organisiert wird und vom 10. bis 23. Mai stattfindet. Ziel der Veranstaltung war es, E-Sport populär zu machen und Studenten im Umgang mit Informationssystemen auszubilden, um sie mit den Fähigkeiten auszustatten, in Zukunft große Turniere auszurichten. Verwendete Technologien: Next.js, React + TS, Ant Design",
+        },
+        {
           name: "Crypto Lab",
           description:
             "Crypto Lab ist eine Online-Plattform zum Austausch notwendiger und wichtiger Informationen für diejenigen, die sich für die Welt der Kryptowährungen interessieren. Praktischerweise können Sie detaillierte Informationen über Ihre bevorzugten Kryptowährungen abrufen und deren Preise im Laufe der Zeit verfolgen, über die neuesten Nachrichten auf dem Laufenden bleiben und als Recherche zwischen Kryptowährungen umrechnen. Verwendete Technologien: React + TS, Ant Design, Redux-Toolkit",
         },
         {
           name: "Pomodoro 25+5",
-          description: `Dieses Projekt gehört zu den Aufgaben des Kurses „freeCodeCamp“. Eine Pomodoro-App ist ein Zeitmanagement-Tool, das Benutzern hilft, ihre Arbeit in Intervalle namens „Pomodoros“ aufzuteilen, die traditionell 25 Minuten lang sind und durch kurze Pausen getrennt sind. Die Pomodoro-Technik zielt darauf ab, die Produktivität und Konzentration zu verbessern, indem sie die Arbeit in überschaubare Abschnitte aufteilt.`,
-        },
-        {
-          name: "Pokemono",
-          description: `„Pokemono“ ist eine Webanwendung, die ich im RS School-Projekt erstellt habe. Es ermöglicht Benutzern, eine Liste von Pokémon anzuzeigen. Bietet Details wie den Namen, das Bild und andere relevante Informationen des Pokémon. Es verwendet eine Architektur, die auf React-Komponenten basiert, um die Benutzeroberfläche effizient zu verwalten und zu aktualisieren und Benutzern, die Pokemon-Informationen lernen möchten, ein reaktionsfähiges und interaktives Erlebnis zu bieten. Verwendete Technologien: React JS, TypeScript, Sass`,
+          description: `Dieses Projekt gehört zu den Aufgaben des Kurses „freeCodeCamp“. Eine Pomodoro-App ist ein Zeitmanagement-Tool, das Benutzern hilft, ihre Arbeit in Intervalle namens „Pomodoros“ aufzuteilen, die traditionell 25 Minuten lang sind und durch kurze Pausen getrennt sind. Die Pomodoro-Technik zielt darauf ab, die Produktivität und Konzentration zu verbessern, indem sie die Arbeit in überschaubare Abschnitte aufteilt. Verwendete Technologien: React + TS, SASS`,
         },
         {
           name: "Scivenia Beta-Projekt",
@@ -202,10 +212,6 @@ const langObject = {
         {
           name: "68. Schulapp",
           description: `68-DIMI WebApp – Diese Anwendung wurde für Schüler unserer Fachschule Nr. 68 im Bezirk Guzor erstellt. In diesem Projekt können Schüler Spiele spielen, Probleme lösen, Tests lösen und um den Sieg kämpfen. Es gibt eine Bestenliste, auf der die besten Schüler angezeigt werden, die bei den von der App organisierten Tests und Prüfungen Punkte erzielt haben. Verwendete Technologien: HTML, CSS, JavaScript und PHP`,
-        },
-        {
-          name: "Apple-Layout",
-          description: `Ich wollte meine CSS-Kenntnisse verbessern, um mit Flexbox und Grid-Layouts arbeiten zu können. Ich habe die Website von Apple ausgewählt und versucht, einen Klon davon zu erstellen. Ich hoffe, dass dieses Layout wie die echte Apple-Website aussieht. Verwendete Technologien: HTML und CSS`,
         },
         {
           name: "Frontend-Mentor-Profil",

@@ -20,12 +20,17 @@ const langObject = {
       title: "About Me",
       info: `I am a ${
         new Date().getFullYear() - 2004
-      } year old Web Developer. I am currently studying at the Tashkent Institute of Textile and Light Industry in Uzbekistan and in my spare time I am studying modern libraries and frameworks in the field of Web Development, and I have tried myself in several small projects so far. Innopolis University courses helped me to learn the basic concepts of "Software Design", "Data Structures and Algorithms", especially "Graph Theory". In addition, I try to solve problems of various difficulties on the Leetcode platform every day using my favorite programming languages JavaScript and C++. I think these skills of mine will help you!`,
+      } year old Web Developer. Currently, I am a Frontend developer at the "Center for the Development of Digital Education Technologies" under the Ministry of Higher Education, Science, and Innovations of the Republic of Uzbekistan. Innopolis University courses helped me to learn the basic concepts of "Software Design", "Data Structures and Algorithms", especially "Graph Theory". In addition, I try to solve problems of various difficulties on the Leetcode platform every day using my favorite programming languages JavaScript and C++. I think these skills of mine will help you!`,
       btn: "MORE INFO",
     },
     portfolio: {
       title: "PORTFOLIO",
       projects: [
+        {
+          name: "MY.HEMIS.UZ",
+          description:
+            'HEMIS (Higher Education Management Information System) - is an information system that allows you to manage the educational process online. The Hemis system included modules such as "Administrative Management", "Educational Process", "Scientific Activities" and "Financial Management". Currently, Hemis is used by more than 217 higher education institutions and more than 1 million users (students and teachers).. Used technologies: React + TS, Ant Design',
+        },
         {
           name: "Sertifikat.edu.uz",
           description:
@@ -100,12 +105,17 @@ const langObject = {
       title: "MEN HAQIMDA",
       info: `Men ${
         new Date().getFullYear() - 2004
-      } yoshli Web Dasturchiman. Hozirda O‘zbekistondagi Toshkent to‘qimachilik va yengil sanoat institutida tahsil olyapman va bo‘sh vaqtimda Web Development bo‘yicha ushbu sohadagi zamonaviy kutubxona va freymvorklarni o‘rganyapman, shuningdek, hozirgacha bir qancha kichik loyihalarda o'zimni sinab ko'rganman. Innopolis Universiteti kurslari menga "Dasturiy Ta'minotni Loyihalash", "Ma'lumotlar Tuzilmalari va Algoritmlar"ning asosiy tushunchalarini, ayniqsa "Graf Nazariyasi"ni o'rganishga yordam berdi. Bundan tashqari, men har kuni Leetcode platformasidagi turli qiyinchilikdagi masalalarni sevimli JavaScript va C++ dasturlash tillari yordamida yechishga harakat qilaman. O'ylashimcha, mening bu qobiliyatlarim sizga yordam beradi!`,
+      } yoshli Web Dasturchiman. Hozirda O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi huzuridagi "Raqamli ta'lim texnologiyalarini rivojlantirish markazi"da Frontend dasturchiman. Innopolis Universiteti kurslari menga "Dasturiy Ta'minotni Loyihalash", "Ma'lumotlar Tuzilmalari va Algoritmlar"ning asosiy tushunchalarini, ayniqsa "Graf Nazariyasi"ni o'rganishga yordam berdi. Bundan tashqari, men har kuni Leetcode platformasidagi turli qiyinchilikdagi masalalarni sevimli JavaScript va C++ dasturlash tillari yordamida yechishga harakat qilaman. O'ylashimcha, mening bu qobiliyatlarim sizga yordam beradi!`,
       btn: "Ko'proq Bilish",
     },
     portfolio: {
       title: "PORTFEL",
       projects: [
+        {
+          name: "MY.HEMIS.UZ",
+          description:
+            'HEMIS (Higher Education Management Information System) - bu ta\'lim jarayonini onlayn boshqarish imkonini beruvchi axborot tizimi. Hemis tizimiga "Ma\'muriy Boshqaruv", "Ta\'lim Jarayoni", "Ilmiy Faoliyatlar" va "Moliyaviy Boshqaruv" kabi modullar kiradi. Hozirda Hemis tizimidan 217 dan ortiq oliy ta\'lim muassasalari va 1 milliondan ortiq foydalanuvchilar (talabalar va o\'qituvchilar) foydalanmoqda. Foydalanilgan texnologiyalar: React + TS, Ant Design',
+        },
         {
           name: "Sertifikat.edu.uz",
           description:
@@ -180,12 +190,17 @@ const langObject = {
       title: "Über mich",
       info: `Ich bin ein ${
         new Date().getFullYear() - 2004
-      }-jähriger Webentwickler. Ich studiere derzeit am Tashkent Institute of Textile and Light Industry in Usbekistan und beschäftige mich in meiner Freizeit mit modernen Bibliotheken und Frameworks in diesem Bereich der Webentwicklung und habe mich bisher in mehreren kleinen Projekten versucht. Die Kurse der Innopolis University haben mir geholfen, die Grundkonzepte von „Softwaredesign“, „Datenstrukturen und Algorithmen“ und insbesondere „Graphentheorie“ zu erlernen. Darüber hinaus versuche ich täglich, Probleme unterschiedlicher Schwierigkeitsgrade auf der Leetcode-Plattform zu lösen, indem ich meine Lieblingsprogrammiersprachen JavaScript und C++ verwende. Ich denke, diese meiner Fähigkeiten werden Ihnen helfen!`,
+      }-jähriger Webentwickler. Derzeit bin ich Frontend-Entwickler im "Zentrum für die Entwicklung digitaler Bildungstechnologien" unter dem Ministerium für Hochschulbildung, Wissenschaft und Innovationen der Republik Usbekistan. Die Kurse der Innopolis University haben mir geholfen, die Grundkonzepte von „Softwaredesign“, „Datenstrukturen und Algorithmen“ und insbesondere „Graphentheorie“ zu erlernen. Darüber hinaus versuche ich täglich, Probleme unterschiedlicher Schwierigkeitsgrade auf der Leetcode-Plattform zu lösen, indem ich meine Lieblingsprogrammiersprachen JavaScript und C++ verwende. Ich denke, diese meiner Fähigkeiten werden Ihnen helfen!`,
       btn: "MEHR INFO",
     },
     portfolio: {
       title: "PORTFOLIO",
       projects: [
+        {
+          name: "MY.HEMIS.UZ",
+          description:
+            'HEMIS (Higher Education Management Information System) - ist ein Informationssystem, das die Verwaltung des Bildungsprozesses online ermöglicht. Das Hemis-System umfasst Module wie "Verwaltungsmanagement", "Bildungsprozess", "Wissenschaftliche Aktivitäten" und "Finanzmanagement". Derzeit wird Hemis von mehr als 217 Hochschulen und über 1 Million Nutzern (Studenten und Lehrern) verwendet. Verwendete Technologien: React + TS, Ant Design',
+        },
         {
           name: "Sertifikat.edu.uz",
           description:

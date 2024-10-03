@@ -54,6 +54,18 @@
   }
 }
 
+@keyframes animatePatternBadge {
+  0% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -426,8 +438,8 @@ li {
   z-index: 0;
   right: 15px;
   bottom: -10px;
-  transform: rotate(80deg);
-  animation: animatePattern 5s ease infinite;
+  transform: rotate(30deg);
+  animation: animatePatternBadge 5s ease infinite;
 }
 
 /* ABOUT ME SECTION */

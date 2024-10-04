@@ -1,4 +1,3 @@
-
 @media (min-width: 751px) and (max-width: 850px) {
   * {
     --info-font-size: 14pt;
@@ -22,7 +21,6 @@
     font-size: 35px;
   }
 
-  
   #skills {
     gap: 40px;
   }
@@ -32,7 +30,8 @@
     font-size: 16pt;
   }
 
-  .skill-title, .achievements__title {
+  .skill-title,
+  .achievements__title {
     letter-spacing: 4px;
     font-size: 14pt;
   }
@@ -42,7 +41,7 @@
   }
 
   .card-container > .card {
-    width:45%;
+    width: 45%;
   }
 
   .card > .card__info {
@@ -75,5 +74,8 @@
     line-height: 22pt;
     max-height: 280px;
     overflow: auto;
+    overflow-x: hidden;
+    scrollbar-color: #39e8c873 transparent;
+    scrollbar-width: thin !important;
   }
 }

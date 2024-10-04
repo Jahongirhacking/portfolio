@@ -32,13 +32,13 @@
 
 @keyframes animateTriangle {
   0% {
-    transform: rotate(-85deg);
+    transform: rotate(-5deg);
   }
   50% {
-    transform: rotate(-105deg);
+    transform: rotate(-25deg);
   }
   100% {
-    transform: rotate(-85deg);
+    transform: rotate(-5deg);
   }
 }
 
@@ -56,13 +56,13 @@
 
 @keyframes animatePatternBadge {
   0% {
-    transform: rotate(30deg);
+    transform: rotate(20deg);
   }
   50% {
-    transform: rotate(50deg);
+    transform: rotate(40deg);
   }
   100% {
-    transform: rotate(30deg);
+    transform: rotate(20deg);
   }
 }
 
@@ -423,10 +423,10 @@ li {
 }
 
 .header__img > .header__triangle-img {
-  width: 22%;
+  width: 18%;
   z-index: 2;
   position: absolute;
-  left: 46px;
+  left: 60px;
   top: -20px;
   transform: rotate(-85deg);
   animation: animateTriangle 4s ease infinite;
@@ -468,8 +468,11 @@ li {
   font-size: var(--info-font-size);
   line-height: 23pt;
   max-height: 235px;
-  overflow: auto;
   padding-right: 8px;
+  overflow: auto;
+  overflow-x: hidden;
+  scrollbar-color: #39e8c873 transparent;
+  scrollbar-width: thin !important;
 }
 
 .about_me__link {
@@ -675,6 +678,7 @@ section .card-container {
 .portfolio__description > .portfolio__info {
   margin: auto;
   font-size: 15pt;
+  line-height: 24pt;
   color: var(--text-color-shadow);
 }
 

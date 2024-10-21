@@ -110,6 +110,7 @@
     overflow-x: hidden;
     scrollbar-color: #39e8c873 transparent;
     scrollbar-width: thin !important;
+    line-height: 19pt;
   }
 
   .portfolio__link {

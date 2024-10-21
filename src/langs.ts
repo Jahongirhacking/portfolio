@@ -32,6 +32,11 @@ const langObject = {
             'HEMIS (Higher Education Management Information System) - is an information system that allows you to manage the educational process online. The Hemis system included modules such as "Administrative Management", "Educational Process", "Scientific Activities" and "Financial Management". Currently, Hemis is used by more than 217 higher education institutions and more than 1 million users (students and teachers).. Used technologies: React + TS, Ant Design',
         },
         {
+          name: "LESSON-SCHEDULE-REACT",
+          description:
+            "The lesson-schedule-react package provides a customizable timetable component for React applications. It allows users to create lesson schedules with ease by simply passing schedule items as props. The timetable can display schedules on a daily or weekly basis and supports custom schedule components, multiple languages, and theme customization. It also offers a lightweight version without configurations for more flexibility. Used technologies: React + TS, Ant Design",
+        },
+        {
           name: "Sertifikat.edu.uz",
           description:
             "This website provides a database of international certificates for languages ​​and general education subjects recognized in the Republic of Uzbekistan. The site's main purpose is to provide information about educational tools, pedagogues, government agencies, international certification control processes, and security. Used technologies: Next.js, React + TS, Ant Design",
@@ -117,6 +122,11 @@ const langObject = {
             'HEMIS (Higher Education Management Information System) - bu ta\'lim jarayonini onlayn boshqarish imkonini beruvchi axborot tizimi. Hemis tizimiga "Ma\'muriy Boshqaruv", "Ta\'lim Jarayoni", "Ilmiy Faoliyatlar" va "Moliyaviy Boshqaruv" kabi modullar kiradi. Hozirda Hemis tizimidan 217 dan ortiq oliy ta\'lim muassasalari va 1 milliondan ortiq foydalanuvchilar (talabalar va o\'qituvchilar) foydalanmoqda. Foydalanilgan texnologiyalar: React + TS, Ant Design',
         },
         {
+          name: "LESSON-SCHEDULE-REACT",
+          description:
+            "lesson-schedule-react - bu React ilovalari uchun moslashtirilgan jadval komponentini taqdim etuvchi paket. Bu foydalanuvchilarga jadval elementlarini property sifatida berish orqali osonlik bilan dars jadvallarini yaratish imkonini beradi. Jadval kunlik yoki haftalik jadvallarni ko'rsatishi mumkin va maxsus jadval komponentlarini, bir nechta tillarni va mavzuni sozlashni qo'llab-quvvatlaydi. Bundan tashqari, ko'proq moslashuvchanlik uchun konfiguratsiyalarsiz yengil versiyani taklif qiladi. Ishlatilgan texnologiyalar: React + TS, Ant Design",
+        },
+        {
           name: "Sertifikat.edu.uz",
           description:
             "Ushbu veb-sayt Oʻzbekiston Respublikasida tan olingan tillar va umumtaʼlim fanlari boʻyicha xalqaro sertifikatlar maʼlumotlar bazasini taqdim etadi. Saytning asosiy maqsadi ta’lim vositalari, pedagoglar, davlat idoralari, xalqaro sertifikatlashtirish nazorati jarayonlari va xavfsizlik haqida ma’lumot berishdir. Foydalanilgan texnologiyalar: Next.js, React + TS, Ant Design",
@@ -200,6 +210,11 @@ const langObject = {
           name: "MY.HEMIS.UZ",
           description:
             'HEMIS (Higher Education Management Information System) - ist ein Informationssystem, das die Verwaltung des Bildungsprozesses online ermöglicht. Das Hemis-System umfasst Module wie "Verwaltungsmanagement", "Bildungsprozess", "Wissenschaftliche Aktivitäten" und "Finanzmanagement". Derzeit wird Hemis von mehr als 217 Hochschulen und über 1 Million Nutzern (Studenten und Lehrern) verwendet. Verwendete Technologien: React + TS, Ant Design',
+        },
+        {
+          name: "LESSON-SCHEDULE-REACT",
+          description:
+            "Das Paket lesson-schedule-react bietet eine anpassbare Stundenplankomponente für React-Anwendungen. Es ermöglicht Benutzern, mühelos Stundenpläne zu erstellen, indem sie einfach Stundenplanelemente als Requisiten übergeben. Der Stundenplan kann Stundenpläne auf täglicher oder wöchentlicher Basis anzeigen und unterstützt benutzerdefinierte Stundenplankomponenten, mehrere Sprachen und die Anpassung von Themen. Es bietet auch eine leichte Version ohne Konfigurationen für mehr Flexibilität. Verwendete Technologien: React + TS, Ant Design",
         },
         {
           name: "Sertifikat.edu.uz",

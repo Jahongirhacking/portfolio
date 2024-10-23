@@ -42,9 +42,9 @@ const langObject = {
             "This website provides a database of international certificates for languages ​​and general education subjects recognized in the Republic of Uzbekistan. The site's main purpose is to provide information about educational tools, pedagogues, government agencies, international certification control processes, and security. Used technologies: Next.js, React + TS, Ant Design",
         },
         {
-          name: "EDUCAP Tournament Website",
+          name: "EDUCUP Tournament Website",
           description:
-            "The ESports EDUCAP Tournament website showcases the 2024 e-sports competition organized by the Ministry of Higher Education, Science, and Innovation in Tashkent, held from May 10-23. The event aimed to popularize e-sports and train students to work with information systems, equipping them with the skills to host large-scale tournaments in the future. Used technologies: Next.js, React + TS, Ant Design",
+            "The ESports EDUCUP Tournament website showcases the 2024 e-sports competition organized by the Ministry of Higher Education, Science, and Innovation in Tashkent, held from May 10-23. The event aimed to popularize e-sports and train students to work with information systems, equipping them with the skills to host large-scale tournaments in the future. Used technologies: Next.js, React + TS, Ant Design",
         },
         {
           name: "Crypto Lab",
@@ -132,9 +132,9 @@ const langObject = {
             "Ushbu veb-sayt Oʻzbekiston Respublikasida tan olingan tillar va umumtaʼlim fanlari boʻyicha xalqaro sertifikatlar maʼlumotlar bazasini taqdim etadi. Saytning asosiy maqsadi ta’lim vositalari, pedagoglar, davlat idoralari, xalqaro sertifikatlashtirish nazorati jarayonlari va xavfsizlik haqida ma’lumot berishdir. Foydalanilgan texnologiyalar: Next.js, React + TS, Ant Design",
         },
         {
-          name: "EDUCAP Turniri Web-sayti",
+          name: "EDUCUP Turniri Web-sayti",
           description:
-            "ESports EDUCAP Turniri veb-saytida 10-23 may kunlari Toshkentda Oliy taʼlim, fan va innovatsiyalar vazirligi tomonidan oʻtkaziladigan 2024 yilgi e-sport musobaqasi namoyish etilgan. Tadbirdan ko‘zlangan maqsad kibersportni ommalashtirish va o‘quvchilarni axborot tizimlari bilan ishlashga o‘rgatish, ularni kelajakda keng ko‘lamli turnirlar o‘tkazish ko‘nikmasini shakllantirishdan iborat edi. Foydalanilgan texnologiyalar: Next.js, React + TS, Ant Design",
+            "ESports EDUCUP Turniri veb-saytida 10-23 may kunlari Toshkentda Oliy taʼlim, fan va innovatsiyalar vazirligi tomonidan oʻtkaziladigan 2024 yilgi e-sport musobaqasi namoyish etilgan. Tadbirdan ko‘zlangan maqsad kibersportni ommalashtirish va o‘quvchilarni axborot tizimlari bilan ishlashga o‘rgatish, ularni kelajakda keng ko‘lamli turnirlar o‘tkazish ko‘nikmasini shakllantirishdan iborat edi. Foydalanilgan texnologiyalar: Next.js, React + TS, Ant Design",
         },
         {
           name: "Crypto Lab",
@@ -222,9 +222,9 @@ const langObject = {
             "Diese Website bietet eine Datenbank mit internationalen Zertifikaten für Sprachen und allgemeinbildende Fächer, die in der Republik Usbekistan anerkannt sind. Der Hauptzweck der Website besteht darin, Informationen über Bildungsinstrumente, Pädagogen, Regierungsbehörden, internationale Zertifizierungskontrollprozesse und Sicherheit bereitzustellen. Verwendete Technologien: Next.js, React + TS, Ant Design",
         },
         {
-          name: "EDUCAP-Turnier Website",
+          name: "EDUCUP-Turnier Website",
           description:
-            "Auf der Website des ESports EDUCAP Tournament wird der E-Sport-Wettbewerb 2024 vorgestellt, der vom Ministerium für Hochschulbildung, Wissenschaft und Innovation in Taschkent organisiert wird und vom 10. bis 23. Mai stattfindet. Ziel der Veranstaltung war es, E-Sport populär zu machen und Studenten im Umgang mit Informationssystemen auszubilden, um sie mit den Fähigkeiten auszustatten, in Zukunft große Turniere auszurichten. Verwendete Technologien: Next.js, React + TS, Ant Design",
+            "Auf der Website des ESports EDUCUP Tournament wird der E-Sport-Wettbewerb 2024 vorgestellt, der vom Ministerium für Hochschulbildung, Wissenschaft und Innovation in Taschkent organisiert wird und vom 10. bis 23. Mai stattfindet. Ziel der Veranstaltung war es, E-Sport populär zu machen und Studenten im Umgang mit Informationssystemen auszubilden, um sie mit den Fähigkeiten auszustatten, in Zukunft große Turniere auszurichten. Verwendete Technologien: Next.js, React + TS, Ant Design",
         },
         {
           name: "Crypto Lab",

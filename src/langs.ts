@@ -1,5 +1,3 @@
-import { description, name } from "commander";
-
 const langObject = {
   eng: {
     flag: "eng.jpg",
@@ -18,9 +16,7 @@ const langObject = {
     },
     about: {
       title: "About Me",
-      info: `I am a ${
-        new Date().getFullYear() - 2004
-      } year old Web Developer. Currently, I am a Frontend developer at the "Center for the Development of Digital Education Technologies" under the Ministry of Higher Education, Science, and Innovations of the Republic of Uzbekistan. Innopolis University courses helped me to learn the basic concepts of "Software Design", "Data Structures and Algorithms", especially "Graph Theory". In addition, I try to solve problems of various difficulties on the Leetcode platform every day using my favorite programming languages JavaScript and C++. I think these skills of mine will help you!`,
+      info: `I am a passionate frontend developer with a solid foundation in JavaScript, TypeScript, and React. Driven by a problem-solving mindset, I specialize in building scalable, high-performance web applications. Currently, I work at the Center for the Development of Digital Education Technologies under the Ministry of Higher Education, Science, and Innovations of Uzbekistan, where I contribute to developing digital solutions aimed at improving access to education`,
       btn: "MORE INFO",
     },
     portfolio: {
@@ -32,28 +28,24 @@ const langObject = {
             'HEMIS (Higher Education Management Information System) - is an information system that allows you to manage the educational process online. The Hemis system included modules such as "Administrative Management", "Educational Process", "Scientific Activities" and "Financial Management". Currently, Hemis is used by more than 217 higher education institutions and more than 1 million users (students and teachers).. Used technologies: React + TS, Ant Design',
         },
         {
+          name: "MUHANDIS.EDU.UZ",
+          description:
+            "Teachers, students and practicing engineers can participate in the Republican competition in engineering areas conducted by the Ministry of Higher Education and Innovation",
+        },
+        {
+          name: "Checklist Bot",
+          description:
+            "A customizable task and activity tracker for workouts, learning, and personal goals. Users can create tasks, track progress, and receive daily summaries via Telegram. Features include dark/light mode, multilingual support, and a responsive UI.",
+        },
+        {
           name: "LESSON-SCHEDULE-REACT",
           description:
             "The lesson-schedule-react package provides a customizable timetable component for React applications. It allows users to create lesson schedules with ease by simply passing schedule items as props. The timetable can display schedules on a daily or weekly basis and supports custom schedule components, multiple languages, and theme customization. It also offers a lightweight version without configurations for more flexibility. Used technologies: React + TS, Ant Design",
         },
         {
-          name: "Sertifikat.edu.uz",
-          description:
-            "This website provides a database of international certificates for languages ​​and general education subjects recognized in the Republic of Uzbekistan. The site's main purpose is to provide information about educational tools, pedagogues, government agencies, international certification control processes, and security. Used technologies: Next.js, React + TS, Ant Design",
-        },
-        {
-          name: "EDUCUP Tournament Website",
-          description:
-            "The ESports EDUCUP Tournament website showcases the 2024 e-sports competition organized by the Ministry of Higher Education, Science, and Innovation in Tashkent, held from May 10-23. The event aimed to popularize e-sports and train students to work with information systems, equipping them with the skills to host large-scale tournaments in the future. Used technologies: Next.js, React + TS, Ant Design",
-        },
-        {
           name: "Crypto Lab",
           description:
             "Crypto Lab is an online platform for sharing the necessary and important information for those interested in the world of cryptocurrencies. Conveniently, you'll be able to get detailed information about your favorite cryptocurrencies and see their prices over time, keep up with the latest news, and convert between cryptocurrencies as research. Used technologies: React + TS, Ant Design, Redux-Toolkit",
-        },
-        {
-          name: "Pomodoro 25+5",
-          description: `This project is among the assignments of the "freeCodeCamp" course. A Pomodoro app is a time management tool that helps users break their work into intervals called "pomodoros," traditionally 25 minutes in length, separated by short breaks. The Pomodoro technique aims to improve productivity and focus by breaking down work into manageable chunks. Used technologies: React + TS, SASS`,
         },
         {
           name: "Scivenia Beta Project",
@@ -73,6 +65,7 @@ const langObject = {
     achievements: {
       title: "ACHIEVEMENTS",
       cert: [
+        "Full Stack Open (Univeristy of Helsinki) - Certificate of Completion",
         "Front End Libraries Certification - freeCodeCamp",
         "Grant Offer from Innopolis University",
         "Udacity Nanodegree of Front End Development",
@@ -108,10 +101,8 @@ const langObject = {
     },
     about: {
       title: "MEN HAQIMDA",
-      info: `Men ${
-        new Date().getFullYear() - 2004
-      } yoshli Web Dasturchiman. Hozirda O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi huzuridagi "Raqamli ta'lim texnologiyalarini rivojlantirish markazi"da Frontend dasturchiman. Innopolis Universiteti kurslari menga "Dasturiy Ta'minotni Loyihalash", "Ma'lumotlar Tuzilmalari va Algoritmlar"ning asosiy tushunchalarini, ayniqsa "Graf Nazariyasi"ni o'rganishga yordam berdi. Bundan tashqari, men har kuni Leetcode platformasidagi turli qiyinchilikdagi masalalarni sevimli JavaScript va C++ dasturlash tillari yordamida yechishga harakat qilaman. O'ylashimcha, mening bu qobiliyatlarim sizga yordam beradi!`,
-      btn: "Ko'proq Bilish",
+      info: `Men JavaScript, TypeScript va React-da mustahkam poydevorga ega ishtiyoqli frontend dasturchisiman. Muammolarni hal qilish nuqtai nazaridan men kengaytiriladigan, yuqori samarali veb-ilovalarni yaratishga ixtisoslashganman. Hozirda men O‘zbekiston Oliy ta’lim, fan va innovatsiyalar vazirligi huzuridagi “Raqamli ta’lim texnologiyalarini rivojlantirish markazi”da ishlayman va u yerda ta’lim olish imkoniyatini yaxshilashga qaratilgan raqamli yechimlarni ishlab chiqishga hissa qo‘shaman`,
+      btn: "Batafsil",
     },
     portfolio: {
       title: "PORTFEL",
@@ -122,28 +113,24 @@ const langObject = {
             'HEMIS (Higher Education Management Information System) - bu ta\'lim jarayonini onlayn boshqarish imkonini beruvchi axborot tizimi. Hemis tizimiga "Ma\'muriy Boshqaruv", "Ta\'lim Jarayoni", "Ilmiy Faoliyatlar" va "Moliyaviy Boshqaruv" kabi modullar kiradi. Hozirda Hemis tizimidan 217 dan ortiq oliy ta\'lim muassasalari va 1 milliondan ortiq foydalanuvchilar (talabalar va o\'qituvchilar) foydalanmoqda. Foydalanilgan texnologiyalar: React + TS, Ant Design',
         },
         {
+          name: "MUHANDIS.EDU.UZ",
+          description:
+            "Oliy taʼlim va innovatsiyalar vazirligi tomonidan muhandislik yoʻnalishlari boʻyicha oʻtkaziladigan Respublika tanlovida oʻqituvchilar, talabalar va amaliyotchi muhandislar ishtirok etishlari mumkin.",
+        },
+        {
+          name: "Checklist Bot",
+          description:
+            "Mashqlar, o'rganish va shaxsiy maqsadlar uchun sozlanadigan vazifa va faoliyat kuzatuvchisi. Foydalanuvchilar Telegram orqali vazifalar yaratishi, ishning borishini kuzatishi va kundalik xulosalarni olishlari mumkin. Xususiyatlarga qorong'u/yorug'lik rejimi, ko'p tilli yordam va sezgir UI kiradi.",
+        },
+        {
           name: "LESSON-SCHEDULE-REACT",
           description:
             "lesson-schedule-react - bu React ilovalari uchun moslashtirilgan jadval komponentini taqdim etuvchi paket. Bu foydalanuvchilarga jadval elementlarini property sifatida berish orqali osonlik bilan dars jadvallarini yaratish imkonini beradi. Jadval kunlik yoki haftalik jadvallarni ko'rsatishi mumkin va maxsus jadval komponentlarini, bir nechta tillarni va mavzuni sozlashni qo'llab-quvvatlaydi. Bundan tashqari, ko'proq moslashuvchanlik uchun konfiguratsiyalarsiz yengil versiyani taklif qiladi. Ishlatilgan texnologiyalar: React + TS, Ant Design",
         },
         {
-          name: "Sertifikat.edu.uz",
-          description:
-            "Ushbu veb-sayt Oʻzbekiston Respublikasida tan olingan tillar va umumtaʼlim fanlari boʻyicha xalqaro sertifikatlar maʼlumotlar bazasini taqdim etadi. Saytning asosiy maqsadi ta’lim vositalari, pedagoglar, davlat idoralari, xalqaro sertifikatlashtirish nazorati jarayonlari va xavfsizlik haqida ma’lumot berishdir. Foydalanilgan texnologiyalar: Next.js, React + TS, Ant Design",
-        },
-        {
-          name: "EDUCUP Turniri Web-sayti",
-          description:
-            "ESports EDUCUP Turniri veb-saytida 10-23 may kunlari Toshkentda Oliy taʼlim, fan va innovatsiyalar vazirligi tomonidan oʻtkaziladigan 2024 yilgi e-sport musobaqasi namoyish etilgan. Tadbirdan ko‘zlangan maqsad kibersportni ommalashtirish va o‘quvchilarni axborot tizimlari bilan ishlashga o‘rgatish, ularni kelajakda keng ko‘lamli turnirlar o‘tkazish ko‘nikmasini shakllantirishdan iborat edi. Foydalanilgan texnologiyalar: Next.js, React + TS, Ant Design",
-        },
-        {
           name: "Crypto Lab",
           description:
             "Crypto Lab - Kriptovalyutalar dunyosiga qiziquvchilar uchun kerakli va muhim bo'lgan ma'lumotlarni onlayn ulashish platformasi. Qulayliklari, siz o'zingizga yoqgan kripto tangalar haqida batafsil ma'lumot olishingiz va turli davrlar oralig'idagi narxlari bilan tanishib chiqish, eng yangi xabarlardan boxabar bo'lish va tadqiqot sifatida kripto tangalar o'rtasida konvertatsiya qilish imkoniyatiga ega bo'lasiz. Foydalanilgan texnologiyalar: React + TS, Ant Design, Redux-Toolkit",
-        },
-        {
-          name: "Pomodoro 25+5",
-          description: `Ushbu loyiha "freeCodeCamp" kursining topshiriqlari qatoriga kiradi. Pomodoro ilovasi vaqtni boshqarish vositasi boʻlib, foydalanuvchilarga oʻz ishlarini qisqa tanaffuslar bilan ajratilgan, anʼanaviy ravishda 25 daqiqalik “pomodorolar” deb nomlangan intervallarga ajratishga yordam beradi. Pomodoro texnikasi ishni boshqariladigan bo'laklarga bo'lish orqali samaradorlikni oshirish va diqqatni jamlashga qaratilgan. Foydalanilgan texnologiyalar: React + TS, SASS`,
         },
         {
           name: "Scivenia Beta Loyihasi",
@@ -163,6 +150,7 @@ const langObject = {
     achievements: {
       title: "YUTUQLARIM",
       cert: [
+        "Full Stack Open (Helsinki Universiteti) - Bitiruv Sertifikati",
         "Front End Kutubxonalari Sertifikati - freeCodeCamp",
         "Innopolis universitetidan grant taklifi",
         "Front End Development bo'yicha Udacitydan Nanodaraja",
@@ -198,9 +186,7 @@ const langObject = {
     },
     about: {
       title: "Über mich",
-      info: `Ich bin ein ${
-        new Date().getFullYear() - 2004
-      }-jähriger Webentwickler. Derzeit bin ich Frontend-Entwickler im "Zentrum für die Entwicklung digitaler Bildungstechnologien" unter dem Ministerium für Hochschulbildung, Wissenschaft und Innovationen der Republik Usbekistan. Die Kurse der Innopolis University haben mir geholfen, die Grundkonzepte von „Softwaredesign“, „Datenstrukturen und Algorithmen“ und insbesondere „Graphentheorie“ zu erlernen. Darüber hinaus versuche ich täglich, Probleme unterschiedlicher Schwierigkeitsgrade auf der Leetcode-Plattform zu lösen, indem ich meine Lieblingsprogrammiersprachen JavaScript und C++ verwende. Ich denke, diese meiner Fähigkeiten werden Ihnen helfen!`,
+      info: `Ich bin ein leidenschaftlicher Frontend-Entwickler mit fundierten Kenntnissen in JavaScript, TypeScript und React. Angetrieben von einer lösungsorientierten Denkweise habe ich mich auf die Entwicklung skalierbarer, leistungsstarker Webanwendungen spezialisiert. Derzeit arbeite ich am Zentrum für die Entwicklung digitaler Bildungstechnologien des usbekischen Ministeriums für Hochschulbildung, Wissenschaft und Innovation und trage dort zur Entwicklung digitaler Lösungen zur Verbesserung des Bildungszugangs bei`,
       btn: "MEHR INFO",
     },
     portfolio: {
@@ -212,28 +198,24 @@ const langObject = {
             'HEMIS (Higher Education Management Information System) - ist ein Informationssystem, das die Verwaltung des Bildungsprozesses online ermöglicht. Das Hemis-System umfasst Module wie "Verwaltungsmanagement", "Bildungsprozess", "Wissenschaftliche Aktivitäten" und "Finanzmanagement". Derzeit wird Hemis von mehr als 217 Hochschulen und über 1 Million Nutzern (Studenten und Lehrern) verwendet. Verwendete Technologien: React + TS, Ant Design',
         },
         {
+          name: "MUHANDIS.EDU.UZ",
+          description:
+            "Lehrer, Studenten und praktizierende Ingenieure können am republikanischen Wettbewerb in Ingenieurbereichen teilnehmen, der vom Ministerium für Hochschulbildung und Innovation durchgeführt wird",
+        },
+        {
+          name: "Checklist Bot",
+          description:
+            "Ein anpassbarer Aufgaben- und Aktivitätstracker für Training, Lernen und persönliche Ziele. Nutzer können Aufgaben erstellen, Fortschritte verfolgen und tägliche Zusammenfassungen per Telegram erhalten. Zu den Funktionen gehören Dunkel-/Hellmodus, mehrsprachige Unterstützung und eine responsive Benutzeroberfläche.",
+        },
+        {
           name: "LESSON-SCHEDULE-REACT",
           description:
             "Das Paket lesson-schedule-react bietet eine anpassbare Stundenplankomponente für React-Anwendungen. Es ermöglicht Benutzern, mühelos Stundenpläne zu erstellen, indem sie einfach Stundenplanelemente als Requisiten übergeben. Der Stundenplan kann Stundenpläne auf täglicher oder wöchentlicher Basis anzeigen und unterstützt benutzerdefinierte Stundenplankomponenten, mehrere Sprachen und die Anpassung von Themen. Es bietet auch eine leichte Version ohne Konfigurationen für mehr Flexibilität. Verwendete Technologien: React + TS, Ant Design",
         },
         {
-          name: "Sertifikat.edu.uz",
-          description:
-            "Diese Website bietet eine Datenbank mit internationalen Zertifikaten für Sprachen und allgemeinbildende Fächer, die in der Republik Usbekistan anerkannt sind. Der Hauptzweck der Website besteht darin, Informationen über Bildungsinstrumente, Pädagogen, Regierungsbehörden, internationale Zertifizierungskontrollprozesse und Sicherheit bereitzustellen. Verwendete Technologien: Next.js, React + TS, Ant Design",
-        },
-        {
-          name: "EDUCUP-Turnier Website",
-          description:
-            "Auf der Website des ESports EDUCUP Tournament wird der E-Sport-Wettbewerb 2024 vorgestellt, der vom Ministerium für Hochschulbildung, Wissenschaft und Innovation in Taschkent organisiert wird und vom 10. bis 23. Mai stattfindet. Ziel der Veranstaltung war es, E-Sport populär zu machen und Studenten im Umgang mit Informationssystemen auszubilden, um sie mit den Fähigkeiten auszustatten, in Zukunft große Turniere auszurichten. Verwendete Technologien: Next.js, React + TS, Ant Design",
-        },
-        {
           name: "Crypto Lab",
           description:
             "Crypto Lab ist eine Online-Plattform zum Austausch notwendiger und wichtiger Informationen für diejenigen, die sich für die Welt der Kryptowährungen interessieren. Praktischerweise können Sie detaillierte Informationen über Ihre bevorzugten Kryptowährungen abrufen und deren Preise im Laufe der Zeit verfolgen, über die neuesten Nachrichten auf dem Laufenden bleiben und als Recherche zwischen Kryptowährungen umrechnen. Verwendete Technologien: React + TS, Ant Design, Redux-Toolkit",
-        },
-        {
-          name: "Pomodoro 25+5",
-          description: `Dieses Projekt gehört zu den Aufgaben des Kurses „freeCodeCamp“. Eine Pomodoro-App ist ein Zeitmanagement-Tool, das Benutzern hilft, ihre Arbeit in Intervalle namens „Pomodoros“ aufzuteilen, die traditionell 25 Minuten lang sind und durch kurze Pausen getrennt sind. Die Pomodoro-Technik zielt darauf ab, die Produktivität und Konzentration zu verbessern, indem sie die Arbeit in überschaubare Abschnitte aufteilt. Verwendete Technologien: React + TS, SASS`,
         },
         {
           name: "Scivenia Beta-Projekt",
@@ -253,6 +235,7 @@ const langObject = {
     achievements: {
       title: "ERFOLGE",
       cert: [
+        "Full Stack Open (Univeristy of Helsinki) - Certificate of Completion",
         "Front-End-Bibliotheks-Zertifizierung – freeCodeCamp",
         "Stipendienangebot der Innopolis University",
         "Udacity Nanodegree der Front-End-Entwicklung",

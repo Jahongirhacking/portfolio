@@ -13,12 +13,10 @@ let currentLangObject = langObject[currentLang];
 const updateDocumentContent = () => {
   // Nav
   const navLink = Array.from(document.querySelectorAll(".nav__link"));
-  navLink[0].innerHTML =
-    currentLangObject.nav.latest + `<span class="badge new-badge">new</span>`;
-  navLink[1].textContent = currentLangObject.nav.about;
-  navLink[2].textContent = currentLangObject.nav.portfolio;
-  navLink[3].textContent = currentLangObject.nav.skills;
-  navLink[4].textContent = currentLangObject.nav.contact;
+  navLink[0].textContent = currentLangObject.nav.about;
+  navLink[1].textContent = currentLangObject.nav.portfolio;
+  navLink[2].textContent = currentLangObject.nav.skills;
+  navLink[3].textContent = currentLangObject.nav.contact;
   document
     .querySelector(".nav__lang")!
     .setAttribute("src", `./img/Languages/${currentLangObject.flag}`);
@@ -47,9 +45,6 @@ const updateDocumentContent = () => {
     project.querySelector(".portfolio__info")!.textContent =
       currentLangObject.portfolio.projects[index].description;
   });
-  projects[projects.length - 1].querySelector(".demo-link")!.innerHTML =
-    currentLangObject.portfolio.projects[projects.length - 1].btn ||
-    "Click To See";
   // Achievements
   document.querySelector(".achievements__title")!.textContent =
     currentLangObject.achievements.title;
@@ -71,10 +66,6 @@ const updateDocumentContent = () => {
   // Contact
   document.querySelector(".footer__title")!.textContent =
     currentLangObject.contact.title;
-  document.querySelector(".footer__made-heart")!.innerHTML =
-    currentLangObject.contact.made;
-  document.querySelector(".footer__small > span")!.textContent =
-    currentLangObject.contact.last;
   document.getElementById("current__year")!.textContent = new Date()
     .getFullYear()
     .toString();

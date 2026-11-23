@@ -15,7 +15,7 @@ const langObject = {
     },
     about: {
       title: "About Me",
-      info: `Full-stack developer building scalable, high-performance web applications with React, Next.js, NestJS and PostgreSQL. I work at the Center for the Development of Digital Education Technologies under the Ministry of Higher Education, Science and Innovations of Uzbekistan, developing digital solutions that improve access to education.`,
+      info: `Full-stack developer building scalable, high-performance web applications with React, Next.js, NestJS and PostgreSQL. I work at the Center for the Development of Digital Education and Artificial Intelligence under the Ministry of Higher Education, Science and Innovations of Uzbekistan, developing digital solutions that improve access to education.`,
       btn: "MORE INFO",
     },
     portfolio: {
@@ -100,7 +100,7 @@ const langObject = {
     },
     about: {
       title: "MEN HAQIMDA",
-      info: `Kengaytiriladigan, yuqori samarali veb-ilovalarni React, Next.js, NestJS va PostgreSQL yordamida yaratadigan full-stack dasturchiman. Hozirda O‘zbekiston Oliy ta’lim, fan va innovatsiyalar vazirligi huzuridagi “Raqamli ta’lim texnologiyalarini rivojlantirish markazi”da ishlayman va ta’lim olish imkoniyatini yaxshilashga qaratilgan raqamli yechimlarni ishlab chiqaman.`,
+      info: `Kengaytiriladigan, yuqori samarali veb-ilovalarni React, Next.js, NestJS va PostgreSQL yordamida yaratadigan full-stack dasturchiman. Hozirda O‘zbekiston Oliy ta’lim, fan va innovatsiyalar vazirligi huzuridagi “Raqamli ta’lim va sun’iy intellektni rivojlantirish markazi”da ishlayman va ta’lim olish imkoniyatini yaxshilashga qaratilgan raqamli yechimlarni ishlab chiqaman.`,
       btn: "Batafsil",
     },
     portfolio: {
@@ -185,7 +185,7 @@ const langObject = {
     },
     about: {
       title: "Über mich",
-      info: `Full-Stack-Entwickler für skalierbare, leistungsstarke Webanwendungen mit React, Next.js, NestJS und PostgreSQL. Ich arbeite am Zentrum für die Entwicklung digitaler Bildungstechnologien des usbekischen Ministeriums für Hochschulbildung, Wissenschaft und Innovation und entwickle digitale Lösungen, die den Zugang zu Bildung verbessern.`,
+      info: `Full-Stack-Entwickler für skalierbare, leistungsstarke Webanwendungen mit React, Next.js, NestJS und PostgreSQL. Ich arbeite am Zentrum für die Entwicklung digitaler Bildung und Künstlicher Intelligenz des usbekischen Ministeriums für Hochschulbildung, Wissenschaft und Innovation und entwickle digitale Lösungen, die den Zugang zu Bildung verbessern.`,
       btn: "MEHR INFO",
     },
     portfolio: {

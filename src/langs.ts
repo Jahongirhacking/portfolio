@@ -2,30 +2,44 @@ const langObject = {
   eng: {
     flag: "eng.jpg",
     nav: {
-      latest: "Pomodoro",
       about: "About Me",
       portfolio: "Portfolio",
       skills: "Skills",
       contact: "Contact Me",
     },
     hero: {
-      span1: "Hi, Welcome to my Portfolio",
-      span2: "My fullname is",
-      fullname: "Hayitov Jahongir Akrom ugli",
-      job: "I am a Web Developer and JavaScript Enthusiast",
+      span1: "Hi, welcome to my portfolio",
+      span2: "I am",
+      fullname: "Hayitov Jahongir",
+      job: "Front-End Developer",
     },
     about: {
       title: "About Me",
-      info: `I am a passionate frontend developer with a solid foundation in JavaScript, TypeScript, and React. Driven by a problem-solving mindset, I specialize in building scalable, high-performance web applications. Currently, I work at the Center for the Development of Digital Education Technologies under the Ministry of Higher Education, Science, and Innovations of Uzbekistan, where I contribute to developing digital solutions aimed at improving access to education`,
+      info: `Front-end developer with a solid foundation in JavaScript, TypeScript and React, focused on building scalable, high-performance web applications. I work at the Center for the Development of Digital Education Technologies under the Ministry of Higher Education, Science and Innovations of Uzbekistan, building digital solutions that improve access to education.`,
       btn: "MORE INFO",
     },
     portfolio: {
       title: "PORTFOLIO",
       projects: [
         {
+          name: "FOTSPOT.UZ",
+          description:
+            "A platform that helps grassroots football players in Uzbekistan get discovered. Players build a professional profile backed by video evidence, scouts recommend talent, and academies search by age, position and region, invite players to closed trials and manage squads in one system. Players can also apply directly to open trials.",
+        },
+        {
           name: "MY.HEMIS.UZ",
           description:
-            'HEMIS (Higher Education Management Information System) - is an information system that allows you to manage the educational process online. The Hemis system included modules such as "Administrative Management", "Educational Process", "Scientific Activities" and "Financial Management". Currently, Hemis is used by more than 217 higher education institutions and more than 1 million users (students and teachers).. Used technologies: React + TS, Ant Design',
+            'HEMIS (Higher Education Management Information System) - is an information system that allows you to manage the educational process online. The Hemis system included modules such as "Administrative Management", "Educational Process", "Scientific Activities" and "Financial Management". Currently, Hemis is used by more than 217 higher education institutions and more than 1 million users (students and teachers). Used technologies: React + TS, Ant Design',
+        },
+        {
+          name: "TYUTOR.HEMIS.UZ",
+          description:
+            "The tutor module of the HEMIS ecosystem, built for university tutors who support student groups. Part of the national higher education information system. Technologies: React + TS, Ant Design",
+        },
+        {
+          name: "TEACHER.HEMIS.UZ",
+          description:
+            "The teacher portal of the HEMIS ecosystem, built for university instructors. Part of the national higher education information system. Technologies: React + TS, Ant Design",
         },
         {
           name: "MUHANDIS.EDU.UZ",
@@ -47,25 +61,12 @@ const langObject = {
           description:
             "Crypto Lab is an online platform for sharing the necessary and important information for those interested in the world of cryptocurrencies. Conveniently, you'll be able to get detailed information about your favorite cryptocurrencies and see their prices over time, keep up with the latest news, and convert between cryptocurrencies as research. Used technologies: React + TS, Ant Design, Redux-Toolkit",
         },
-        {
-          name: "Scivenia Beta Project",
-          description: `As part of this university software project, we created a specific functionality of a bigger web app. The purpose of this function is to visually represent the scientific collaboration between researchers and scientists. I used Breadth First Search algorithm in the client side to find all collaborators of the researcher. Used technologies: React JS and Sigma JS`,
-        },
-        {
-          name: "68th School App",
-          description: `68-DIMI WebApp - This application was created for students of our school in Uzbekistan. In this project, the students can play games, solve problems, take tests and compete to win. It has a leaderboard to show top students who collect points by taking tests and exams which being organized by the App. Used technologies: HTML, CSS, JavaScript and PHP`,
-        },
-        {
-          name: "Frontend Mentor Profile",
-          description: `You can see my other frontend related work. I think this platform is one of the best for learning and gaining experience, I have had a lot of good results through the many practices I have done on this platform.`,
-          btn: `Click To See <i class="fas fa-link"></i>`,
-        },
       ],
     },
     achievements: {
       title: "ACHIEVEMENTS",
       cert: [
-        "Full Stack Open (Univeristy of Helsinki) - Certificate of Completion",
+        "Full Stack Open (University of Helsinki) - Certificate of Completion",
         "Front End Libraries Certification - freeCodeCamp",
         "Grant Offer from Innopolis University",
         "Udacity Nanodegree of Front End Development",
@@ -80,14 +81,11 @@ const langObject = {
     },
     contact: {
       title: "CONTACT ME",
-      made: `Made with <i class="fas fa-heart red-color"></i>`,
-      last: "last update:",
     },
   },
   uzb: {
     flag: "uzb.jpg",
     nav: {
-      latest: "Pomodoro",
       about: "Men Haqimda",
       portfolio: "Portfel",
       skills: "Skillar",
@@ -96,8 +94,8 @@ const langObject = {
     hero: {
       span1: "Assalomu Alaykum! Portfelimga",
       span2: "Xush Kelibsiz, mening ismim",
-      fullname: "Hayitov Jahongir Akrom o'g'li",
-      job: "Men JavaScriptga ishtiyoqmand Web Dasturchiman ",
+      fullname: "Hayitov Jahongir",
+      job: "Front-End dasturchi",
     },
     about: {
       title: "MEN HAQIMDA",
@@ -108,9 +106,24 @@ const langObject = {
       title: "PORTFEL",
       projects: [
         {
+          name: "FOTSPOT.UZ",
+          description:
+            "O'zbekistondagi mahalla futbolchilariga o'z iste'dodini ko'rsatishda yordam beradigan platforma. Futbolchilar video-isbotga asoslangan professional profil yaratadi, skautlar iste'dodlarni tavsiya qiladi, akademiyalar esa yosh, pozitsiya va hudud bo'yicha qidiradi, yopiq sinovlarga taklif qiladi va tarkibni yagona tizimda boshqaradi. Futbolchilar ochiq sinovlarga bevosita ariza ham bera oladi.",
+        },
+        {
           name: "MY.HEMIS.UZ",
           description:
             'HEMIS (Higher Education Management Information System) - bu ta\'lim jarayonini onlayn boshqarish imkonini beruvchi axborot tizimi. Hemis tizimiga "Ma\'muriy Boshqaruv", "Ta\'lim Jarayoni", "Ilmiy Faoliyatlar" va "Moliyaviy Boshqaruv" kabi modullar kiradi. Hozirda Hemis tizimidan 217 dan ortiq oliy ta\'lim muassasalari va 1 milliondan ortiq foydalanuvchilar (talabalar va o\'qituvchilar) foydalanmoqda. Foydalanilgan texnologiyalar: React + TS, Ant Design',
+        },
+        {
+          name: "TYUTOR.HEMIS.UZ",
+          description:
+            "HEMIS ekotizimining tyutorlar uchun mo'ljallangan moduli: talabalar guruhlari bilan ishlovchi tyutorlarga xizmat qiladi. Oliy ta'limning yagona axborot tizimi tarkibiga kiradi. Texnologiyalar: React + TS, Ant Design",
+        },
+        {
+          name: "TEACHER.HEMIS.UZ",
+          description:
+            "HEMIS ekotizimining o'qituvchilar uchun mo'ljallangan portali. Oliy ta'limning yagona axborot tizimi tarkibiga kiradi. Texnologiyalar: React + TS, Ant Design",
         },
         {
           name: "MUHANDIS.EDU.UZ",
@@ -132,19 +145,6 @@ const langObject = {
           description:
             "Crypto Lab - Kriptovalyutalar dunyosiga qiziquvchilar uchun kerakli va muhim bo'lgan ma'lumotlarni onlayn ulashish platformasi. Qulayliklari, siz o'zingizga yoqgan kripto tangalar haqida batafsil ma'lumot olishingiz va turli davrlar oralig'idagi narxlari bilan tanishib chiqish, eng yangi xabarlardan boxabar bo'lish va tadqiqot sifatida kripto tangalar o'rtasida konvertatsiya qilish imkoniyatiga ega bo'lasiz. Foydalanilgan texnologiyalar: React + TS, Ant Design, Redux-Toolkit",
         },
-        {
-          name: "Scivenia Beta Loyihasi",
-          description: `Ushbu universitet dasturiy loyihasining bir qismi sifatida biz kattaroq veb-ilovaning o'ziga xos funksiyasini yaratdik. Ushbu funktsiyaning maqsadi tadqiqotchilar va olimlar o'rtasidagi ilmiy hamkorlikni vizual ko'rinishda namoyish qilishdir. Men tadqiqotchining barcha hamkorlarini topish uchun mijoz tomonida "Kenglik Bo'yicha Qidirish" algoritmidan foydalandim. Foydalanilgan texnologiyalar: React JS va Sigma JS`,
-        },
-        {
-          name: "68-DIMI App",
-          description: `68-DIMI WebApp - Ushbu ilova G'uzor tumanidagi 68-sonli ixtisoslashtirilgan maktabimiz o'quvchilari uchun yaratilgan. Ushbu loyihada o'quvchilar o'yin o'ynashlari, muammolarni hal qilishlari, testlarni yechishlari va g'alaba qozonish uchun kurashishlari mumkin. Ilova tomonidan tashkil etilgan test va imtihonlarni topshirish orqali ball to'plagan eng yaxshi talabalarni ko'rsatish uchun peshqadamlar jadvali mavjud. Foydalanilgan texnologiyalar: HTML, CSS, JavaScript va PHP`,
-        },
-        {
-          name: "Frontend Mentor Profilim",
-          description: `Frontend bilan bog'liq boshqa ishlarimni ko'rishingiz mumkin. O'ylaymanki, bu platforma o'rganish va tajriba orttirish uchun eng yaxshilaridan biri, men ushbu platformada qilgan ko'plab amaliyotlarim orqali juda ko'p yaxshi natijalarga erishdim.`,
-          btn: `Ko'rish Uchun Bosing <i class="fas fa-link"></i>`,
-        },
       ],
     },
     achievements: {
@@ -165,14 +165,11 @@ const langObject = {
     },
     contact: {
       title: "BOG'LANISH",
-      made: `<i class="fas fa-heart red-color"></i> bilan qilingan!`,
-      last: "oxirgi yangilanish:",
     },
   },
   deu: {
     flag: "deu.jpg",
     nav: {
-      latest: "Pomodoro",
       about: "Über mich",
       portfolio: "Portfolio",
       skills: "Fähigkeiten",
@@ -181,8 +178,8 @@ const langObject = {
     hero: {
       span1: "Hallo, willkommen in meinem Portfolio",
       span2: "Mein ganzer Name lautet",
-      fullname: "Hayitov Jahongir Akrom ugli",
-      job: "Ich bin ein Webentwickler mit einer Leidenschaft für JavaScript",
+      fullname: "Hayitov Jahongir",
+      job: "Front-End-Entwickler",
     },
     about: {
       title: "Über mich",
@@ -193,9 +190,24 @@ const langObject = {
       title: "PORTFOLIO",
       projects: [
         {
+          name: "FOTSPOT.UZ",
+          description:
+            "Eine Plattform, die Nachwuchsfußballern in Usbekistan hilft, entdeckt zu werden. Spieler erstellen ein professionelles Profil mit Videobelegen, Scouts empfehlen Talente, Akademien suchen nach Alter, Position und Region, laden zu geschlossenen Probetrainings ein und verwalten Kader in einem System. Spieler können sich auch direkt für offene Probetrainings bewerben.",
+        },
+        {
           name: "MY.HEMIS.UZ",
           description:
             'HEMIS (Higher Education Management Information System) - ist ein Informationssystem, das die Verwaltung des Bildungsprozesses online ermöglicht. Das Hemis-System umfasst Module wie "Verwaltungsmanagement", "Bildungsprozess", "Wissenschaftliche Aktivitäten" und "Finanzmanagement". Derzeit wird Hemis von mehr als 217 Hochschulen und über 1 Million Nutzern (Studenten und Lehrern) verwendet. Verwendete Technologien: React + TS, Ant Design',
+        },
+        {
+          name: "TYUTOR.HEMIS.UZ",
+          description:
+            "Das Tutorenmodul des HEMIS-Ökosystems für Hochschultutoren, die Studierendengruppen betreuen. Teil des nationalen Informationssystems für die Hochschulbildung. Technologien: React + TS, Ant Design",
+        },
+        {
+          name: "TEACHER.HEMIS.UZ",
+          description:
+            "Das Lehrendenportal des HEMIS-Ökosystems für Hochschuldozenten. Teil des nationalen Informationssystems für die Hochschulbildung. Technologien: React + TS, Ant Design",
         },
         {
           name: "MUHANDIS.EDU.UZ",
@@ -217,25 +229,12 @@ const langObject = {
           description:
             "Crypto Lab ist eine Online-Plattform zum Austausch notwendiger und wichtiger Informationen für diejenigen, die sich für die Welt der Kryptowährungen interessieren. Praktischerweise können Sie detaillierte Informationen über Ihre bevorzugten Kryptowährungen abrufen und deren Preise im Laufe der Zeit verfolgen, über die neuesten Nachrichten auf dem Laufenden bleiben und als Recherche zwischen Kryptowährungen umrechnen. Verwendete Technologien: React + TS, Ant Design, Redux-Toolkit",
         },
-        {
-          name: "Scivenia Beta-Projekt",
-          description: `Im Rahmen dieses universitären Softwareprojekts haben wir ein einzigartiges Feature einer größeren Webanwendung erstellt. Der Zweck dieser Funktion besteht darin, die wissenschaftliche Zusammenarbeit zwischen Forschern und Wissenschaftlern visuell darzustellen. Ich habe einen clientseitigen Latitude Search-Algorithmus verwendet, um alle Partner des Forschers zu finden. Verwendete Technologien: React JS und Sigma JS`,
-        },
-        {
-          name: "68. Schulapp",
-          description: `68-DIMI WebApp – Diese Anwendung wurde für Schüler unserer Fachschule Nr. 68 im Bezirk Guzor erstellt. In diesem Projekt können Schüler Spiele spielen, Probleme lösen, Tests lösen und um den Sieg kämpfen. Es gibt eine Bestenliste, auf der die besten Schüler angezeigt werden, die bei den von der App organisierten Tests und Prüfungen Punkte erzielt haben. Verwendete Technologien: HTML, CSS, JavaScript und PHP`,
-        },
-        {
-          name: "Frontend-Mentor-Profil",
-          description: `Sie können meine anderen Frontend-bezogenen Arbeiten sehen. Ich denke, dass diese Plattform eine der besten zum Lernen und Sammeln von Erfahrungen ist. Ich habe durch die vielen Übungen, die ich auf dieser Plattform durchgeführt habe, viele gute Ergebnisse erzielt.`,
-          btn: `Klicke um es zu sehen <i class="fas fa-link"></i>`,
-        },
       ],
     },
     achievements: {
       title: "ERFOLGE",
       cert: [
-        "Full Stack Open (Univeristy of Helsinki) - Certificate of Completion",
+        "Full Stack Open (University of Helsinki) - Certificate of Completion",
         "Front-End-Bibliotheks-Zertifizierung – freeCodeCamp",
         "Stipendienangebot der Innopolis University",
         "Udacity Nanodegree der Front-End-Entwicklung",
@@ -250,8 +249,6 @@ const langObject = {
     },
     contact: {
       title: "KONTAKTIERE MICH",
-      made: `Gemacht mit <i class="fas fa-heart red-color"></i>`,
-      last: "letzte Aktualisierung:",
     },
   },
 };

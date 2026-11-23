@@ -8,13 +8,16 @@
       name="google-site-verification"
       content="nfVN6bDqMxUwXOIJZfWOsY_rWscGwmmaQKP82FDvpfU"
     />
-    <meta name="description" content="Jahongir Hayitov's portfolio webpage" />
+    <meta
+      name="description"
+      content="Portfolio of Jahongir Hayitov, Front-End Developer"
+    />
     <meta
       name="keywords"
-      content="Jahongir Hayitov, Jahongir Khayitov, Jahongir Hacking, Jahongirhacking, Bulalar Team, Portfolio, JavaScript, React JS, Uzbekistan, Kashkadarya, Programmer"
+      content="Jahongir Hayitov, Front-End Developer, JavaScript, TypeScript, React, Portfolio, Uzbekistan"
     />
-    <meta name="author" content="Jahongir Hayitov Akrom ugli" />
-    <title>Jahongir Hayitov - Portfolio (Bulalar Team)</title>
+    <meta name="author" content="Jahongir Hayitov" />
+    <title>Jahongir Hayitov - Front-End Developer</title>
     <!-- STYLES -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style_400.css" />
@@ -36,11 +39,6 @@
     <nav id="nav" class="nav">
       <img src="./img/logo.png" class="nav__logo" alt="logo-image" />
       <ul class="nav__list" id="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="https://pomedoro.netlify.app/"
-            >Pomodoro<span class="badge new-badge">new</span></a
-          >
-        </li>
         <li class="nav__item">
           <a class="nav__link" href="#about_me">About Me</a>
         </li>
@@ -65,9 +63,9 @@
     <!-- HEADER -->
     <header id="header">
       <div class="header__info">
-        <span>Hi, Welcome to my Portfolio</span>
-        <span>My fullname is</span>
-        <h1 class="header__my-name">Hayitov Jahongir Akrom ugli</h1>
+        <span>Hi, welcome to my portfolio</span>
+        <span>I am</span>
+        <h1 class="header__my-name">Hayitov Jahongir</h1>
         <small class="header__my-job">I am a Front-End Developer</small>
         <ul class="header__network">
           <!-- Balls -->
@@ -118,16 +116,12 @@
     <section id="about_me">
       <h3 class="about_me__title">About Me</h3>
       <p class="about_me__info">
-        I am a 20 year old Web Developer. I am currently studying at the
-        Tashkent Institute of Textile and Light Industry in Uzbekistan and in my
-        spare time I am studying modern libraries and frameworks in the field of
-        Web Development, and I have tried myself in several small projects so
-        far. Innopolis University courses helped me to learn the basic concepts
-        of "Software Design", "Data Structures and Algorithms", especially
-        "Graph Theory". In addition, I try to solve problems of various
-        difficulties on the Leetcode platform every day using my favorite
-        programming languages JavaScript and C++. I think these skills of mine
-        will help you!
+        Front-end developer with a solid foundation in JavaScript, TypeScript
+        and React, focused on building scalable, high-performance web
+        applications. I work at the Center for the Development of Digital
+        Education Technologies under the Ministry of Higher Education, Science
+        and Innovations of Uzbekistan, building digital solutions that improve
+        access to education.
       </p>
 
       <a
@@ -142,26 +136,88 @@
       <h2 class="portfolio__heading">Portfolio</h2>
       <div class="project-container portfolio__projects">
         <div class="portfolio__project">
+          <a class="portfolio__img" href="https://fotspot.uz/">
+            <img src="./img/Projects/fotspot.jpg" alt="FotSpot image" />
+          </a>
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">FOTSPOT.UZ</h2>
+            <p class="portfolio__info">
+              A platform that helps grassroots football players in Uzbekistan
+              get discovered. Players build a professional profile backed by
+              video evidence, scouts recommend talent, and academies search by
+              age, position and region, invite players to closed trials and
+              manage squads in one system. Players can also apply directly to
+              open trials. Profiles of players under 18 are private by default,
+              with no private messaging between adults and children.
+            </p>
+            <div class="portfolio__links">
+              <a href="https://fotspot.uz/" class="demo-link portfolio__link"
+                >LIVE <i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__project">
           <a class="portfolio__img" href="https://my.hemis.uz/">
             <img src="./img/Projects/hemis.jpg" alt="Hemis image" />
           </a>
           <div class="portfolio__description">
             <h2 class="portfolio__title">MY.HEMIS.UZ</h2>
             <p class="portfolio__info">
-              HEMIS (Higher Education Management Information System) - is an
-              information system that allows you to manage the educational
-              process online. The Hemis system included modules such as
-              "Administrative Management", "Educational Process", "Scientific
-              Activities" and "Financial Management". Currently, Hemis is used
-              by more than 217 higher education institutions and more than 1
-              million users (students and teachers).. Used technologies: React +
-              TS, Ant Design
+              HEMIS (Higher Education Management Information System) is an
+              information system for managing the educational process online,
+              with modules for administration, education, research and finance.
+              Used by 217+ higher education institutions and over 1 million
+              students and teachers. Technologies: React + TS, Ant Design
             </p>
             <div class="portfolio__links">
               <a href="https://hemis.uz/" class="github-link portfolio__link"
                 >DOCS <i class="fa-solid fa-file"></i
               ></a>
               <a href="https://my.hemis.uz/" class="demo-link portfolio__link"
+                >LIVE <i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__project">
+          <a class="portfolio__img" href="https://tyutor.hemis.uz/">
+            <img src="./img/Projects/tyutor.jpg" alt="TYUTOR.HEMIS.UZ image" />
+          </a>
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">TYUTOR.HEMIS.UZ</h2>
+            <p class="portfolio__info">
+              The tutor module of the HEMIS ecosystem, built for university
+              tutors who support student groups. Part of the national higher
+              education information system. Technologies: React + TS, Ant Design
+            </p>
+            <div class="portfolio__links">
+              <a
+                href="https://tyutor.hemis.uz/"
+                class="demo-link portfolio__link"
+                >LIVE <i class="fas fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__project">
+          <a class="portfolio__img" href="https://teacher.hemis.uz/">
+            <img
+              src="./img/Projects/teacher.jpg"
+              alt="TEACHER.HEMIS.UZ image"
+            />
+          </a>
+          <div class="portfolio__description">
+            <h2 class="portfolio__title">TEACHER.HEMIS.UZ</h2>
+            <p class="portfolio__info">
+              The teacher portal of the HEMIS ecosystem, built for university
+              instructors. Part of the national higher education information
+              system. Technologies: React + TS, Ant Design
+            </p>
+            <div class="portfolio__links">
+              <a
+                href="https://teacher.hemis.uz/"
+                class="demo-link portfolio__link"
                 >LIVE <i class="fas fa-link"></i
               ></a>
             </div>
@@ -201,7 +257,7 @@
         <!-- Checklist -->
         <div class="portfolio__project">
           <a class="portfolio__img" href="https://checklist-bot.netlify.app/">
-            <img src="./img/Projects/checklist.png" alt="muhandis image" />
+            <img src="./img/Projects/checklist.png" alt="checklist image" />
           </a>
           <div class="portfolio__description">
             <h2 class="portfolio__title">Checklist Bot</h2>
@@ -297,92 +353,6 @@
             </div>
           </div>
         </div>
-        <!-- 2nd -->
-        <div class="portfolio__project">
-          <a
-            class="portfolio__img"
-            href="https://github.com/Jahongirhacking/SciVenia-beta"
-          >
-            <img src="./img/Projects/scivenia.jpg" alt="scivenia image" />
-          </a>
-          <div class="portfolio__description">
-            <h2 class="portfolio__title">Scivenia Beta Project</h2>
-            <p class="portfolio__info">
-              As part of this university software project, we created a specific
-              functionality of a bigger web app. The aim of this functionality
-              is to visualize and demonstrate the scientific collaboration
-              between researchers and scientists. I used Breadth First Search
-              algorithm in the client side to find all collaborators of the
-              researcher. Used technologies: React JS and Sigma JS
-            </p>
-            <div class="portfolio__links">
-              <a
-                href="https://github.com/Jahongirhacking/SciVenia-beta"
-                class="github-link portfolio__link"
-                >GitHub <i class="fab fa-github"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!-- 4th -->
-        <div class="portfolio__project">
-          <a class="portfolio__img" href="https://68dimi.netlify.app/">
-            <img src="./img/Projects/school.jpg" alt="school image" />
-          </a>
-          <div class="portfolio__description">
-            <h2 class="portfolio__title">68th School App</h2>
-            <p class="portfolio__info">
-              68-DIMI WebApp - This application was created for students of our
-              school in Uzbekistan. In this project, the students can play
-              games, solve problems, take tests and compete to win. It has a
-              leaderboard to show top students who collect points by taking
-              tests and exams which being organized by the App. Used
-              technologies: HTML, CSS, JavaScript and PHP
-            </p>
-            <div class="portfolio__links">
-              <a
-                href="https://github.com/Jahongirhacking/68dimi"
-                class="github-link portfolio__link"
-                >GitHub <i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://68dimi.netlify.app/"
-                class="demo-link portfolio__link"
-                >DEMO <i class="fas fa-link"></i
-              ></a>
-              <a
-                href="https://youtu.be/f1KV9d9tQu4"
-                class="youtube-link portfolio__link"
-                >Video <i class="fab fa-youtube"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!-- 6th -->
-        <div class="portfolio__project">
-          <a
-            class="portfolio__img"
-            href="https://www.frontendmentor.io/profile/Jahongirhacking"
-          >
-            <img src="./img/Projects/frontendmentor.jpg" alt="mentor image" />
-          </a>
-          <div class="portfolio__description">
-            <h2 class="portfolio__title">Frontend Mentor Profile</h2>
-            <p class="portfolio__info">
-              You can see my other works related to Front-End stuff. I think
-              this platform is the best for learning and gaining some
-              experience, by doing some practice, I have achieved a lot of
-              progress on this platform.
-            </p>
-            <div class="portfolio__links">
-              <a
-                href="https://www.frontendmentor.io/profile/Jahongirhacking"
-                class="demo-link portfolio__link"
-                >Click To See <i class="fas fa-link"></i
-              ></a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -449,6 +419,14 @@
       <div class="skills__using skill-container">
         <h3 class="skills__using__title skill-title">Using Now</h3>
         <div class="card-container skills__using__cards">
+          <div class="skills__learning__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/nestjs.svg"
+              alt="nestjs-logo"
+            />
+            <p class="card__info">NestJS</p>
+          </div>
           <div class="skills__using__card card">
             <img
               class="card__image"
@@ -468,26 +446,18 @@
           <div class="skills__using__card card">
             <img
               class="card__image"
-              src="./img/Logos/redux-toolkit.png"
-              alt="redux-toolkit-logo"
-            />
-            <p class="card__info">Redux Toolkit</p>
-          </div>
-          <div class="skills__using__card card">
-            <img
-              class="card__image"
-              src="./img/Logos/antd.png"
-              alt="antd-logo"
-            />
-            <p class="card__info">Ant Design</p>
-          </div>
-          <div class="skills__using__card card">
-            <img
-              class="card__image"
               src="./img/Logos/express.png"
               alt="express-logo"
             />
             <p class="card__info">Express JS</p>
+          </div>
+          <div class="skills__using__card card">
+            <img
+              class="card__image"
+              src="./img/Logos/postgresql.svg"
+              alt="postgresql-logo"
+            />
+            <p class="card__info">PostgreSQL</p>
           </div>
         </div>
       </div>
@@ -503,14 +473,6 @@
               alt="react-logo"
             />
             <p class="card__info">React Native</p>
-          </div>
-          <div class="skills__learning__card card">
-            <img
-              class="card__image"
-              src="./img/Logos/mongo.png"
-              alt="mongo-logo"
-            />
-            <p class="card__info">Mongo DB + Mongoose</p>
           </div>
           <div class="skills__learning__card card">
             <img
@@ -553,12 +515,6 @@
         ></a>
         <a
           class="footer__link"
-          href="https://www.instagram.com/jahongir_khayitov/"
-          id="ig-link"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a
-          class="footer__link"
           href="https://t.me/JahongirKhayitov"
           id="tg-link"
           ><i class="fab fa-telegram"></i
@@ -584,32 +540,14 @@
         ></a>
         <a
           class="footer__link"
-          href="https://www.freecodecamp.org/jahongirhacking"
-          id="fcc-link"
-          ><i class="fab fa-free-code-camp"></i
-        ></a>
-        <a
-          class="footer__link"
-          href="https://robocontest.uz/profile/jahongir_khayitov"
-          id="rb-link"
-          ><i class="fas fa-robot"></i
-        ></a>
-        <a
-          class="footer__link"
           href="mailto:Jahongirhacking@gmail.com"
           id="email"
           ><i class="fas fa-envelope"></i
         ></a>
       </div>
       <p class="footer__info">
-        &copy; Jahongir Hayitov 2021 - <span id="current__year"></span> |
-        <span class="footer__made-heart"
-          >Made with <i class="fas fa-heart red-color"></i
-        ></span>
+        &copy; <span id="current__year"></span> Jahongir Hayitov
       </p>
-      <small class="footer__small"
-        ><span>last update:</span> 11 Apr, 2025</small
-      >
     </footer>
 
     <svg class="paths hidden">

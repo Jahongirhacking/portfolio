@@ -81,6 +81,7 @@ const langObject = {
     },
     contact: {
       title: "CONTACT ME",
+      last: "last update:",
     },
   },
   uzb: {
@@ -165,6 +166,7 @@ const langObject = {
     },
     contact: {
       title: "BOG'LANISH",
+      last: "oxirgi yangilanish:",
     },
   },
   deu: {
@@ -249,6 +251,7 @@ const langObject = {
     },
     contact: {
       title: "KONTAKTIERE MICH",
+      last: "letzte Aktualisierung:",
     },
   },
 };

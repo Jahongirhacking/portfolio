@@ -66,6 +66,8 @@ const updateDocumentContent = () => {
   // Contact
   document.querySelector(".footer__title")!.textContent =
     currentLangObject.contact.title;
+  document.querySelector(".footer__small > span")!.textContent =
+    currentLangObject.contact.last;
   document.getElementById("current__year")!.textContent = new Date()
     .getFullYear()
     .toString();

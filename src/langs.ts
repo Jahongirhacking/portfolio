@@ -11,11 +11,11 @@ const langObject = {
       span1: "Hi, welcome to my portfolio",
       span2: "I am",
       fullname: "Hayitov Jahongir",
-      job: "Front-End Developer",
+      job: "Full-Stack Developer",
     },
     about: {
       title: "About Me",
-      info: `Front-end developer with a solid foundation in JavaScript, TypeScript and React, focused on building scalable, high-performance web applications. I work at the Center for the Development of Digital Education Technologies under the Ministry of Higher Education, Science and Innovations of Uzbekistan, building digital solutions that improve access to education.`,
+      info: `Full-stack developer building scalable, high-performance web applications with React, Next.js, NestJS and PostgreSQL. I work at the Center for the Development of Digital Education Technologies under the Ministry of Higher Education, Science and Innovations of Uzbekistan, developing digital solutions that improve access to education.`,
       btn: "MORE INFO",
     },
     portfolio: {
@@ -24,7 +24,7 @@ const langObject = {
         {
           name: "FOTSPOT.UZ",
           description:
-            "A platform that helps grassroots football players in Uzbekistan get discovered. Players build a professional profile backed by video evidence, scouts recommend talent, and academies search by age, position and region, invite players to closed trials and manage squads in one system. Players can also apply directly to open trials.",
+            "A platform that helps grassroots football players in Uzbekistan get discovered. Players build a professional profile backed by video evidence, scouts recommend talent, and academies search by age, position and region, invite players to closed trials and manage squads in one system. Players can also apply directly to open trials. Technologies: Next.js, NestJS, PostgreSQL",
         },
         {
           name: "MY.HEMIS.UZ",
@@ -96,11 +96,11 @@ const langObject = {
       span1: "Assalomu Alaykum! Portfelimga",
       span2: "Xush Kelibsiz, mening ismim",
       fullname: "Hayitov Jahongir",
-      job: "Front-End dasturchi",
+      job: "Full-Stack dasturchi",
     },
     about: {
       title: "MEN HAQIMDA",
-      info: `Men JavaScript, TypeScript va React-da mustahkam poydevorga ega ishtiyoqli frontend dasturchisiman. Muammolarni hal qilish nuqtai nazaridan men kengaytiriladigan, yuqori samarali veb-ilovalarni yaratishga ixtisoslashganman. Hozirda men O‘zbekiston Oliy ta’lim, fan va innovatsiyalar vazirligi huzuridagi “Raqamli ta’lim texnologiyalarini rivojlantirish markazi”da ishlayman va u yerda ta’lim olish imkoniyatini yaxshilashga qaratilgan raqamli yechimlarni ishlab chiqishga hissa qo‘shaman`,
+      info: `Kengaytiriladigan, yuqori samarali veb-ilovalarni React, Next.js, NestJS va PostgreSQL yordamida yaratadigan full-stack dasturchiman. Hozirda O‘zbekiston Oliy ta’lim, fan va innovatsiyalar vazirligi huzuridagi “Raqamli ta’lim texnologiyalarini rivojlantirish markazi”da ishlayman va ta’lim olish imkoniyatini yaxshilashga qaratilgan raqamli yechimlarni ishlab chiqaman.`,
       btn: "Batafsil",
     },
     portfolio: {
@@ -109,7 +109,7 @@ const langObject = {
         {
           name: "FOTSPOT.UZ",
           description:
-            "O'zbekistondagi mahalla futbolchilariga o'z iste'dodini ko'rsatishda yordam beradigan platforma. Futbolchilar video-isbotga asoslangan professional profil yaratadi, skautlar iste'dodlarni tavsiya qiladi, akademiyalar esa yosh, pozitsiya va hudud bo'yicha qidiradi, yopiq sinovlarga taklif qiladi va tarkibni yagona tizimda boshqaradi. Futbolchilar ochiq sinovlarga bevosita ariza ham bera oladi.",
+            "O'zbekistondagi mahalla futbolchilariga o'z iste'dodini ko'rsatishda yordam beradigan platforma. Futbolchilar video-isbotga asoslangan professional profil yaratadi, skautlar iste'dodlarni tavsiya qiladi, akademiyalar esa yosh, pozitsiya va hudud bo'yicha qidiradi, yopiq sinovlarga taklif qiladi va tarkibni yagona tizimda boshqaradi. Futbolchilar ochiq sinovlarga bevosita ariza ham bera oladi. Texnologiyalar: Next.js, NestJS, PostgreSQL",
         },
         {
           name: "MY.HEMIS.UZ",
@@ -181,11 +181,11 @@ const langObject = {
       span1: "Hallo, willkommen in meinem Portfolio",
       span2: "Mein ganzer Name lautet",
       fullname: "Hayitov Jahongir",
-      job: "Front-End-Entwickler",
+      job: "Full-Stack-Entwickler",
     },
     about: {
       title: "Über mich",
-      info: `Ich bin ein leidenschaftlicher Frontend-Entwickler mit fundierten Kenntnissen in JavaScript, TypeScript und React. Angetrieben von einer lösungsorientierten Denkweise habe ich mich auf die Entwicklung skalierbarer, leistungsstarker Webanwendungen spezialisiert. Derzeit arbeite ich am Zentrum für die Entwicklung digitaler Bildungstechnologien des usbekischen Ministeriums für Hochschulbildung, Wissenschaft und Innovation und trage dort zur Entwicklung digitaler Lösungen zur Verbesserung des Bildungszugangs bei`,
+      info: `Full-Stack-Entwickler für skalierbare, leistungsstarke Webanwendungen mit React, Next.js, NestJS und PostgreSQL. Ich arbeite am Zentrum für die Entwicklung digitaler Bildungstechnologien des usbekischen Ministeriums für Hochschulbildung, Wissenschaft und Innovation und entwickle digitale Lösungen, die den Zugang zu Bildung verbessern.`,
       btn: "MEHR INFO",
     },
     portfolio: {
@@ -194,7 +194,7 @@ const langObject = {
         {
           name: "FOTSPOT.UZ",
           description:
-            "Eine Plattform, die Nachwuchsfußballern in Usbekistan hilft, entdeckt zu werden. Spieler erstellen ein professionelles Profil mit Videobelegen, Scouts empfehlen Talente, Akademien suchen nach Alter, Position und Region, laden zu geschlossenen Probetrainings ein und verwalten Kader in einem System. Spieler können sich auch direkt für offene Probetrainings bewerben.",
+            "Eine Plattform, die Nachwuchsfußballern in Usbekistan hilft, entdeckt zu werden. Spieler erstellen ein professionelles Profil mit Videobelegen, Scouts empfehlen Talente, Akademien suchen nach Alter, Position und Region, laden zu geschlossenen Probetrainings ein und verwalten Kader in einem System. Spieler können sich auch direkt für offene Probetrainings bewerben. Technologien: Next.js, NestJS, PostgreSQL",
         },
         {
           name: "MY.HEMIS.UZ",
